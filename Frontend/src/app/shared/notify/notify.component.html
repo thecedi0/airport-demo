@@ -1,0 +1,34 @@
+<div class="ad-notify" [class.top]="isTop">
+  <div class="slide-up" *ngFor="let alert of data">
+    <!-- <div class="color-bar bg-{{ onGetDataColor(alert.status) }}"></div> -->
+    <div class="main">
+      <div (click)="onAlertRoute(alert.route)" class="ad-card ad-round bg-white">
+        <div class="activity">
+          <!-- <div class="bg-color bg-{{ onGetDataColor(alert.status) }}"></div> -->
+          <div class="icon">
+            <button *ngIf="alert.type === 0" style="position: absolute; left:0; top:0;"
+              class="ad-btn ad-round ad-flat ad-icon btn-{{ onGetDataColor(alert.status) }}">
+              <i class="axl ax-{{
+                onGetDataIcon(alert.status)
+              }}"></i>
+            </button>
+            <!-- <i *ngIf="alert.type === 0" class="color-{{ onGetDataColor(alert.status) }} axr ax-{{
+                onGetDataIcon(alert.status)
+              }}"></i> -->
+
+
+            <div *ngIf="alert.type !== 0" class="ad-img-cover bg-special">
+
+            </div>
+          </div>
+          <div class="message">{{ alert.message }}</div>
+          <div class="action" (click)="onCloseAlert(alert, $event)">
+            <button class="ad-btn ad-round ad-icon btn-grey shine-pink" style="transform: scale(.6);">
+              <i class="axr ax-clear-all"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

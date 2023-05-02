@@ -1,0 +1,54 @@
+<div
+  class="ad-card ad-shadow outlinex ad-round ux-left-menu"
+  [ngClass]="{
+    'bg-dark': theme == 'dark',
+    'bg-white': theme == 'light',
+    'show-menu': showMenu
+  }"
+>
+  <!--
+    <div class="ad-logo">
+      <div class="wrapper-fluid">
+        <div class="ad-row">
+          <div class="ad-colx-4">
+            <div class="logo "><img src="" class="img-responsive" alt="" /></div>
+          </div>
+          <div class="ad-colx-8">
+            <h3 class="title" style="text-transform:none;">{{ appName }}</h3>
+            <small><i>version 0.9.5 Beta</i></small>
+          </div>
+        </div>
+      </div>
+    </div>
+  -->
+  <div class="menu-flex" (click)="onToggleMenu()">
+    <div class="top part">
+      <button
+        class="ad-btn ad-icon ad-flat clear ad-round"
+        [routerLink]="['/']"
+      >
+        <i class="axl ax-brand-aiira"></i>
+      </button>
+    </div>
+
+    <div class="menu" (click)="onMenuClicked($event)">
+      <button
+        *ngFor="let item of menu"
+        [routerLink]="[item.route]"
+        routerLinkActive="active"
+        class="ad-btn ad-icon ad-flat clear ad-rounder"
+        [title]="item.name"
+      >
+        <i [class]="item.icon" routerLinkActive="axr color-blue"></i>
+      </button>
+    </div>
+    <div class="bottom-part">
+      <button
+        class="ad-btn ad-icon clear ad-flat ad-round"
+        [routerLink]="['settings']"
+      >
+        <i class="axl ax-settings"></i>
+      </button>
+    </div>
+  </div>
+</div>

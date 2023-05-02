@@ -1,0 +1,189 @@
+.ad-notify {
+  position: fixed;
+  bottom: 8px;
+  left: 8px;
+  // background-color: green;
+  width: 300px;
+  z-index: 600;
+  .slide-up {
+    position: relative;
+    animation: slideUp 0.5s ease-in;
+
+    .color-bar {
+      // background-color: deeppink;
+      border-radius: 8px;
+      position: absolute;
+      left: 8px;
+      top: 0;
+      bottom: 0;
+      width: 60px;
+    }
+    .main {
+      padding-left: 4px;
+      .activity {
+        position: relative;
+        z-index: 10;
+        padding: 0 2px;
+
+        .ad-img {
+          border-radius: 8px;
+          // padding: 4px;
+          // border: 1px solid transparent;
+          // width: 32px;
+          // height: 32px;
+          position: relative;
+          z-index: 10;
+        }
+
+        .ad-img-cover {
+          position: absolute;
+          left: -10px;
+          top: -20px;
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          z-index: 1;
+          // opacity: 0.5;
+          animation: slideDown 5s ease-in alternate-reverse infinite;
+        }
+
+        .message {
+          position: relative;
+          z-index: 10;
+        }
+        .action {
+          opacity: 1;
+          .ad-btn {
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &.top {
+    bottom: auto;
+    left: auto;
+    top: 8px;
+    right: 8px;
+
+    .slide-up {
+      position: relative;
+      animation: slideDown 0.5s ease-in;
+    }
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    // transform: translateY(100);
+    top: 50px;
+  }
+  // 20% {
+  //   opacity: 1;
+  //   // margin-top: 100px;
+  // }
+  100% {
+    opacity: 1;
+    // transform: translateY(0);
+    top: 0px;
+  }
+}
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    // transform: translateY(100);
+    top: -50px;
+  }
+  // 20% {
+  //   opacity: 1;
+  //   // margin-top: 100px;
+  // }
+  100% {
+    opacity: 1;
+    // transform: translateY(0);
+    top: 0px;
+  }
+}
+
+.activity {
+  display: flex;
+  // height: 100px;
+  overflow: hidden;
+
+  & > div {
+    // height: 100%;
+    padding: 16px 0;
+    &.bg-color {
+      width: 4px;
+      margin: 0;
+      padding: 0;
+      // background-color: yellow;
+    }
+
+    // &.date {
+    //   width: 100px;
+    //   // background-color: red;
+    //   text-align: center;
+    //   font-weight: bold;
+    //   .month {
+    //     font-size: 18px;
+    //     margin: 0;
+    //     padding: 0;
+    //     margin-top: 24px;
+    //   }
+
+    //   .day {
+    //     font-size: 35px;
+    //     margin: 0;
+    //     padding: 0;
+    //     margin-top: -5px;
+    //   }
+    // }
+    &.icon {
+      width: 44px;
+      // background-color: aqua;
+      text-align: center;
+      justify-content: center;
+
+      .ad-img {
+        width: 32px;
+        height: 32px;
+        overflow: hidden;
+        border-radius: 4px;
+        background-color: black;
+        margin: 0 auto;
+
+        &.is-round {
+          border-radius: 50%;
+        }
+        img {
+          height: 100%;
+          object-fit: cover;
+          width: 100%;
+        }
+      }
+    }
+    &.message {
+      flex: 1;
+      // background-color: green;
+      // font-weight: bold;
+      // font-size: 16px;
+      // padding-top: 40px;
+    }
+    &.action {
+      width: 30px;
+      cursor: pointer;
+      // background-color:red;
+      z-index: 1;
+      opacity: 0.4;
+
+      // text-align: center;
+      // padding-top: 40px;
+      // background-color: purple;
+    }
+  }
+}

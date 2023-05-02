@@ -1,0 +1,48 @@
+<div class="wrapper">
+  <div class="ad-row">
+    <div class="ad-cols-12">
+      <div class="ad-header ad-flat bg-blackx">
+        <div class="app-name bg-pinkx">
+          <!-- <button class="ad-btn ad-icon clear ad-flat ad-round">
+            <i class="fal fa-bars"></i>
+          </button> -->
+          <div class="ad-appInfo">
+            <div class="ad-img"><img [src]="appLogo" alt="" /></div>
+            <div class="apptitle">
+              airFinance LITE: Financial Management App
+            </div>
+          </div>
+        </div>
+        <div class="bg-yellowx">
+
+          <a href="mailto:support@aiira.co"  class="ad-btn ad-flat ad-icon ad-round">
+            <i class="axr ax-question-mark"></i>
+          </a>
+
+          <button [routerLink]="['/settings']" routerLinkActive="router-link-active"
+            class="ad-btn btn-dark ad-iconx ad-round btn-image ad-trigger">
+            <span class="user-icon">
+              <i class="axr ax-user"></i>
+            </span>
+            {{activeUser.username}}
+          </button>
+
+          <button (click)="onLogOut()" class="ad-btn ad-flat ad-icon ad-round">
+            <span> <i class="axl ax-logout"></i> </span>
+          </button>
+
+          <!-- menu -->
+
+          <button (click)="onToggleMenu()" class="ad-btn ad-icon ad-round ad-sm menu-btn" [ngClass]="{
+            'btn-dark': theme == 'light',
+            'btn-grey': theme == 'dark'
+          }">
+            <i class="axr ax-menu"></i>
+          </button>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

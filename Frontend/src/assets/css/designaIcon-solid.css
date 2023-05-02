@@ -1,0 +1,1494 @@
+/*--------------------------------
+
+DesignaIcon-Solid Web Font
+Generated using nucleoapp.com
+
+-------------------------------- */
+@font-face {
+  font-family: 'DesignaIcon-Solid';
+  src: url('../webfonts/DesignaIcon-Solid.eot');
+  src: url('../webfonts/DesignaIcon-Solid.eot') format('embedded-opentype'),
+    url('../webfonts/DesignaIcon-Solid.woff2') format('woff2'),
+    url('../webfonts/DesignaIcon-Solid.woff') format('woff'),
+    url('../webfonts/DesignaIcon-Solid.ttf') format('truetype'),
+    url('../webfonts/DesignaIcon-Solid.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*------------------------
+	base class definition
+-------------------------*/
+.axs {
+  display: inline-block;
+  font-family: 'DesignaIcon-Solid';
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  /* line-height: 1; */
+  transform: translateY(1px) scale(1.4);
+  speak: none;
+  text-transform: none;
+  text-rendering: auto;
+  /* background-color: red; */
+  /* Better Font Rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*------------------------
+  change icon size
+-------------------------*/
+/* relative units */
+.axs-sm {
+  font-size: 0.8em;
+}
+.axs-lg {
+  font-size: 1.2em;
+}
+/* absolute units */
+.axs-16 {
+  font-size: 16px;
+}
+.axs-32 {
+  font-size: 32px;
+}
+/*----------------------------------
+  add a square/circle background
+-----------------------------------*/
+.axs-bg-square,
+.axs-bg-circle {
+  padding: 0.35em;
+  background-color: #eee;
+}
+.axs-bg-circle {
+  border-radius: 50%;
+}
+/*------------------------------------
+  use icons as list item markers
+-------------------------------------*/
+.axs-ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+.axs-ul > li {
+  display: flex;
+  align-items: flex-start;
+  line-height: 1.4;
+}
+.axs-ul > li > .axs {
+  margin-right: 0.4em;
+  line-height: inherit;
+}
+/*------------------------
+  spinning icons
+-------------------------*/
+.axs-is-spinning {
+  -webkit-animation: axs-spin 2s infinite linear;
+  -moz-animation: axs-spin 2s infinite linear;
+  animation: axs-spin 2s infinite linear;
+}
+@-webkit-keyframes axs-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes axs-spin {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@keyframes axs-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/*------------------------
+  rotated/flipped icons
+-------------------------*/
+.axs-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.axs-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.axs-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.axs-flip-y {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+  -webkit-transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.axs-flip-x {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: scale(1, -1);
+  -moz-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+/*------------------------
+	icons
+-------------------------*/
+
+.axs.ax-woman::before {
+  content: "\ea02";
+}
+
+.axs.ax-thumb-up::before {
+  content: "\ea03";
+}
+
+.axs.ax-alarm::before {
+  content: "\ea04";
+}
+
+.axs.ax-align-left::before {
+  content: "\ea05";
+}
+
+.axs.ax-align-justified::before {
+  content: "\ea06";
+}
+
+.axs.ax-align-center::before {
+  content: "\ea07";
+}
+
+.axs.ax-alert-triangle::before {
+  content: "\ea08";
+}
+
+.axs.ax-alert-circle::before {
+  content: "\ea09";
+}
+
+.axs.ax-user-x::before {
+  content: "\ea0a";
+}
+
+.axs.ax-adjustments::before {
+  content: "\ea0b";
+}
+
+.axs.ax-ad::before {
+  content: "\ea0c";
+}
+
+.axs.ax-activity::before {
+  content: "\ea0d";
+}
+
+.axs.ax-accessible::before {
+  content: "\ea0e";
+}
+
+.axs.ax-yin-yang::before {
+  content: "\ea0f";
+}
+
+.axs.ax-x::before {
+  content: "\ea10";
+}
+
+.axs.ax-world::before {
+  content: "\ea11";
+}
+
+.axs.ax-volume-3::before {
+  content: "\ea12";
+}
+
+.axs.ax-wind::before {
+  content: "\ea13";
+}
+
+.axs.ax-wifi-2::before {
+  content: "\ea14";
+}
+
+.axs.ax-wifi-1::before {
+  content: "\ea15";
+}
+
+.axs.ax-wifi-0::before {
+  content: "\ea16";
+}
+
+.axs.ax-wifi::before {
+  content: "\ea17";
+}
+
+.axs.ax-wand::before {
+  content: "\ea18";
+}
+
+.axs.ax-wallet::before {
+  content: "\ea19";
+}
+
+.axs.ax-viewport-wide::before {
+  content: "\ea1a";
+}
+
+.axs.ax-volume-2::before {
+  content: "\ea1b";
+}
+
+.axs.ax-volume::before {
+  content: "\ea1c";
+}
+
+.axs.ax-virus::before {
+  content: "\ea1d";
+}
+
+.axs.ax-user-minus::before {
+  content: "\ea1e";
+}
+
+.axs.ax-viewport-narrow::before {
+  content: "\ea1f";
+}
+
+.axs.ax-viewfinder::before {
+  content: "\ea20";
+}
+
+.axs.ax-underline::before {
+  content: "\ea21";
+}
+
+.axs.ax-users::before {
+  content: "\ea22";
+}
+
+.axs.ax-user-plus::before {
+  content: "\ea23";
+}
+
+.axs.ax-trademark::before {
+  content: "\ea24";
+}
+
+.axs.ax-user-exclamation::before {
+  content: "\ea25";
+}
+
+.axs.ax-user-check::before {
+  content: "\ea26";
+}
+
+.axs.ax-user::before {
+  content: "\ea27";
+}
+
+.axs.ax-urgent::before {
+  content: "\ea28";
+}
+
+.axs.ax-upload::before {
+  content: "\ea29";
+}
+
+.axs.ax-unlink::before {
+  content: "\ea2a";
+}
+
+.axs.ax-triangle::before {
+  content: "\ea2b";
+}
+
+.axs.ax-umbrella::before {
+  content: "\ea2c";
+}
+
+.axs.ax-typography::before {
+  content: "\ea2d";
+}
+
+.axs.ax-truck::before {
+  content: "\ea2e";
+}
+
+.axs.ax-trophy::before {
+  content: "\ea2f";
+}
+
+.axs.ax-tool::before {
+  content: "\ea30";
+}
+
+.axs.ax-trending-up::before {
+  content: "\ea31";
+}
+
+.axs.ax-trending-down::before {
+  content: "\ea32";
+}
+
+.axs.ax-trees::before {
+  content: "\ea33";
+}
+
+.axs.ax-trash::before {
+  content: "\ea34";
+}
+
+.axs.ax-traffic-cone::before {
+  content: "\ea35";
+}
+
+.axs.ax-tir::before {
+  content: "\ea36";
+}
+
+.axs.ax-tractor::before {
+  content: "\ea37";
+}
+
+.axs.ax-tools::before {
+  content: "\ea38";
+}
+
+.axs.ax-star::before {
+  content: "\ea39";
+}
+
+.axs.ax-toggle-right::before {
+  content: "\ea3a";
+}
+
+.axs.ax-toggle-left::before {
+  content: "\ea3b";
+}
+
+.axs.ax-switch::before {
+  content: "\ea3c";
+}
+
+.axs.ax-ticket::before {
+  content: "\ea3d";
+}
+
+.axs.ax-tag::before {
+  content: "\ea3e";
+}
+
+.axs.ax-thumb-down::before {
+  content: "\ea3f";
+}
+
+.axs.ax-text-wrap::before {
+  content: "\ea40";
+}
+
+.axs.ax-test-pipe::before {
+  content: "\ea41";
+}
+
+.axs.ax-test::before {
+  content: "\ea42";
+}
+
+.axs.ax-terminal-2::before {
+  content: "\ea43";
+}
+
+.axs.ax-terminal::before {
+  content: "\ea44";
+}
+
+.axs.ax-template::before {
+  content: "\ea45";
+}
+
+.axs.ax-tax::before {
+  content: "\ea46";
+}
+
+.axs.ax-target::before {
+  content: "\ea47";
+}
+
+.axs.ax-sunset::before {
+  content: "\ea48";
+}
+
+.axs.ax-table::before {
+  content: "\ea49";
+}
+
+.axs.ax-switch-vertical::before {
+  content: "\ea4a";
+}
+
+.axs.ax-switch-horizontal::before {
+  content: "\ea4b";
+}
+
+.axs.ax-subscript::before {
+  content: "\ea4c";
+}
+
+.axs.ax-superscript::before {
+  content: "\ea4d";
+}
+
+.axs.ax-sunshine::before {
+  content: "\ea4e";
+}
+
+.axs.ax-square-plus::before {
+  content: "\ea4f";
+}
+
+.axs.ax-sun::before {
+  content: "\ea50";
+}
+
+.axs.ax-sum::before {
+  content: "\ea51";
+}
+
+.axs.ax-space::before {
+  content: "\ea52";
+}
+
+.axs.ax-strikethrough::before {
+  content: "\ea53";
+}
+
+.axs.ax-sticker::before {
+  content: "\ea54";
+}
+
+.axs.ax-servicemark::before {
+  content: "\ea55";
+}
+
+.axs.ax-stack::before {
+  content: "\ea56";
+}
+
+.axs.ax-square-x::before {
+  content: "\ea57";
+}
+
+.axs.ax-power::before {
+  content: "\ea58";
+}
+
+.axs.ax-square-minus::before {
+  content: "\ea59";
+}
+
+.axs.ax-square-check::before {
+  content: "\ea5a";
+}
+
+.axs.ax-square::before {
+  content: "\ea5b";
+}
+
+.axs.ax-rotate-clockwise::before {
+  content: "\ea5c";
+}
+
+.axs.ax-sort-descending::before {
+  content: "\ea5d";
+}
+
+.axs.ax-sort-ascending::before {
+  content: "\ea5e";
+}
+
+.axs.ax-social::before {
+  content: "\ea5f";
+}
+
+.axs.ax-snowflake::before {
+  content: "\ea60";
+}
+
+.axs.ax-slideshow::before {
+  content: "\ea61";
+}
+
+.axs.ax-slice::before {
+  content: "\ea62";
+}
+
+.axs.ax-sitemap::before {
+  content: "\ea63";
+}
+
+.axs.ax-shopping-cart::before {
+  content: "\ea64";
+}
+
+.axs.ax-shopping-bag::before {
+  content: "\ea65";
+}
+
+.axs.ax-shirt::before {
+  content: "\ea66";
+}
+
+.axs.ax-shield-x::before {
+  content: "\ea67";
+}
+
+.axs.ax-shield-check::before {
+  content: "\ea68";
+}
+
+.axs.ax-shield::before {
+  content: "\ea69";
+}
+
+.axs.ax-share::before {
+  content: "\ea6a";
+}
+
+.axs.ax-shape::before {
+  content: "\ea6b";
+}
+
+.axs.ax-settings::before {
+  content: "\ea6c";
+}
+
+.axs.ax-search::before {
+  content: "\ea6d";
+}
+
+.axs.ax-server::before {
+  content: "\ea6e";
+}
+
+.axs.ax-separator::before {
+  content: "\ea6f";
+}
+
+.axs.ax-send::before {
+  content: "\ea70";
+}
+
+.axs.ax-selector::before {
+  content: "\ea71";
+}
+
+.axs.ax-phone-plus::before {
+  content: "\ea72";
+}
+
+.axs.ax-scissors::before {
+  content: "\ea73";
+}
+
+.axs.ax-scan::before {
+  content: "\ea74";
+}
+
+.axs.ax-scale::before {
+  content: "\ea75";
+}
+
+.axs.ax-ruler::before {
+  content: "\ea76";
+}
+
+.axs.ax-rss::before {
+  content: "\ea77";
+}
+
+.axs.ax-router::before {
+  content: "\ea78";
+}
+
+.axs.ax-route::before {
+  content: "\ea79";
+}
+
+.axs.ax-rotate-rectangle::before {
+  content: "\ea7a";
+}
+
+.axs.ax-rotate-clockwise-2::before {
+  content: "\ea7b";
+}
+
+.axs.ax-replace::before {
+  content: "\ea7c";
+}
+
+.axs.ax-rotate-2::before {
+  content: "\ea7d";
+}
+
+.axs.ax-rotate::before {
+  content: "\ea7e";
+}
+
+.axs.ax-record-mail::before {
+  content: "\ea7f";
+}
+
+.axs.ax-repeat-once::before {
+  content: "\ea80";
+}
+
+.axs.ax-repeat::before {
+  content: "\ea81";
+}
+
+.axs.ax-registered::before {
+  content: "\ea82";
+}
+
+.axs.ax-refresh::before {
+  content: "\ea83";
+}
+
+.axs.ax-recycle::before {
+  content: "\ea84";
+}
+
+.axs.ax-pillow::before {
+  content: "\ea85";
+}
+
+.axs.ax-qrcode::before {
+  content: "\ea86";
+}
+
+.axs.ax-puzzle::before {
+  content: "\ea87";
+}
+
+.axs.ax-prompt::before {
+  content: "\ea88";
+}
+
+.axs.ax-printer::before {
+  content: "\ea89";
+}
+
+.axs.ax-presentation::before {
+  content: "\ea8a";
+}
+
+.axs.ax-outlet::before {
+  content: "\ea8b";
+}
+
+.axs.ax-point::before {
+  content: "\ea8c";
+}
+
+.axs.ax-plus::before {
+  content: "\ea8d";
+}
+
+.axs.ax-plug::before {
+  content: "\ea8e";
+}
+
+.axs.ax-planet::before {
+  content: "\ea8f";
+}
+
+.axs.ax-plane-departure::before {
+  content: "\ea90";
+}
+
+.axs.ax-plane-arrival::before {
+  content: "\ea91";
+}
+
+.axs.ax-plane::before {
+  content: "\ea92";
+}
+
+.axs.ax-mail-opened::before {
+  content: "\ea93";
+}
+
+.axs.ax-photos::before {
+  content: "\ea94";
+}
+
+.axs.ax-photo::before {
+  content: "\ea95";
+}
+
+.axs.ax-phone-x::before {
+  content: "\ea96";
+}
+
+.axs.ax-phone-check::before {
+  content: "\ea97";
+}
+
+.axs.ax-phone-pause::before {
+  content: "\ea98";
+}
+
+.axs.ax-phone-outgoing::before {
+  content: "\ea99";
+}
+
+.axs.ax-phone-incoming::before {
+  content: "\ea9a";
+}
+
+.axs.ax-paperclip::before {
+  content: "\ea9b";
+}
+
+.axs.ax-phone-call::before {
+  content: "\ea9c";
+}
+
+.axs.ax-phone::before {
+  content: "\ea9d";
+}
+
+.axs.ax-pencil::before {
+  content: "\ea9e";
+}
+
+.axs.ax-parking::before {
+  content: "\ea9f";
+}
+
+.axs.ax-parentheses::before {
+  content: "\eaa0";
+}
+
+.axs.ax-notes::before {
+  content: "\eaa1";
+}
+
+.axs.ax-palette::before {
+  content: "\eaa2";
+}
+
+.axs.ax-paint::before {
+  content: "\eaa3";
+}
+
+.axs.ax-package::before {
+  content: "\eaa4";
+}
+
+.axs.ax-ice-cream::before {
+  content: "\eaa5";
+}
+
+.axs.ax-omega::before {
+  content: "\eaa6";
+}
+
+.axs.ax-notification::before {
+  content: "\eaa7";
+}
+
+.axs.ax-notebook::before {
+  content: "\eaa9";
+}
+
+.axs.ax-note::before {
+  content: "\eaaa";
+}
+
+.axs.ax-new-section::before {
+  content: "\eaab";
+}
+
+.axs.ax-news::before {
+  content: "\eaac";
+}
+
+.axs.ax-message-dots::before {
+  content: "\eaad";
+}
+
+.axs.ax-mug::before {
+  content: "\eaae";
+}
+
+.axs.ax-movie::before {
+  content: "\eaaf";
+}
+
+.axs.ax-mouse::before {
+  content: "\eab0";
+}
+
+.axs.ax-moon::before {
+  content: "\eab1";
+}
+
+.axs.ax-mist::before {
+  content: "\eab2";
+}
+
+.axs.ax-minus::before {
+  content: "\eab3";
+}
+
+.axs.ax-minimize::before {
+  content: "\eab4";
+}
+
+.axs.ax-microphone::before {
+  content: "\eab5";
+}
+
+.axs.ax-messages::before {
+  content: "\eab6";
+}
+
+.axs.ax-map-2::before {
+  content: "\eab7";
+}
+
+.axs.ax-message-circle::before {
+  content: "\eab8";
+}
+
+.axs.ax-message-2::before {
+  content: "\eab9";
+}
+
+.axs.ax-message::before {
+  content: "\eaba";
+}
+
+.axs.ax-menu::before {
+  content: "\eabb";
+}
+
+.axs.ax-medical-cross::before {
+  content: "\eabc";
+}
+
+.axs.ax-maximize::before {
+  content: "\eabd";
+}
+
+.axs.ax-math::before {
+  content: "\eabe";
+}
+
+.axs.ax-map-pin::before {
+  content: "\eabf";
+}
+
+.axs.ax-lock-open::before {
+  content: "\eac0";
+}
+
+.axs.ax-map::before {
+  content: "\eac1";
+}
+
+.axs.ax-man::before {
+  content: "\eac2";
+}
+
+.axs.ax-folder-x::before {
+  content: "\eac3";
+}
+
+.axs.ax-mail::before {
+  content: "\eac4";
+}
+
+.axs.ax-magnet::before {
+  content: "\eac5";
+}
+
+.axs.ax-logout::before {
+  content: "\eac6";
+}
+
+.axs.ax-login::before {
+  content: "\eac7";
+}
+
+.axs.ax-lego::before {
+  content: "\eac8";
+}
+
+.axs.ax-lock::before {
+  content: "\eac9";
+}
+
+.axs.ax-location::before {
+  content: "\eaca";
+}
+
+.axs.ax-list::before {
+  content: "\eacb";
+}
+
+.axs.ax-link::before {
+  content: "\eacc";
+}
+
+.axs.ax-headphones::before {
+  content: "\eacd";
+}
+
+.axs.ax-id::before {
+  content: "\eace";
+}
+
+.axs.ax-circle::before {
+  content: "\eacf";
+}
+
+.axs.ax-home-2::before {
+  content: "\ead0";
+}
+
+.axs.ax-home::before {
+  content: "\ead1";
+}
+
+.axs.ax-history::before {
+  content: "\ead2";
+}
+
+.axs.ax-help::before {
+  content: "\ead3";
+}
+
+.axs.ax-heart::before {
+  content: "\ead4";
+}
+
+.axs.ax-headset::before {
+  content: "\ead5";
+}
+
+.axs.ax-folder-minus::before {
+  content: "\ead6";
+}
+
+.axs.ax-hash::before {
+  content: "\ead7";
+}
+
+.axs.ax-hand-middle-finger::before {
+  content: "\ead8";
+}
+
+.axs.ax-grid::before {
+  content: "\ead9";
+}
+
+.axs.ax-globe::before {
+  content: "\eada";
+}
+
+.axs.ax-glass-full::before {
+  content: "\eadb";
+}
+
+.axs.ax-glass::before {
+  content: "\eadc";
+}
+
+.axs.ax-friends::before {
+  content: "\eadd";
+}
+
+.axs.ax-credit-card::before {
+  content: "\eade";
+}
+
+.axs.ax-folders::before {
+  content: "\eadf";
+}
+
+.axs.ax-folder-plus::before {
+  content: "\eae0";
+}
+
+.axs.ax-chart-area-line::before {
+  content: "\eae1";
+}
+
+.axs.ax-folder::before {
+  content: "\eae2";
+}
+
+.axs.ax-floppy-disk::before {
+  content: "\eae3";
+}
+
+.axs.ax-flame::before {
+  content: "\eae4";
+}
+
+.axs.ax-eye::before {
+  content: "\eae5";
+}
+
+.axs.ax-diamond::before {
+  content: "\eae6";
+}
+
+.axs.ax-device-floppy::before {
+  content: "\eae7";
+}
+
+.axs.ax-device-desktop::before {
+  content: "\eae8";
+}
+
+.axs.ax-dashboard::before {
+  content: "\eae9";
+}
+
+.axs.ax-camera::before {
+  content: "\eaea";
+}
+
+.axs.ax-cloud::before {
+  content: "\eaeb";
+}
+
+.axs.ax-click::before {
+  content: "\eaec";
+}
+
+.axs.ax-clear-formatting::before {
+  content: "\eaed";
+}
+
+.axs.ax-checkbox::before {
+  content: "\eaee";
+}
+
+.axs.ax-chevron-down::before {
+  content: "\eaef";
+}
+
+.axs.ax-checks::before {
+  content: "\eaf0";
+}
+
+.axs.ax-brightness-up::before {
+  content: "\eaf1";
+}
+
+.axs.ax-check::before {
+  content: "\eaf2";
+}
+
+.axs.ax-chart-bar::before {
+  content: "\eaf3";
+}
+
+.axs.ax-battery-full::before {
+  content: "\eaf4";
+}
+
+.axs.ax-chart-area::before {
+  content: "\eaf5";
+}
+
+.axs.ax-cart-plus::before {
+  content: "\eaf6";
+}
+
+.axs.ax-cart-down::before {
+  content: "\eaf7";
+}
+
+.axs.ax-calendar::before {
+  content: "\eaf8";
+}
+
+.axs.ax-calendar-plus::before {
+  content: "\eaf9";
+}
+
+.axs.ax-calendar-minus::before {
+  content: "\eafa";
+}
+
+.axs.ax-calendar-event::before {
+  content: "\eafb";
+}
+
+.axs.ax-calendar-1::before {
+  content: "\eafc";
+}
+
+.axs.ax-brightness::before {
+  content: "\eafd";
+}
+
+.axs.ax-bulb-off::before {
+  content: "\eafe";
+}
+
+.axs.ax-bulb::before {
+  content: "\eaff";
+}
+
+.axs.ax-bug::before {
+  content: "\eb00";
+}
+
+.axs.ax-bolt::before {
+  content: "\eb01";
+}
+
+.axs.ax-brightness-down::before {
+  content: "\eb02";
+}
+
+.axs.ax-ball-volleyball::before {
+  content: "\eb03";
+}
+
+.axs.ax-brackets::before {
+  content: "\eb04";
+}
+
+.axs.ax-braces::before {
+  content: "\eb05";
+}
+
+.axs.ax-border-all::before {
+  content: "\eb06";
+}
+
+.axs.ax-bookmark::before {
+  content: "\eb07";
+}
+
+.axs.ax-book::before {
+  content: "\eb08";
+}
+
+.axs.ax-ball-basketball::before {
+  content: "\eb09";
+}
+
+.axs.ax-bold::before {
+  content: "\eb0a";
+}
+
+.axs.ax-bluetooth::before {
+  content: "\eb0b";
+}
+
+.axs.ax-bike::before {
+  content: "\eb0c";
+}
+
+.axs.ax-bell::before {
+  content: "\eb0d";
+}
+
+.axs.ax-bed::before {
+  content: "\eb0e";
+}
+
+.axs.ax-bandage::before {
+  content: "\eb0f";
+}
+
+.axs.ax-battery-charging::before {
+  content: "\eb10";
+}
+
+.axs.ax-battery-1::before {
+  content: "\eb11";
+}
+
+.axs.ax-battery::before {
+  content: "\eb12";
+}
+
+.axs.ax-basket::before {
+  content: "\eb13";
+}
+
+.axs.ax-barcode::before {
+  content: "\eb14";
+}
+
+.axs.ax-atom-2::before {
+  content: "\eb15";
+}
+
+.axs.ax-ban::before {
+  content: "\eb16";
+}
+
+.axs.ax-arrows-sort::before {
+  content: "\eb17";
+}
+
+.axs.ax-ball-tennis::before {
+  content: "\eb18";
+}
+
+.axs.ax-ball-bowling::before {
+  content: "\eb19";
+}
+
+.axs.ax-arrow-up-right-circle::before {
+  content: "\eb1a";
+}
+
+.axs.ax-backspace::before {
+  content: "\eb1b";
+}
+
+.axs.ax-award::before {
+  content: "\eb1c";
+}
+
+.axs.ax-arrow-right::before {
+  content: "\eb1d";
+}
+
+.axs.ax-atom::before {
+  content: "\eb1e";
+}
+
+.axs.ax-at::before {
+  content: "\eb1f";
+}
+
+.axs.ax-artboard::before {
+  content: "\eb20";
+}
+
+.axs.ax-arrows-horizontal::before {
+  content: "\eb21";
+}
+
+.axs.ax-arrow-up-right::before {
+  content: "\eb22";
+}
+
+.axs.ax-arrow-up-left-circle::before {
+  content: "\eb23";
+}
+
+.axs.ax-arrow-up-left::before {
+  content: "\eb24";
+}
+
+.axs.ax-arrow-up-circle::before {
+  content: "\eb25";
+}
+
+.axs.ax-arrow-up::before {
+  content: "\eb26";
+}
+
+.axs.ax-arrows-vertical::before {
+  content: "\eb27";
+}
+
+.axs.ax-arrow-left-circle::before {
+  content: "\eb28";
+}
+
+.axs.ax-arrows-minimize::before {
+  content: "\eb29";
+}
+
+.axs.ax-arrows-maximize::before {
+  content: "\eb2a";
+}
+
+.axs.ax-arrow-narrow-right::before {
+  content: "\eb2b";
+}
+
+.axs.ax-arrows-diagonal-2::before {
+  content: "\eb2c";
+}
+
+.axs.ax-arrows-diagonal::before {
+  content: "\eb2d";
+}
+
+.axs.ax-arrow-right-circle::before {
+  content: "\eb2e";
+}
+
+.axs.ax-ambulance::before {
+  content: "\eb2f";
+}
+
+.axs.ax-arrow-narrow-up::before {
+  content: "\eb30";
+}
+
+.axs.ax-arrow-forward::before {
+  content: "\eb31";
+}
+
+.axs.ax-arrow-narrow-left::before {
+  content: "\eb32";
+}
+
+.axs.ax-arrow-narrow-down::before {
+  content: "\eb33";
+}
+
+.axs.ax-arrow-bar-up::before {
+  content: "\eb34";
+}
+
+.axs.ax-arrow-left::before {
+  content: "\eb35";
+}
+
+.axs.ax-arrow-forward-up::before {
+  content: "\eb36";
+}
+
+.axs.ax-arrow-down-circle::before {
+  content: "\eb37";
+}
+
+.axs.ax-arrow-down-right-circle::before {
+  content: "\eb38";
+}
+
+.axs.ax-arrow-down-right::before {
+  content: "\eb39";
+}
+
+.axs.ax-arrow-down-left-circle::before {
+  content: "\eb3a";
+}
+
+.axs.ax-arrow-down-left::before {
+  content: "\eb3b";
+}
+
+.axs.ax-arrow-back::before {
+  content: "\eb3c";
+}
+
+.axs.ax-arrow-down::before {
+  content: "\eb3d";
+}
+
+.axs.ax-anchor::before {
+  content: "\eb3e";
+}
+
+.axs.ax-arrow-bar-right::before {
+  content: "\eb3f";
+}
+
+.axs.ax-arrow-bar-left::before {
+  content: "\eb40";
+}
+
+.axs.ax-arrow-bar-down::before {
+  content: "\eb41";
+}
+
+.axs.ax-arrow-back-up::before {
+  content: "\eb42";
+}
+
+.axs.ax-aperture::before {
+  content: "\eb43";
+}
+
+.axs.ax-archive-alt::before {
+  content: "\eb44";
+}
+
+.axs.ax-archive::before {
+  content: "\eb45";
+}
+
+.axs.ax-apps::before {
+  content: "\eb46";
+}
+
+.axs.ax-align-right::before {
+  content: "\eb47";
+}
+
+.axs.ax-forward::before {
+  content: "\eb48";
+}
+
+.axs.ax-pause::before {
+  content: "\eb49";
+}
+
+.axs.ax-play::before {
+  content: "\eb4a";
+}
+
+.axs.ax-previous::before {
+  content: "\eb4b";
+}
+
+.axs.ax-reshare::before {
+  content: "\eb4c";
+}
+
+.axs.ax-music::before {
+  content: "\eb4d";
+}
+
+.axs.ax-photo-2::before {
+  content: "\eb4e";
+}

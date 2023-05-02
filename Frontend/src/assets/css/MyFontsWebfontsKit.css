@@ -1,0 +1,106 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3084181, 2015-09-01T10:21:52-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Sailec-Black by Type Dynamic
+ * URL: http://www.myfonts.com/fonts/typedynamic/sailec/black/
+ * 
+ * Webfont: Sailec-Thin by Type Dynamic
+ * URL: http://www.myfonts.com/fonts/typedynamic/sailec/thin/
+ * 
+ * Webfont: Sailec-Bold by Type Dynamic
+ * URL: http://www.myfonts.com/fonts/typedynamic/sailec/bold/
+ * 
+ * Webfont: Sailec-BlackItalic by Type Dynamic
+ * URL: http://www.myfonts.com/fonts/typedynamic/sailec/black-italic/
+ * 
+ * Webfont: Sailec-ThinItalic by Type Dynamic
+ * URL: http://www.myfonts.com/fonts/typedynamic/sailec/thin-italic/
+ * 
+ * Webfont: Sailec-Hairline by Type Dynamic
+ * URL: http://www.myfonts.com/fonts/typedynamic/sailec/hairline/
+ * 
+ * Webfont: Sailec-BoldItalic by Type Dynamic
+ * URL: http://www.myfonts.com/fonts/typedynamic/sailec/bold-italic/
+ * 
+ * Webfont: Sailec-Light by Type Dynamic
+ * URL: http://www.myfonts.com/fonts/typedynamic/sailec/light/
+ * 
+ * Webfont: Sailec-Medium by Type Dynamic
+ * URL: http://www.myfonts.com/fonts/typedynamic/sailec/medium/
+ * 
+ * Webfont: Sailec-Regular by Type Dynamic
+ * URL: http://www.myfonts.com/fonts/typedynamic/sailec/regular/
+ * 
+ * Webfont: Sailec-HairlineItalic by Type Dynamic
+ * URL: http://www.myfonts.com/fonts/typedynamic/sailec/hairline-italic/
+ * 
+ * Webfont: Sailec-LightItalic by Type Dynamic
+ * URL: http://www.myfonts.com/fonts/typedynamic/sailec/light-italic/
+ * 
+ * Webfont: Sailec-MediumItalic by Type Dynamic
+ * URL: http://www.myfonts.com/fonts/typedynamic/sailec/medium-italic/
+ * 
+ * Webfont: Sailec-RegularItalic by Type Dynamic
+ * URL: http://www.myfonts.com/fonts/typedynamic/sailec/regular-italic/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3084181
+ * Licensed pageviews: 10,000
+ * Webfonts copyright: Copyright &#x00A9; 2014 by Type Dynamic. All rights reserved.
+ * 
+ * © 2015 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+/* @import url("//hello.myfonts.net/count/2f0f95"); */
+
+  
+@font-face {font-family: 'Sailec-Black';src: url('webfonts/2F0F95_0_0.eot');src: url('webfonts/2F0F95_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F0F95_0_0.woff2') format('woff2'),url('webfonts/2F0F95_0_0.woff') format('woff'),url('webfonts/2F0F95_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Sailec-Thin';src: url('webfonts/2F0F95_1_0.eot');src: url('webfonts/2F0F95_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F0F95_1_0.woff2') format('woff2'),url('webfonts/2F0F95_1_0.woff') format('woff'),url('webfonts/2F0F95_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Sailec-Bold';src: url('webfonts/2F0F95_2_0.eot');src: url('webfonts/2F0F95_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F0F95_2_0.woff2') format('woff2'),url('webfonts/2F0F95_2_0.woff') format('woff'),url('webfonts/2F0F95_2_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Sailec-BlackItalic';src: url('webfonts/2F0F95_3_0.eot');src: url('webfonts/2F0F95_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F0F95_3_0.woff2') format('woff2'),url('webfonts/2F0F95_3_0.woff') format('woff'),url('webfonts/2F0F95_3_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Sailec-ThinItalic';src: url('webfonts/2F0F95_4_0.eot');src: url('webfonts/2F0F95_4_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F0F95_4_0.woff2') format('woff2'),url('webfonts/2F0F95_4_0.woff') format('woff'),url('webfonts/2F0F95_4_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Sailec-Hairline';src: url('webfonts/2F0F95_5_0.eot');src: url('webfonts/2F0F95_5_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F0F95_5_0.woff2') format('woff2'),url('webfonts/2F0F95_5_0.woff') format('woff'),url('webfonts/2F0F95_5_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Sailec-BoldItalic';src: url('webfonts/2F0F95_6_0.eot');src: url('webfonts/2F0F95_6_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F0F95_6_0.woff2') format('woff2'),url('webfonts/2F0F95_6_0.woff') format('woff'),url('webfonts/2F0F95_6_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Sailec-Light';src: url('webfonts/2F0F95_7_0.eot');src: url('webfonts/2F0F95_7_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F0F95_7_0.woff2') format('woff2'),url('webfonts/2F0F95_7_0.woff') format('woff'),url('webfonts/2F0F95_7_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Sailec-Medium';src: url('webfonts/2F0F95_8_0.eot');src: url('webfonts/2F0F95_8_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F0F95_8_0.woff2') format('woff2'),url('webfonts/2F0F95_8_0.woff') format('woff'),url('webfonts/2F0F95_8_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Sailec-Regular';src: url('webfonts/2F0F95_9_0.eot');src: url('webfonts/2F0F95_9_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F0F95_9_0.woff2') format('woff2'),url('webfonts/2F0F95_9_0.woff') format('woff'),url('webfonts/2F0F95_9_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Sailec-HairlineItalic';src: url('webfonts/2F0F95_A_0.eot');src: url('webfonts/2F0F95_A_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F0F95_A_0.woff2') format('woff2'),url('webfonts/2F0F95_A_0.woff') format('woff'),url('webfonts/2F0F95_A_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Sailec-LightItalic';src: url('webfonts/2F0F95_B_0.eot');src: url('webfonts/2F0F95_B_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F0F95_B_0.woff2') format('woff2'),url('webfonts/2F0F95_B_0.woff') format('woff'),url('webfonts/2F0F95_B_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Sailec-MediumItalic';src: url('webfonts/2F0F95_C_0.eot');src: url('webfonts/2F0F95_C_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F0F95_C_0.woff2') format('woff2'),url('webfonts/2F0F95_C_0.woff') format('woff'),url('webfonts/2F0F95_C_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Sailec-RegularItalic';src: url('webfonts/2F0F95_D_0.eot');src: url('webfonts/2F0F95_D_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F0F95_D_0.woff2') format('woff2'),url('webfonts/2F0F95_D_0.woff') format('woff'),url('webfonts/2F0F95_D_0.ttf') format('truetype');}
+ 

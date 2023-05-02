@@ -1,0 +1,116 @@
+.ux-left-menu {
+  position: fixed;
+  left: 5%;
+  top: 10%;
+  bottom: 10%;
+  width: 50px;
+  overflow: visible;
+  border-radius: 16px;
+
+  transition: all 0.3s ease-out;
+  z-index: 300;
+
+  .menu-flex {
+    flex-direction: column;
+
+    .menu {
+      flex-direction: column;
+    }
+  }
+}
+
+.ux-bottom-menu {
+  position: fixed;
+  left: 50%;
+  // top: 10%;
+  width: 600px;
+  margin-left: -300px;
+  bottom: 24px;
+  height: 50px;
+  overflow: visible;
+  z-index: 400;
+
+  border-radius: 16px;
+
+  // box-shadow: 0 6px 12px -6px rgba(0, 0, 0, 0.4),
+  //   inset 0 -3px 4px -1px rgba(0, 0, 0, 0.2),
+  //   0 -5px 6px -1px rgba(255, 255, 255, 0.6),
+  //   inset 0 1.5px 2px -1px rgba(255, 255, 255, 0.2),
+  //   inset 0 0 2.5px 1px rgba(255, 255, 255, 0.8),
+  //   inset 0 10px 15px 0 rgba(255, 255, 255, 0.2);
+}
+
+.menu-flex {
+  display: flex;
+  text-align: center;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+
+  &>div {
+    height: 46px;
+
+    // background-color: blue;
+    &.menu {
+      height: auto;
+      flex: 1;
+      // background-color: red;
+      display: flex;
+
+      align-content: center;
+      justify-content: center;
+
+      // min-height: 100px;
+      .ad-btn {
+        overflow: visible;
+
+        &:after {
+          left: 110%;
+          padding: 0 8px;
+          // line-height: 0;
+          border-radius: 0 8px 8px 8px;
+        }
+      }
+    }
+  }
+}
+
+.ad-neu {
+  background-color: transparent;
+  box-shadow: 0 6px 12px -6px rgba(0, 0, 0, 0.4),
+    inset 0 -3px 4px -1px rgba(0, 0, 0, 0.2),
+    0 -5px 6px -1px rgba(255, 255, 255, 0.6),
+    inset 0 1.5px 2px -1px rgba(255, 255, 255, 0.2),
+    inset 0 0 2.5px 1px rgba(255, 255, 255, 0.8),
+    inset 0 10px 15px 0 rgba(255, 255, 255, 0.2);
+}
+
+.ad-btn {
+  &.active {
+    background-color: rgba(65, 105, 225, 0.159);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .ux-left-menu {
+    left: auto;
+    right: -60px;
+
+    .menu-flex {
+      .menu {
+        .ad-btn {
+
+          &:after {
+            left: -210%;
+            border-radius: 8px 0 8px 8px;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+
+    &.show-menu {
+      right: 6px;
+    }
+  }
+}

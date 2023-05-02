@@ -1,0 +1,2474 @@
+/*--------------------------------
+
+DesignaIcon-Light Web Font
+Generated using nucleoapp.com
+
+-------------------------------- */
+@font-face {
+  font-family: 'DesignaIcon-Light';
+  src: url('../webfonts/DesignaIcon-Light.eot');
+  src: url('../webfonts/DesignaIcon-Light.eot') format('embedded-opentype'),
+    url('../webfonts/DesignaIcon-Light.woff2') format('woff2'),
+    url('../webfonts/DesignaIcon-Light.woff') format('woff'),
+    url('../webfonts/DesignaIcon-Light.ttf') format('truetype'),
+    url('../webfonts/DesignaIcon-Light.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*------------------------
+	base class definition
+-------------------------*/
+.axl {
+  display: inline-block;
+  font-family: 'DesignaIcon-Light';
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  /* transform: translateY(1px) scale(1.4); */
+  /* font-size: 1.2em; */
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+  text-rendering: auto;
+  /* Better Font Rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*------------------------
+  change icon size
+-------------------------*/
+/* relative units */
+.ax-xs {
+  font-size: 0.75em;
+}
+.ax-sm {
+  font-size: 0.875em;
+}
+.ax-lg {
+  font-size: 1.33em;
+}
+/* absolute units */
+.ax-2x {
+  font-size: 2em;
+}
+.ax-3x {
+  font-size: 3em;
+}
+.ax-4x {
+  font-size: 4em;
+}
+.ax-5x {
+  font-size: 5em;
+}
+.ax-6x {
+  font-size: 6em;
+}
+.ax-7x {
+  font-size: 7em;
+}
+.ax-8x {
+  font-size: 8em;
+}
+.ax-9x {
+  font-size: 9em;
+}
+.ax-10x {
+  font-size: 10em;
+}
+/*----------------------------------
+  add a square/circle background
+-----------------------------------*/
+.axl-bg-square,
+.axl-bg-circle {
+  padding: 0.35em;
+  background-color: #eee;
+}
+.axl-bg-circle {
+  border-radius: 50%;
+}
+/*------------------------------------
+  use icons as list item markers
+-------------------------------------*/
+.axl-ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+.axl-ul > li {
+  display: flex;
+  align-items: flex-start;
+  line-height: 1.4;
+}
+.axl-ul > li > .axl {
+  margin-right: 0.4em;
+  line-height: inherit;
+}
+/*------------------------
+  spinning icons
+-------------------------*/
+.axl-is-spinning {
+  -webkit-animation: axl-spin 2s infinite linear;
+  -moz-animation: axl-spin 2s infinite linear;
+  animation: axl-spin 2s infinite linear;
+}
+@-webkit-keyframes axl-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes axl-spin {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@keyframes axl-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/*------------------------
+  rotated/flipped icons
+-------------------------*/
+.axl-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.axl-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.axl-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.axl-flip-y {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+  -webkit-transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.axl-flip-x {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: scale(1, -1);
+  -moz-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+/*------------------------
+	icons
+-------------------------*/
+
+.axl.ax-mail-opened::before {
+  content: '\ea02';
+}
+
+.axl.ax-cart-down::before {
+  content: '\ea03';
+}
+
+.axl.ax-cart-plus::before {
+  content: '\ea04';
+}
+
+.axl.ax-shopping-bag::before {
+  content: '\ea05';
+}
+
+.axl.ax-zoom-in::before {
+  content: '\ea06';
+}
+
+.axl.ax-star::before {
+  content: '\ea07';
+}
+
+.axl.ax-accessible::before {
+  content: '\ea08';
+}
+
+.axl.ax-alarm::before {
+  content: '\ea09';
+}
+
+.axl.ax-wand::before {
+  content: '\ea0a';
+}
+
+.axl.ax-wifi-1::before {
+  content: '\ea0b';
+}
+
+.axl.ax-alert-triangle::before {
+  content: '\ea0c';
+}
+
+.axl.ax-alert-circle::before {
+  content: '\ea0d';
+}
+
+.axl.ax-yin-yang::before {
+  content: '\ea0e';
+}
+
+.axl.ax-adjustments::before {
+  content: '\ea0f';
+}
+
+.axl.ax-ad::before {
+  content: '\ea10';
+}
+
+.axl.ax-activity::before {
+  content: '\ea11';
+}
+
+.axl.ax-woman::before {
+  content: '\ea12';
+}
+
+.axl.ax-zoom-out::before {
+  content: '\ea13';
+}
+
+.axl.ax-umbrella::before {
+  content: '\ea14';
+}
+
+.axl.ax-wifi-0::before {
+  content: '\ea15';
+}
+
+.axl.ax-x::before {
+  content: '\ea16';
+}
+
+.axl.ax-world::before {
+  content: '\ea17';
+}
+
+.axl.ax-wallet::before {
+  content: '\ea18';
+}
+
+.axl.ax-wind::before {
+  content: '\ea19';
+}
+
+.axl.ax-wifi-2::before {
+  content: '\ea1a';
+}
+
+.axl.ax-square::before {
+  content: '\ea1b';
+}
+
+.axl.ax-volume::before {
+  content: '\ea1c';
+}
+
+.axl.ax-wifi::before {
+  content: '\ea1d';
+}
+
+.axl.ax-viewport-narrow::before {
+  content: '\ea1e';
+}
+
+.axl.ax-subscript::before {
+  content: '\ea1f';
+}
+
+.axl.ax-volume-3::before {
+  content: '\ea20';
+}
+
+.axl.ax-volume-2::before {
+  content: '\ea21';
+}
+
+.axl.ax-users::before {
+  content: '\ea22';
+}
+
+.axl.ax-virus::before {
+  content: '\ea23';
+}
+
+.axl.ax-viewport-wide::before {
+  content: '\ea24';
+}
+
+.axl.ax-user-exclamation::before {
+  content: '\ea25';
+}
+
+.axl.ax-viewfinder::before {
+  content: '\ea26';
+}
+
+.axl.ax-user-x::before {
+  content: '\ea27';
+}
+
+.axl.ax-unlink::before {
+  content: '\ea28';
+}
+
+.axl.ax-user-plus::before {
+  content: '\ea29';
+}
+
+.axl.ax-user-minus::before {
+  content: '\ea2a';
+}
+
+.axl.ax-typography::before {
+  content: '\ea2b';
+}
+
+.axl.ax-user-check::before {
+  content: '\ea2c';
+}
+
+.axl.ax-user::before {
+  content: '\ea2d';
+}
+
+.axl.ax-urgent::before {
+  content: '\ea2e';
+}
+
+.axl.ax-upload::before {
+  content: '\ea2f';
+}
+
+.axl.ax-triangle::before {
+  content: '\ea30';
+}
+
+.axl.ax-underline::before {
+  content: '\ea31';
+}
+
+.axl.ax-square-x::before {
+  content: '\ea32';
+}
+
+.axl.ax-tools::before {
+  content: '\ea33';
+}
+
+.axl.ax-truck::before {
+  content: '\ea34';
+}
+
+.axl.ax-trophy::before {
+  content: '\ea35';
+}
+
+.axl.ax-traffic-cone::before {
+  content: '\ea36';
+}
+
+.axl.ax-trending-up::before {
+  content: '\ea37';
+}
+
+.axl.ax-trending-down::before {
+  content: '\ea38';
+}
+
+.axl.ax-trees::before {
+  content: '\ea39';
+}
+
+.axl.ax-trash::before {
+  content: '\ea3a';
+}
+
+.axl.ax-ticket::before {
+  content: '\ea3b';
+}
+
+.axl.ax-trademark::before {
+  content: '\ea3c';
+}
+
+.axl.ax-tractor::before {
+  content: '\ea3d';
+}
+
+.axl.ax-text-wrap::before {
+  content: '\ea3e';
+}
+
+.axl.ax-tool::before {
+  content: '\ea3f';
+}
+
+.axl.ax-toggle-right::before {
+  content: '\ea40';
+}
+
+.axl.ax-toggle-left::before {
+  content: '\ea41';
+}
+
+.axl.ax-tir::before {
+  content: '\ea42';
+}
+
+.axl.ax-terminal-2::before {
+  content: '\ea43';
+}
+
+.axl.ax-thumb-up::before {
+  content: '\ea44';
+}
+
+.axl.ax-thumb-down::before {
+  content: '\ea45';
+}
+
+.axl.ax-temperature-plus::before {
+  content: '\ea46';
+}
+
+.axl.ax-test-pipe::before {
+  content: '\ea47';
+}
+
+.axl.ax-test::before {
+  content: '\ea48';
+}
+
+.axl.ax-temperature-celsius::before {
+  content: '\ea49';
+}
+
+.axl.ax-terminal::before {
+  content: '\ea4a';
+}
+
+.axl.ax-template::before {
+  content: '\ea4b';
+}
+
+.axl.ax-strikethrough::before {
+  content: '\ea4c';
+}
+
+.axl.ax-temperature-minus::before {
+  content: '\ea4d';
+}
+
+.axl.ax-temperature-fahrenheit::before {
+  content: '\ea4e';
+}
+
+.axl.ax-switch-vertical::before {
+  content: '\ea4f';
+}
+
+.axl.ax-temperature::before {
+  content: '\ea50';
+}
+
+.axl.ax-tax::before {
+  content: '\ea51';
+}
+
+.axl.ax-target::before {
+  content: '\ea52';
+}
+
+.axl.ax-tag::before {
+  content: '\ea53';
+}
+
+.axl.ax-table::before {
+  content: '\ea54';
+}
+
+.axl.ax-sum::before {
+  content: '\ea55';
+}
+
+.axl.ax-switch-horizontal::before {
+  content: '\ea56';
+}
+
+.axl.ax-switch::before {
+  content: '\ea57';
+}
+
+.axl.ax-superscript::before {
+  content: '\ea58';
+}
+
+.axl.ax-sunshine::before {
+  content: '\ea59';
+}
+
+.axl.ax-sunset::before {
+  content: '\ea5a';
+}
+
+.axl.ax-sun::before {
+  content: '\ea5b';
+}
+
+.axl.ax-sort-descending::before {
+  content: '\ea5c';
+}
+
+.axl.ax-minus::before {
+  content: '\ea5d';
+}
+
+.axl.ax-square-minus::before {
+  content: '\ea5e';
+}
+
+.axl.ax-sticker::before {
+  content: '\ea5f';
+}
+
+.axl.ax-slice::before {
+  content: '\ea60';
+}
+
+.axl.ax-stack::before {
+  content: '\ea61';
+}
+
+.axl.ax-square-plus::before {
+  content: '\ea62';
+}
+
+.axl.ax-phone-incoming::before {
+  content: '\ea63';
+}
+
+.axl.ax-point::before {
+  content: '\ea64';
+}
+
+.axl.ax-square-check::before {
+  content: '\ea65';
+}
+
+.axl.ax-phone-plus::before {
+  content: '\ea66';
+}
+
+.axl.ax-space::before {
+  content: '\ea67';
+}
+
+.axl.ax-shirt::before {
+  content: '\ea68';
+}
+
+.axl.ax-sort-ascending::before {
+  content: '\ea69';
+}
+
+.axl.ax-social::before {
+  content: '\ea6a';
+}
+
+.axl.ax-snowflake::before {
+  content: '\ea6b';
+}
+
+.axl.ax-slideshow::before {
+  content: '\ea6c';
+}
+
+.axl.ax-shield::before {
+  content: '\ea6d';
+}
+
+.axl.ax-sitemap::before {
+  content: '\ea6e';
+}
+
+.axl.ax-shopping-cart::before {
+  content: '\ea6f';
+}
+
+.axl.ax-server::before {
+  content: '\ea70';
+}
+
+.axl.ax-shield-x::before {
+  content: '\ea71';
+}
+
+.axl.ax-shield-check::before {
+  content: '\ea72';
+}
+
+.axl.ax-selector::before {
+  content: '\ea73';
+}
+
+.axl.ax-share::before {
+  content: '\ea74';
+}
+
+.axl.ax-shape::before {
+  content: '\ea75';
+}
+
+.axl.ax-settings::before {
+  content: '\ea76';
+}
+
+.axl.ax-servicemark::before {
+  content: '\ea77';
+}
+
+.axl.ax-rotate-2::before {
+  content: '\ea78';
+}
+
+.axl.ax-separator::before {
+  content: '\ea79';
+}
+
+.axl.ax-send::before {
+  content: '\ea7a';
+}
+
+.axl.ax-refresh::before {
+  content: '\ea7b';
+}
+
+.axl.ax-search::before {
+  content: '\ea7c';
+}
+
+.axl.ax-scissors::before {
+  content: '\ea7d';
+}
+
+.axl.ax-scan::before {
+  content: '\ea7e';
+}
+
+.axl.ax-scale::before {
+  content: '\ea7f';
+}
+
+.axl.ax-ruler::before {
+  content: '\ea80';
+}
+
+.axl.ax-rss::before {
+  content: '\ea81';
+}
+
+.axl.ax-router::before {
+  content: '\ea82';
+}
+
+.axl.ax-route::before {
+  content: '\ea83';
+}
+
+.axl.ax-rotate-rectangle::before {
+  content: '\ea84';
+}
+
+.axl.ax-rotate-clockwise-2::before {
+  content: '\ea85';
+}
+
+.axl.ax-rotate-clockwise::before {
+  content: '\ea86';
+}
+
+.axl.ax-puzzle::before {
+  content: '\ea87';
+}
+
+.axl.ax-rotate::before {
+  content: '\ea88';
+}
+
+.axl.ax-replace::before {
+  content: '\ea89';
+}
+
+.axl.ax-repeat-once::before {
+  content: '\ea8a';
+}
+
+.axl.ax-repeat::before {
+  content: '\ea8b';
+}
+
+.axl.ax-registered::before {
+  content: '\ea8c';
+}
+
+.axl.ax-plane-arrival::before {
+  content: '\ea8d';
+}
+
+.axl.ax-recycle::before {
+  content: '\ea8e';
+}
+
+.axl.ax-record-mail::before {
+  content: '\ea8f';
+}
+
+.axl.ax-qrcode::before {
+  content: '\ea90';
+}
+
+.axl.ax-presentation::before {
+  content: '\ea91';
+}
+
+.axl.ax-prompt::before {
+  content: '\ea92';
+}
+
+.axl.ax-printer::before {
+  content: '\ea93';
+}
+
+.axl.ax-phone-check::before {
+  content: '\ea94';
+}
+
+.axl.ax-power::before {
+  content: '\ea95';
+}
+
+.axl.ax-plus::before {
+  content: '\ea96';
+}
+
+.axl.ax-plug::before {
+  content: '\ea97';
+}
+
+.axl.ax-parentheses::before {
+  content: '\ea98';
+}
+
+.axl.ax-planet::before {
+  content: '\ea99';
+}
+
+.axl.ax-plane-departure::before {
+  content: '\ea9a';
+}
+
+.axl.ax-pencil::before {
+  content: '\ea9b';
+}
+
+.axl.ax-plane::before {
+  content: '\ea9c';
+}
+
+.axl.ax-pillow::before {
+  content: '\ea9d';
+}
+
+.axl.ax-photo::before {
+  content: '\ea9e';
+}
+
+.axl.ax-phone-x::before {
+  content: '\ea9f';
+}
+
+.axl.ax-notebook::before {
+  content: '\eaa0';
+}
+
+.axl.ax-phone-pause::before {
+  content: '\eaa1';
+}
+
+.axl.ax-phone-outgoing::before {
+  content: '\eaa2';
+}
+
+.axl.ax-palette::before {
+  content: '\eaa3';
+}
+
+.axl.ax-messages::before {
+  content: '\eaa4';
+}
+
+.axl.ax-phone-call::before {
+  content: '\eaa5';
+}
+
+.axl.ax-phone::before {
+  content: '\eaa6';
+}
+
+.axl.ax-outlet::before {
+  content: '\eaa7';
+}
+
+.axl.ax-parking::before {
+  content: '\eaa8';
+}
+
+.axl.ax-notes::before {
+  content: '\eaa9';
+}
+
+.axl.ax-paperclip::before {
+  content: '\eaaa';
+}
+
+.axl.ax-message-dots::before {
+  content: '\eaab';
+}
+
+.axl.ax-paint::before {
+  content: '\eaac';
+}
+
+.axl.ax-package::before {
+  content: '\eaad';
+}
+
+.axl.ax-mood-happy::before {
+  content: '\eaae';
+}
+
+.axl.ax-omega::before {
+  content: '\eaaf';
+}
+
+.axl.ax-notification::before {
+  content: '\eab0';
+}
+
+.axl.ax-note::before {
+  content: '\eab1';
+}
+
+.axl.ax-mood-tongue::before {
+  content: '\eab2';
+}
+
+.axl.ax-movie::before {
+  content: '\eab3';
+}
+
+.axl.ax-new-section::before {
+  content: '\eab4';
+}
+
+.axl.ax-news::before {
+  content: '\eab5';
+}
+
+.axl.ax-music::before {
+  content: '\eab6';
+}
+
+.axl.ax-mug::before {
+  content: '\eab7';
+}
+
+.axl.ax-layout-navbar::before {
+  content: '\eab8';
+}
+
+.axl.ax-mouse::before {
+  content: '\eab9';
+}
+
+.axl.ax-moon::before {
+  content: '\eaba';
+}
+
+.axl.ax-minimize::before {
+  content: '\eabb';
+}
+
+.axl.ax-mood-suprised::before {
+  content: '\eabc';
+}
+
+.axl.ax-mood-smile::before {
+  content: '\eabd';
+}
+
+.axl.ax-mood-sad::before {
+  content: '\eabe';
+}
+
+.axl.ax-mood-neutral::before {
+  content: '\eabf';
+}
+
+.axl.ax-mood-kid::before {
+  content: '\eac0';
+}
+
+.axl.ax-map::before {
+  content: '\eac1';
+}
+
+.axl.ax-mood-confuzed::before {
+  content: '\eac2';
+}
+
+.axl.ax-mist::before {
+  content: '\eac3';
+}
+
+.axl.ax-globe::before {
+  content: '\eac4';
+}
+
+.axl.ax-message::before {
+  content: '\eac5';
+}
+
+.axl.ax-microphone::before {
+  content: '\eac6';
+}
+
+.axl.ax-mail-opened-1::before {
+  content: '\eac7';
+}
+
+.axl.ax-maximize::before {
+  content: '\eac8';
+}
+
+.axl.ax-message-circle::before {
+  content: '\eac9';
+}
+
+.axl.ax-message-2::before {
+  content: '\eaca';
+}
+
+.axl.ax-map-pin::before {
+  content: '\eacb';
+}
+
+.axl.ax-menu::before {
+  content: '\eacc';
+}
+
+.axl.ax-medical-cross::before {
+  content: '\eacd';
+}
+
+.axl.ax-indent-decrease::before {
+  content: '\eace';
+}
+
+.axl.ax-math::before {
+  content: '\eacf';
+}
+
+.axl.ax-location::before {
+  content: '\ead0';
+}
+
+.axl.ax-map-2::before {
+  content: '\ead1';
+}
+
+.axl.ax-login::before {
+  content: '\ead2';
+}
+
+.axl.ax-man::before {
+  content: '\ead3';
+}
+
+.axl.ax-forbid::before {
+  content: '\ead4';
+}
+
+.axl.ax-mail::before {
+  content: '\ead5';
+}
+
+.axl.ax-magnet::before {
+  content: '\ead6';
+}
+
+.axl.ax-logout::before {
+  content: '\ead7';
+}
+
+.axl.ax-list::before {
+  content: '\ead8';
+}
+
+.axl.ax-lock-open::before {
+  content: '\ead9';
+}
+
+.axl.ax-lock::before {
+  content: '\eada';
+}
+
+.axl.ax-lifebuoy::before {
+  content: '\eadb';
+}
+
+.axl.ax-live-photo::before {
+  content: '\eadc';
+}
+
+.axl.ax-list-check::before {
+  content: '\eadd';
+}
+
+.axl.ax-lego::before {
+  content: '\eade';
+}
+
+.axl.ax-link::before {
+  content: '\eadf';
+}
+
+.axl.ax-line-height::before {
+  content: '\eae0';
+}
+
+.axl.ax-layout-columns::before {
+  content: '\eae1';
+}
+
+.axl.ax-license::before {
+  content: '\eae2';
+}
+
+.axl.ax-letter-case::before {
+  content: '\eae3';
+}
+
+.axl.ax-layout-list::before {
+  content: '\eae4';
+}
+
+.axl.ax-layout-sidebar-right::before {
+  content: '\eae5';
+}
+
+.axl.ax-layout-sidebar::before {
+  content: '\eae6';
+}
+
+.axl.ax-layout-rows::before {
+  content: '\eae7';
+}
+
+.axl.ax-key::before {
+  content: '\eae8';
+}
+
+.axl.ax-layout-align-top::before {
+  content: '\eae9';
+}
+
+.axl.ax-layout-distribute-vertical::before {
+  content: '\eaea';
+}
+
+.axl.ax-layout-distribute-horizontal::before {
+  content: '\eaeb';
+}
+
+.axl.ax-language::before {
+  content: '\eaec';
+}
+
+.axl.ax-layout-cards::before {
+  content: '\eaed';
+}
+
+.axl.ax-layout-bottombar::before {
+  content: '\eaee';
+}
+
+.axl.ax-layers-subtract::before {
+  content: '\eaef';
+}
+
+.axl.ax-layout-align-right::before {
+  content: '\eaf0';
+}
+
+.axl.ax-layout-align-middle::before {
+  content: '\eaf1';
+}
+
+.axl.ax-layout-align-left::before {
+  content: '\eaf2';
+}
+
+.axl.ax-layout-align-center::before {
+  content: '\eaf3';
+}
+
+.axl.ax-layout-align-bottom::before {
+  content: '\eaf4';
+}
+
+.axl.ax-layout-2::before {
+  content: '\eaf5';
+}
+
+.axl.ax-layout::before {
+  content: '\eaf6';
+}
+
+.axl.ax-layers-union::before {
+  content: '\eaf7';
+}
+
+.axl.ax-italic::before {
+  content: '\eaf8';
+}
+
+.axl.ax-layers-intersect::before {
+  content: '\eaf9';
+}
+
+.axl.ax-layers-difference::before {
+  content: '\eafa';
+}
+
+.axl.ax-infinity::before {
+  content: '\eafb';
+}
+
+.axl.ax-keyboard::before {
+  content: '\eafc';
+}
+
+.axl.ax-eraser::before {
+  content: '\eafd';
+}
+
+.axl.ax-inbox::before {
+  content: '\eafe';
+}
+
+.axl.ax-info-square::before {
+  content: '\eaff';
+}
+
+.axl.ax-info-circle::before {
+  content: '\eb00';
+}
+
+.axl.ax-home-2::before {
+  content: '\eb01';
+}
+
+.axl.ax-indent-increase::before {
+  content: '\eb02';
+}
+
+.axl.ax-home::before {
+  content: '\eb03';
+}
+
+.axl.ax-hash::before {
+  content: '\eb04';
+}
+
+.axl.ax-id::before {
+  content: '\eb05';
+}
+
+.axl.ax-ice-cream::before {
+  content: '\eb06';
+}
+
+.axl.ax-heart::before {
+  content: '\eb07';
+}
+
+.axl.ax-gauge::before {
+  content: '\eb08';
+}
+
+.axl.ax-history::before {
+  content: '\eb09';
+}
+
+.axl.ax-hexagon::before {
+  content: '\eb0a';
+}
+
+.axl.ax-help::before {
+  content: '\eb0b';
+}
+
+.axl.ax-grip-vertical::before {
+  content: '\eb0c';
+}
+
+.axl.ax-headset::before {
+  content: '\eb0d';
+}
+
+.axl.ax-headphones::before {
+  content: '\eb0e';
+}
+
+.axl.ax-git-pull-request::before {
+  content: '\eb0f';
+}
+
+.axl.ax-hand-stop::before {
+  content: '\eb10';
+}
+
+.axl.ax-hand-middle-finger::before {
+  content: '\eb11';
+}
+
+.axl.ax-drag-drop::before {
+  content: '\eb12';
+}
+
+.axl.ax-grip-horizontal::before {
+  content: '\eb13';
+}
+
+.axl.ax-grid-dots::before {
+  content: '\eb14';
+}
+
+.axl.ax-grid::before {
+  content: '\eb15';
+}
+
+.axl.ax-git-compare::before {
+  content: '\eb16';
+}
+
+.axl.ax-glass-full::before {
+  content: '\eb17';
+}
+
+.axl.ax-glass::before {
+  content: '\eb18';
+}
+
+.axl.ax-gift::before {
+  content: '\eb19';
+}
+
+.axl.ax-git-merge::before {
+  content: '\eb1a';
+}
+
+.axl.ax-git-fork::before {
+  content: '\eb1b';
+}
+
+.axl.ax-flag::before {
+  content: '\eb1c';
+}
+
+.axl.ax-git-commit::before {
+  content: '\eb1d';
+}
+
+.axl.ax-git-branch::before {
+  content: '\eb1e';
+}
+
+.axl.ax-forklift::before {
+  content: '\eb1f';
+}
+
+.axl.ax-ghost::before {
+  content: '\eb20';
+}
+
+.axl.ax-disabled::before {
+  content: '\eb21';
+}
+
+.axl.ax-friends::before {
+  content: '\eb22';
+}
+
+.axl.ax-frame::before {
+  content: '\eb23';
+}
+
+.axl.ax-flip-horizontal::before {
+  content: '\eb24';
+}
+
+.axl.ax-forbid-2::before {
+  content: '\eb25';
+}
+
+.axl.ax-folder::before {
+  content: '\eb26';
+}
+
+.axl.ax-folder-x::before {
+  content: '\eb27';
+}
+
+.axl.ax-folders::before {
+  content: '\eb28';
+}
+
+.axl.ax-folder-plus::before {
+  content: '\eb29';
+}
+
+.axl.ax-folder-minus::before {
+  content: '\eb2a';
+}
+
+.axl.ax-float-right::before {
+  content: '\eb2b';
+}
+
+.axl.ax-focus-2::before {
+  content: '\eb2c';
+}
+
+.axl.ax-focus::before {
+  content: '\eb2d';
+}
+
+.axl.ax-floppy-disk::before {
+  content: '\eb2e';
+}
+
+.axl.ax-file-x::before {
+  content: '\eb2f';
+}
+
+.axl.ax-float-left::before {
+  content: '\eb30';
+}
+
+.axl.ax-float-center::before {
+  content: '\eb31';
+}
+
+.axl.ax-flip-vertical::before {
+  content: '\eb32';
+}
+
+.axl.ax-exposure::before {
+  content: '\eb33';
+}
+
+.axl.ax-flask::before {
+  content: '\eb34';
+}
+
+.axl.ax-flame::before {
+  content: '\eb35';
+}
+
+.axl.ax-file-music::before {
+  content: '\eb36';
+}
+
+.axl.ax-firetruck::before {
+  content: '\eb37';
+}
+
+.axl.ax-fingerprint::before {
+  content: '\eb38';
+}
+
+.axl.ax-filter::before {
+  content: '\eb39';
+}
+
+.axl.ax-face-id::before {
+  content: '\eb3a';
+}
+
+.axl.ax-file-text::before {
+  content: '\eb3b';
+}
+
+.axl.ax-file-shredder::before {
+  content: '\eb3c';
+}
+
+.axl.ax-file-plus::before {
+  content: '\eb3d';
+}
+
+.axl.ax-file-code::before {
+  content: '\eb3e';
+}
+
+.axl.ax-file-minus::before {
+  content: '\eb3f';
+}
+
+.axl.ax-file-invoice::before {
+  content: '\eb40';
+}
+
+.axl.ax-file-horizontal::before {
+  content: '\eb41';
+}
+
+.axl.ax-file-download::before {
+  content: '\eb42';
+}
+
+.axl.ax-egg::before {
+  content: '\eb43';
+}
+
+.axl.ax-file-check::before {
+  content: '\eb44';
+}
+
+.axl.ax-file::before {
+  content: '\eb45';
+}
+
+.axl.ax-device-mobile::before {
+  content: '\eb46';
+}
+
+.axl.ax-eye::before {
+  content: '\eb47';
+}
+
+.axl.ax-external-link::before {
+  content: '\eb48';
+}
+
+.axl.ax-droplet::before {
+  content: '\eb49';
+}
+
+.axl.ax-exchange::before {
+  content: '\eb4a';
+}
+
+.axl.ax-brightness::before {
+  content: '\eb4b';
+}
+
+.axl.ax-emphasis::before {
+  content: '\eb4c';
+}
+
+.axl.ax-download::before {
+  content: '\eb4d';
+}
+
+.axl.ax-edit::before {
+  content: '\eb4e';
+}
+
+.axl.ax-ear::before {
+  content: '\eb4f';
+}
+
+.axl.ax-device-speaker::before {
+  content: '\eb50';
+}
+
+.axl.ax-drag-drop-2::before {
+  content: '\eb51';
+}
+
+.axl.ax-corner-left-down::before {
+  content: '\eb52';
+}
+
+.axl.ax-dots-circle-horizontal::before {
+  content: '\eb53';
+}
+
+.axl.ax-dots-vertical::before {
+  content: '\eb54';
+}
+
+.axl.ax-dots-diagonal-2::before {
+  content: '\eb55';
+}
+
+.axl.ax-dots-diagonal::before {
+  content: '\eb56';
+}
+
+.axl.ax-direction-horizontal::before {
+  content: '\eb57';
+}
+
+.axl.ax-dots::before {
+  content: '\eb58';
+}
+
+.axl.ax-discount::before {
+  content: '\eb59';
+}
+
+.axl.ax-disc::before {
+  content: '\eb5a';
+}
+
+.axl.ax-disabled-2::before {
+  content: '\eb5b';
+}
+
+.axl.ax-device-tv::before {
+  content: '\eb5c';
+}
+
+.axl.ax-directions::before {
+  content: '\eb5d';
+}
+
+.axl.ax-coin::before {
+  content: '\eb5e';
+}
+
+.axl.ax-direction::before {
+  content: '\eb5f';
+}
+
+.axl.ax-dice::before {
+  content: '\eb60';
+}
+
+.axl.ax-diamond::before {
+  content: '\eb61';
+}
+
+.axl.ax-device-watch::before {
+  content: '\eb62';
+}
+
+.axl.ax-calendar-event::before {
+  content: '\eb63';
+}
+
+.axl.ax-device-tablet::before {
+  content: '\eb64';
+}
+
+.axl.ax-currency-yen::before {
+  content: '\eb65';
+}
+
+.axl.ax-devices::before {
+  content: '\eb66';
+}
+
+.axl.ax-device-mobile-vibration::before {
+  content: '\eb67';
+}
+
+.axl.ax-database::before {
+  content: '\eb68';
+}
+
+.axl.ax-device-laptop::before {
+  content: '\eb69';
+}
+
+.axl.ax-device-gamepad::before {
+  content: '\eb6a';
+}
+
+.axl.ax-device-floppy::before {
+  content: '\eb6b';
+}
+
+.axl.ax-device-desktop::before {
+  content: '\eb6c';
+}
+
+.axl.ax-cloud-download::before {
+  content: '\eb6d';
+}
+
+.axl.ax-dashboard::before {
+  content: '\eb6e';
+}
+
+.axl.ax-cut::before {
+  content: '\eb6f';
+}
+
+.axl.ax-corner-up-right::before {
+  content: '\eb70';
+}
+
+.axl.ax-currency-rupee::before {
+  content: '\eb71';
+}
+
+.axl.ax-currency-pound::before {
+  content: '\eb72';
+}
+
+.axl.ax-currency-euro::before {
+  content: '\eb73';
+}
+
+.axl.ax-currency-dollar::before {
+  content: '\eb74';
+}
+
+.axl.ax-currency-bitcoin::before {
+  content: '\eb75';
+}
+
+.axl.ax-crop::before {
+  content: '\eb76';
+}
+
+.axl.ax-credit-card::before {
+  content: '\eb77';
+}
+
+.axl.ax-clipboard::before {
+  content: '\eb78';
+}
+
+.axl.ax-corner-up-left::before {
+  content: '\eb79';
+}
+
+.axl.ax-corner-right-up::before {
+  content: '\eb7a';
+}
+
+.axl.ax-corner-right-down::before {
+  content: '\eb7b';
+}
+
+.axl.ax-corner-left-up::before {
+  content: '\eb7c';
+}
+
+.axl.ax-chart-candle::before {
+  content: '\eb7d';
+}
+
+.axl.ax-corner-down-right::before {
+  content: '\eb7e';
+}
+
+.axl.ax-corner-down-left::before {
+  content: '\eb7f';
+}
+
+.axl.ax-copyright::before {
+  content: '\eb80';
+}
+
+.axl.ax-copy::before {
+  content: '\eb81';
+}
+
+.axl.ax-compass::before {
+  content: '\eb82';
+}
+
+.axl.ax-command::before {
+  content: '\eb83';
+}
+
+.axl.ax-columns::before {
+  content: '\eb84';
+}
+
+.axl.ax-color-swatch::before {
+  content: '\eb85';
+}
+
+.axl.ax-color-picker::before {
+  content: '\eb86';
+}
+
+.axl.ax-checks::before {
+  content: '\eb87';
+}
+
+.axl.ax-code::before {
+  content: '\eb88';
+}
+
+.axl.ax-cloud-upload::before {
+  content: '\eb89';
+}
+
+.axl.ax-cloud-storm::before {
+  content: '\eb8a';
+}
+
+.axl.ax-cloud-snow::before {
+  content: '\eb8b';
+}
+
+.axl.ax-cloud-rain::before {
+  content: '\eb8c';
+}
+
+.axl.ax-chart-area-line::before {
+  content: '\eb8d';
+}
+
+.axl.ax-cloud::before {
+  content: '\eb8e';
+}
+
+.axl.ax-clock::before {
+  content: '\eb8f';
+}
+
+.axl.ax-clipboard-x::before {
+  content: '\eb90';
+}
+
+.axl.ax-clipboard-list::before {
+  content: '\eb91';
+}
+
+.axl.ax-clipboard-check::before {
+  content: '\eb92';
+}
+
+.axl.ax-circle-check::before {
+  content: '\eb93';
+}
+
+.axl.ax-click::before {
+  content: '\eb94';
+}
+
+.axl.ax-clear-formatting::before {
+  content: '\eb95';
+}
+
+.axl.ax-circle-x::before {
+  content: '\eb96';
+}
+
+.axl.ax-circle-plus::before {
+  content: '\eb97';
+}
+
+.axl.ax-circle-minus::before {
+  content: '\eb98';
+}
+
+.axl.ax-chevron-up::before {
+  content: '\eb99';
+}
+
+.axl.ax-circle::before {
+  content: '\eb9a';
+}
+
+.axl.ax-chevrons-down::before {
+  content: '\eb9b';
+}
+
+.axl.ax-chevrons-up::before {
+  content: '\eb9c';
+}
+
+.axl.ax-chevrons-right::before {
+  content: '\eb9d';
+}
+
+.axl.ax-chevrons-left::before {
+  content: '\eb9e';
+}
+
+.axl.ax-chart-line::before {
+  content: '\eb9f';
+}
+
+.axl.ax-chevron-right::before {
+  content: '\eba0';
+}
+
+.axl.ax-chevron-left::before {
+  content: '\eba1';
+}
+
+.axl.ax-chevron-down::before {
+  content: '\eba2';
+}
+
+.axl.ax-chart-donut::before {
+  content: '\eba3';
+}
+
+.axl.ax-checkbox::before {
+  content: '\eba4';
+}
+
+.axl.ax-check::before {
+  content: '\eba5';
+}
+
+.axl.ax-chart-pie::before {
+  content: '\eba6';
+}
+
+.axl.ax-building-bridge-2::before {
+  content: '\eba7';
+}
+
+.axl.ax-cash::before {
+  content: '\eba8';
+}
+
+.axl.ax-building-arch::before {
+  content: '\eba9';
+}
+
+.axl.ax-chart-bar::before {
+  content: '\ebaa';
+}
+
+.axl.ax-caret-left::before {
+  content: '\ebab';
+}
+
+.axl.ax-chart-area::before {
+  content: '\ebac';
+}
+
+.axl.ax-cast::before {
+  content: '\ebad';
+}
+
+.axl.ax-camera::before {
+  content: '\ebae';
+}
+
+.axl.ax-caret-up::before {
+  content: '\ebaf';
+}
+
+.axl.ax-caret-right::before {
+  content: '\ebb0';
+}
+
+.axl.ax-bulb::before {
+  content: '\ebb1';
+}
+
+.axl.ax-caret-down::before {
+  content: '\ebb2';
+}
+
+.axl.ax-car::before {
+  content: '\ebb3';
+}
+
+.axl.ax-brand-snapchat::before {
+  content: '\ebb4';
+}
+
+.axl.ax-calendar-plus::before {
+  content: '\ebb5';
+}
+
+.axl.ax-calendar-minus::before {
+  content: '\ebb6';
+}
+
+.axl.ax-building-hospital::before {
+  content: '\ebb7';
+}
+
+.axl.ax-calendar::before {
+  content: '\ebb8';
+}
+
+.axl.ax-calculator::before {
+  content: '\ebb9';
+}
+
+.axl.ax-bus::before {
+  content: '\ebba';
+}
+
+.axl.ax-bulb-off::before {
+  content: '\ebbb';
+}
+
+.axl.ax-building::before {
+  content: '\ebbc';
+}
+
+.axl.ax-building-warehouse::before {
+  content: '\ebbd';
+}
+
+.axl.ax-building-store::before {
+  content: '\ebbe';
+}
+
+.axl.ax-building-skyscrappers::before {
+  content: '\ebbf';
+}
+
+.axl.ax-building-pavilon::before {
+  content: '\ebc0';
+}
+
+.axl.ax-browser::before {
+  content: '\ebc1';
+}
+
+.axl.ax-building-community::before {
+  content: '\ebc2';
+}
+
+.axl.ax-building-church::before {
+  content: '\ebc3';
+}
+
+.axl.ax-brush::before {
+  content: '\ebc4';
+}
+
+.axl.ax-building-bridge::before {
+  content: '\ebc5';
+}
+
+.axl.ax-building-bank::before {
+  content: '\ebc6';
+}
+
+.axl.ax-brand-apple::before {
+  content: '\ebc7';
+}
+
+.axl.ax-brand-facebook::before {
+  content: '\ebc8';
+}
+
+.axl.ax-bug::before {
+  content: '\ebc9';
+}
+
+.axl.ax-bucket::before {
+  content: '\ebca';
+}
+
+.axl.ax-brand-telegram::before {
+  content: '\ebcb';
+}
+
+.axl.ax-arrows-diagonal::before {
+  content: '\ebcc';
+}
+
+.axl.ax-brightness-up::before {
+  content: '\ebcd';
+}
+
+.axl.ax-brightness-down::before {
+  content: '\ebce';
+}
+
+.axl.ax-brand-framer::before {
+  content: '\ebcf';
+}
+
+.axl.ax-briefcase::before {
+  content: '\ebd0';
+}
+
+.axl.ax-brand-twitter::before {
+  content: '\ebd1';
+}
+
+.axl.ax-border-bottom::before {
+  content: '\ebd2';
+}
+
+.axl.ax-brand-google::before {
+  content: '\ebd3';
+}
+
+.axl.ax-brand-sketch::before {
+  content: '\ebd4';
+}
+
+.axl.ax-brand-safari::before {
+  content: '\ebd5';
+}
+
+.axl.ax-brand-paypal::before {
+  content: '\ebd6';
+}
+
+.axl.ax-brand-opera::before {
+  content: '\ebd7';
+}
+
+.axl.ax-brand-instagram::before {
+  content: '\ebd8';
+}
+
+.axl.ax-brand-google-drive::before {
+  content: '\ebd9';
+}
+
+.axl.ax-border-radius::before {
+  content: '\ebda';
+}
+
+.axl.ax-brand-gitlab::before {
+  content: '\ebdb';
+}
+
+.axl.ax-brand-github::before {
+  content: '\ebdc';
+}
+
+.axl.ax-border-vertical::before {
+  content: '\ebdd';
+}
+
+.axl.ax-battery-1::before {
+  content: '\ebde';
+}
+
+.axl.ax-brand-dribbble::before {
+  content: '\ebdf';
+}
+
+.axl.ax-brand-chrome::before {
+  content: '\ebe0';
+}
+
+.axl.ax-battery-4::before {
+  content: '\ebe1';
+}
+
+.axl.ax-brand-android::before {
+  content: '\ebe2';
+}
+
+.axl.ax-brackets::before {
+  content: '\ebe3';
+}
+
+.axl.ax-braces::before {
+  content: '\ebe4';
+}
+
+.axl.ax-box::before {
+  content: '\ebe5';
+}
+
+.axl.ax-border-none::before {
+  content: '\ebe6';
+}
+
+.axl.ax-border-top::before {
+  content: '\ebe7';
+}
+
+.axl.ax-border-right::before {
+  content: '\ebe8';
+}
+
+.axl.ax-border-inner::before {
+  content: '\ebe9';
+}
+
+.axl.ax-border-outer::before {
+  content: '\ebea';
+}
+
+.axl.ax-book::before {
+  content: '\ebeb';
+}
+
+.axl.ax-border-left::before {
+  content: '\ebec';
+}
+
+.axl.ax-bed::before {
+  content: '\ebed';
+}
+
+.axl.ax-border-horizontal::before {
+  content: '\ebee';
+}
+
+.axl.ax-bluetooth::before {
+  content: '\ebef';
+}
+
+.axl.ax-border-all::before {
+  content: '\ebf0';
+}
+
+.axl.ax-bookmark::before {
+  content: '\ebf1';
+}
+
+.axl.ax-ball-volleyball::before {
+  content: '\ebf2';
+}
+
+.axl.ax-bolt::before {
+  content: '\ebf3';
+}
+
+.axl.ax-bold::before {
+  content: '\ebf4';
+}
+
+.axl.ax-atom::before {
+  content: '\ebf5';
+}
+
+.axl.ax-bike::before {
+  content: '\ebf6';
+}
+
+.axl.ax-bell::before {
+  content: '\ebf7';
+}
+
+.axl.ax-arrows-minimize::before {
+  content: '\ebf8';
+}
+
+.axl.ax-battery-charging::before {
+  content: '\ebf9';
+}
+
+.axl.ax-backspace::before {
+  content: '\ebfa';
+}
+
+.axl.ax-battery-3::before {
+  content: '\ebfb';
+}
+
+.axl.ax-battery-2::before {
+  content: '\ebfc';
+}
+
+.axl.ax-arrow-down::before {
+  content: '\ebfd';
+}
+
+.axl.ax-battery::before {
+  content: '\ebfe';
+}
+
+.axl.ax-basket::before {
+  content: '\ebff';
+}
+
+.axl.ax-barcode::before {
+  content: '\ec00';
+}
+
+.axl.ax-bandage::before {
+  content: '\ec01';
+}
+
+.axl.ax-ban::before {
+  content: '\ec02';
+}
+
+.axl.ax-arrow-narrow-left::before {
+  content: '\ec03';
+}
+
+.axl.ax-ball-tennis::before {
+  content: '\ec04';
+}
+
+.axl.ax-ball-bowling::before {
+  content: '\ec05';
+}
+
+.axl.ax-ball-basketball::before {
+  content: '\ec06';
+}
+
+.axl.ax-arrows-diagonal-2::before {
+  content: '\ec07';
+}
+
+.axl.ax-award::before {
+  content: '\ec08';
+}
+
+.axl.ax-atom-2::before {
+  content: '\ec09';
+}
+
+.axl.ax-arrow-up-circle::before {
+  content: '\ec0a';
+}
+
+.axl.ax-at::before {
+  content: '\ec0b';
+}
+
+.axl.ax-artboard::before {
+  content: '\ec0c';
+}
+
+.axl.ax-arrow-up-right-circle::before {
+  content: '\ec0d';
+}
+
+.axl.ax-arrow-up-right::before {
+  content: '\ec0e';
+}
+
+.axl.ax-arrow-up-left-circle::before {
+  content: '\ec0f';
+}
+
+.axl.ax-arrow-up-left::before {
+  content: '\ec10';
+}
+
+.axl.ax-arrows-vertical::before {
+  content: '\ec11';
+}
+
+.axl.ax-arrow-up::before {
+  content: '\ec12';
+}
+
+.axl.ax-arrow-bar-left::before {
+  content: '\ec13';
+}
+
+.axl.ax-arrows-sort::before {
+  content: '\ec14';
+}
+
+.axl.ax-arrow-narrow-up::before {
+  content: '\ec15';
+}
+
+.axl.ax-arrows-maximize::before {
+  content: '\ec16';
+}
+
+.axl.ax-arrows-horizontal::before {
+  content: '\ec17';
+}
+
+.axl.ax-arrow-narrow-down::before {
+  content: '\ec18';
+}
+
+.axl.ax-arrow-right-circle::before {
+  content: '\ec19';
+}
+
+.axl.ax-align-center::before {
+  content: '\ec1a';
+}
+
+.axl.ax-arrow-right::before {
+  content: '\ec1b';
+}
+
+.axl.ax-ambulance::before {
+  content: '\ec1c';
+}
+
+.axl.ax-arrow-narrow-right::before {
+  content: '\ec1d';
+}
+
+.axl.ax-align-justified::before {
+  content: '\ec1e';
+}
+
+.axl.ax-align-right::before {
+  content: '\ec1f';
+}
+
+.axl.ax-arrow-left-circle::before {
+  content: '\ec20';
+}
+
+.axl.ax-arrow-left::before {
+  content: '\ec21';
+}
+
+.axl.ax-arrow-forward-up::before {
+  content: '\ec22';
+}
+
+.axl.ax-arrow-forward::before {
+  content: '\ec23';
+}
+
+.axl.ax-arrow-down-right-circle::before {
+  content: '\ec24';
+}
+
+.axl.ax-arrow-down-right::before {
+  content: '\ec25';
+}
+
+.axl.ax-arrow-down-left-circle::before {
+  content: '\ec26';
+}
+
+.axl.ax-arrow-down-left::before {
+  content: '\ec27';
+}
+
+.axl.ax-arrow-down-circle::before {
+  content: '\ec28';
+}
+
+.axl.ax-align-left::before {
+  content: '\ec29';
+}
+
+.axl.ax-arrow-bar-up::before {
+  content: '\ec2a';
+}
+
+.axl.ax-arrow-bar-right::before {
+  content: '\ec2b';
+}
+
+.axl.ax-anchor::before {
+  content: '\ec2c';
+}
+
+.axl.ax-arrow-bar-down::before {
+  content: '\ec2d';
+}
+
+.axl.ax-arrow-back-up::before {
+  content: '\ec2e';
+}
+
+.axl.ax-arrow-back::before {
+  content: '\ec2f';
+}
+
+.axl.ax-archive::before {
+  content: '\ec30';
+}
+
+.axl.ax-apps::before {
+  content: '\ec31';
+}
+
+.axl.ax-aperture::before {
+  content: '\ec32';
+}
+
+.axl.ax-alien::before {
+  content: '\ec33';
+}
+
+.axl.ax-previous::before {
+  content: '\ec34';
+}
+
+.axl.ax-forward::before {
+  content: '\ec35';
+}
+
+.axl.ax-list-plus::before {
+  content: '\ec36';
+}
+
+.axl.ax-list-music::before {
+  content: '\ec37';
+}
+
+.axl.ax-pause::before {
+  content: '\ec38';
+}
+
+.axl.ax-play::before {
+  content: '\ec39';
+}
+
+.axl.ax-message-empty-2::before {
+  content: '\ec3a';
+}
+
+.axl.ax-photos::before {
+  content: '\ec3b';
+}
+
+.axl.ax-reshare::before {
+  content: '\ec3c';
+}

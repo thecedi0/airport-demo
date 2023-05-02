@@ -1,0 +1,76 @@
+<br />
+<br />
+<div class="wrapper-fluid">
+  <!-- wrapper starts -->
+  <div class="slide-cover" (window:resize)="print($event.currentTarget);//onResize($event.currentTarget.innerWidth)">
+    <div class="ad-row" [class.show-detail]="showDetail">
+      <div class="ad-cols-8" [class.ad-colx-12-1]="miniMode">
+        <div class="ad-header ad-flat">
+          <h2 class="title text-normal" style="font-weight: 500;">{{ title }}</h2>
+          <span class="flex-space"></span>
+          <div class="actions" style="max-width: 500px">
+            <span *ngIf="showSearch && showSearchAtAll" class="search-content">
+              <div class="ad-input ad-round" style="width: 200px; transform: scale(0.9)">
+                <input type="text" placeholder="Search ..." name="searchValue" [(ngModel)]="searchValue"
+                  (keydown.enter)="onSearchTriggered()" />
+              </div>
+            </span>
+            <button class="ad-btn ad-icon  ad-round search-btn {{
+                showSearch ? 'btn-pink' : 'btn-default'
+              }}" (click)="onToggleSearch()">
+              <i class="axl ax-{{ showSearch ? 'x' : 'search' }}"></i>
+            </button>
+            <!-- extra inputs here/ -->
+            <div>
+              <ng-content select=".header-inputs"></ng-content>
+            </div>
+
+            <!-- action buttons -->
+            <div *ngIf="(miniMode && !showSearch) || (!miniMode && showSearch)">
+              <ng-content select=".header-btns"></ng-content>
+            </div>
+
+            <span class="constant-btns" *ngIf="showConstantBtns">
+              <!-- <button class="ad-btn ad-shadow ad-icon ad-round">
+                <i class="axl ax-printer"></i>
+              </button> -->
+            </span>
+          </div>
+        </div>
+        <!-- data -->
+        <div class="clearfix"></div>
+        <ng-content select=".data"></ng-content>
+
+        <!-- <app-pagination
+          [page]="paginatorPage"
+          [total]="paginatorTotal"
+          [limit]="paginatorLimit"
+          (pageClicked)="onPaginateData($event)"
+        >
+        </app-pagination> -->
+      </div>
+      <div class="ad-cols-4" [class.ad-colx-12-1]="miniMode">
+        <div class="sticky">
+
+          <div class="ad-header ad-flat">
+            <h2 class="title text-normal" style="font-weight: 500;">{{ detail }}</h2>
+            <span class="float-right">
+              <button *ngIf="showDetail" class="ad-btn ad-icon ad-round" style="transform: rotateZ(45deg);"
+                (click)="onShowDetail()">
+                <i class="axl ax-plus"></i>
+              </button>
+            </span>
+          </div>
+          <div style="margin-top:-4px">
+            <div class="ad-card ad-shadow ad-ellipse  bg-white ">
+              <div class="clearfix"></div>
+              <ng-content select=".detail"></ng-content>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- wrapper ends -->
+</div>

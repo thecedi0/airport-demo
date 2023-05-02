@@ -1,0 +1,33 @@
+<div
+  [ngClass]="{
+    'bg-darker': theme == 'dark',
+    'bg-whitish': theme == 'light'
+  }"
+  style="min-height: 100%;"
+>
+  <ui-side-menu
+    [theme]="theme"
+    [isMini]="closed"
+    [appName]="app"
+
+    [menu]="menu"
+  ></ui-side-menu>
+
+  <div class="wrap-fluid" [class.ad-closed]="closed">
+    <galaxy-uix-header [appName]="app"    [logo]="logo" [theme]="theme">
+      <ng-content select=".extra"></ng-content>
+    </galaxy-uix-header>
+    <br />
+    <br />
+    <div class="ad-workspace"><ng-content></ng-content></div>
+  </div>
+<!--
+  <div
+    class="color-block"
+    [ngClass]="{
+      'bg-dark': theme == 'light',
+      'bg-white': theme == 'dark'
+    }"
+  ></div> -->
+</div>
+

@@ -1,0 +1,2449 @@
+/*--------------------------------
+
+DesignaIcon-Regular Web Font
+Generated using nucleoapp.com
+
+-------------------------------- */
+@font-face {
+  font-family: 'DesignaIcon-Regular';
+  src: url('../webfonts/DesignaIcon-Regular.eot');
+  src: url('../webfonts/DesignaIcon-Regular.eot') format('embedded-opentype'),
+    url('../webfonts/DesignaIcon-Regular.woff2') format('woff2'),
+    url('../webfonts/DesignaIcon-Regular.woff') format('woff'),
+    url('../webfonts/DesignaIcon-Regular.ttf') format('truetype'),
+    url('../webfonts/DesignaIcon-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*------------------------
+	base class definition
+-------------------------*/
+.axr {
+  display: inline-block;
+  font-family: 'DesignaIcon-Regular';
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  transform: translateY(1px) scale(1.4);
+  speak: none;
+  text-transform: none;
+  text-rendering: auto;
+  /* Better Font Rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*------------------------
+  change icon size
+-------------------------*/
+/* relative units */
+.axr-sm {
+  font-size: 0.8em;
+}
+.axr-lg {
+  font-size: 1.2em;
+}
+/* absolute units */
+.axr-16 {
+  font-size: 16px;
+}
+.axr-32 {
+  font-size: 32px;
+}
+/*----------------------------------
+  add a square/circle background
+-----------------------------------*/
+.axr-bg-square,
+.axr-bg-circle {
+  padding: 0.35em;
+  background-color: #eee;
+}
+.axr-bg-circle {
+  border-radius: 50%;
+}
+/*------------------------------------
+  use icons as list item markers
+-------------------------------------*/
+.axr-ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+.axr-ul > li {
+  display: flex;
+  align-items: flex-start;
+  line-height: 1.4;
+}
+.axr-ul > li > .axr {
+  margin-right: 0.4em;
+  line-height: inherit;
+}
+/*------------------------
+  spinning icons
+-------------------------*/
+.axr-is-spinning {
+  -webkit-animation: axr-spin 2s infinite linear;
+  -moz-animation: axr-spin 2s infinite linear;
+  animation: axr-spin 2s infinite linear;
+}
+@-webkit-keyframes axr-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes axr-spin {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@keyframes axr-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/*------------------------
+  rotated/flipped icons
+-------------------------*/
+.axr-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.axr-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.axr-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.axr-flip-y {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+  -webkit-transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.axr-flip-x {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: scale(1, -1);
+  -moz-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+/*------------------------
+	icons
+-------------------------*/
+
+.axr.ax-mail-opened::before {
+  content: "\ea02";
+}
+
+.axr.ax-shopping-bag::before {
+  content: "\ea03";
+}
+
+.axr.ax-cart-plus::before {
+  content: "\ea04";
+}
+
+.axr.ax-cart-down::before {
+  content: "\ea05";
+}
+
+.axr.ax-zoom-in::before {
+  content: "\ea06";
+}
+
+.axr.ax-wand::before {
+  content: "\ea07";
+}
+
+.axr.ax-wifi-1::before {
+  content: "\ea08";
+}
+
+.axr.ax-alert-triangle::before {
+  content: "\ea09";
+}
+
+.axr.ax-alert-circle::before {
+  content: "\ea0a";
+}
+
+.axr.ax-alarm::before {
+  content: "\ea0b";
+}
+
+.axr.ax-adjustments::before {
+  content: "\ea0c";
+}
+
+.axr.ax-ad::before {
+  content: "\ea0d";
+}
+
+.axr.ax-activity::before {
+  content: "\ea0e";
+}
+
+.axr.ax-accessible::before {
+  content: "\ea0f";
+}
+
+.axr.ax-zoom-out::before {
+  content: "\ea10";
+}
+
+.axr.ax-umbrella::before {
+  content: "\ea11";
+}
+
+.axr.ax-yin-yang::before {
+  content: "\ea12";
+}
+
+.axr.ax-x::before {
+  content: "\ea13";
+}
+
+.axr.ax-world::before {
+  content: "\ea14";
+}
+
+.axr.ax-woman::before {
+  content: "\ea15";
+}
+
+.axr.ax-wind::before {
+  content: "\ea16";
+}
+
+.axr.ax-wifi-2::before {
+  content: "\ea17";
+}
+
+.axr.ax-square::before {
+  content: "\ea18";
+}
+
+.axr.ax-wifi-0::before {
+  content: "\ea19";
+}
+
+.axr.ax-wifi::before {
+  content: "\ea1a";
+}
+
+.axr.ax-viewport-narrow::before {
+  content: "\ea1b";
+}
+
+.axr.ax-wallet::before {
+  content: "\ea1c";
+}
+
+.axr.ax-volume-3::before {
+  content: "\ea1d";
+}
+
+.axr.ax-volume-2::before {
+  content: "\ea1e";
+}
+
+.axr.ax-volume::before {
+  content: "\ea1f";
+}
+
+.axr.ax-virus::before {
+  content: "\ea20";
+}
+
+.axr.ax-viewport-wide::before {
+  content: "\ea21";
+}
+
+.axr.ax-subscript::before {
+  content: "\ea22";
+}
+
+.axr.ax-viewfinder::before {
+  content: "\ea23";
+}
+
+.axr.ax-user-x::before {
+  content: "\ea24";
+}
+
+.axr.ax-users::before {
+  content: "\ea25";
+}
+
+.axr.ax-user-plus::before {
+  content: "\ea26";
+}
+
+.axr.ax-user-minus::before {
+  content: "\ea27";
+}
+
+.axr.ax-user-exclamation::before {
+  content: "\ea28";
+}
+
+.axr.ax-user-check::before {
+  content: "\ea29";
+}
+
+.axr.ax-user::before {
+  content: "\ea2a";
+}
+
+.axr.ax-urgent::before {
+  content: "\ea2b";
+}
+
+.axr.ax-upload::before {
+  content: "\ea2c";
+}
+
+.axr.ax-unlink::before {
+  content: "\ea2d";
+}
+
+.axr.ax-underline::before {
+  content: "\ea2e";
+}
+
+.axr.ax-square-x::before {
+  content: "\ea2f";
+}
+
+.axr.ax-typography::before {
+  content: "\ea30";
+}
+
+.axr.ax-truck::before {
+  content: "\ea31";
+}
+
+.axr.ax-trophy::before {
+  content: "\ea32";
+}
+
+.axr.ax-triangle::before {
+  content: "\ea33";
+}
+
+.axr.ax-trending-up::before {
+  content: "\ea34";
+}
+
+.axr.ax-trending-down::before {
+  content: "\ea35";
+}
+
+.axr.ax-trees::before {
+  content: "\ea36";
+}
+
+.axr.ax-trash::before {
+  content: "\ea37";
+}
+
+.axr.ax-traffic-cone::before {
+  content: "\ea38";
+}
+
+.axr.ax-trademark::before {
+  content: "\ea39";
+}
+
+.axr.ax-tractor::before {
+  content: "\ea3a";
+}
+
+.axr.ax-tools::before {
+  content: "\ea3b";
+}
+
+.axr.ax-tool::before {
+  content: "\ea3c";
+}
+
+.axr.ax-toggle-right::before {
+  content: "\ea3d";
+}
+
+.axr.ax-toggle-left::before {
+  content: "\ea3e";
+}
+
+.axr.ax-tir::before {
+  content: "\ea3f";
+}
+
+.axr.ax-ticket::before {
+  content: "\ea40";
+}
+
+.axr.ax-thumb-up::before {
+  content: "\ea41";
+}
+
+.axr.ax-thumb-down::before {
+  content: "\ea42";
+}
+
+.axr.ax-text-wrap::before {
+  content: "\ea43";
+}
+
+.axr.ax-test-pipe::before {
+  content: "\ea44";
+}
+
+.axr.ax-test::before {
+  content: "\ea45";
+}
+
+.axr.ax-terminal-2::before {
+  content: "\ea46";
+}
+
+.axr.ax-terminal::before {
+  content: "\ea47";
+}
+
+.axr.ax-template::before {
+  content: "\ea48";
+}
+
+.axr.ax-temperature-plus::before {
+  content: "\ea49";
+}
+
+.axr.ax-temperature-minus::before {
+  content: "\ea4a";
+}
+
+.axr.ax-temperature-fahrenheit::before {
+  content: "\ea4b";
+}
+
+.axr.ax-temperature-celsius::before {
+  content: "\ea4c";
+}
+
+.axr.ax-temperature::before {
+  content: "\ea4d";
+}
+
+.axr.ax-tax::before {
+  content: "\ea4e";
+}
+
+.axr.ax-target::before {
+  content: "\ea4f";
+}
+
+.axr.ax-tag::before {
+  content: "\ea50";
+}
+
+.axr.ax-table::before {
+  content: "\ea51";
+}
+
+.axr.ax-switch-vertical::before {
+  content: "\ea52";
+}
+
+.axr.ax-switch-horizontal::before {
+  content: "\ea53";
+}
+
+.axr.ax-switch::before {
+  content: "\ea54";
+}
+
+.axr.ax-superscript::before {
+  content: "\ea55";
+}
+
+.axr.ax-sunshine::before {
+  content: "\ea56";
+}
+
+.axr.ax-sunset::before {
+  content: "\ea57";
+}
+
+.axr.ax-sun::before {
+  content: "\ea58";
+}
+
+.axr.ax-sum::before {
+  content: "\ea59";
+}
+
+.axr.ax-minus::before {
+  content: "\ea5a";
+}
+
+.axr.ax-strikethrough::before {
+  content: "\ea5b";
+}
+
+.axr.ax-sticker::before {
+  content: "\ea5c";
+}
+
+.axr.ax-star::before {
+  content: "\ea5d";
+}
+
+.axr.ax-stack::before {
+  content: "\ea5e";
+}
+
+.axr.ax-square-plus::before {
+  content: "\ea5f";
+}
+
+.axr.ax-phone-incoming::before {
+  content: "\ea60";
+}
+
+.axr.ax-square-minus::before {
+  content: "\ea61";
+}
+
+.axr.ax-square-check::before {
+  content: "\ea62";
+}
+
+.axr.ax-phone-plus::before {
+  content: "\ea63";
+}
+
+.axr.ax-space::before {
+  content: "\ea64";
+}
+
+.axr.ax-sort-descending::before {
+  content: "\ea65";
+}
+
+.axr.ax-sort-ascending::before {
+  content: "\ea66";
+}
+
+.axr.ax-social::before {
+  content: "\ea67";
+}
+
+.axr.ax-snowflake::before {
+  content: "\ea68";
+}
+
+.axr.ax-slideshow::before {
+  content: "\ea69";
+}
+
+.axr.ax-slice::before {
+  content: "\ea6a";
+}
+
+.axr.ax-sitemap::before {
+  content: "\ea6b";
+}
+
+.axr.ax-shopping-cart::before {
+  content: "\ea6c";
+}
+
+.axr.ax-shirt::before {
+  content: "\ea6d";
+}
+
+.axr.ax-shield-x::before {
+  content: "\ea6e";
+}
+
+.axr.ax-shield-check::before {
+  content: "\ea6f";
+}
+
+.axr.ax-shield::before {
+  content: "\ea70";
+}
+
+.axr.ax-share::before {
+  content: "\ea71";
+}
+
+.axr.ax-shape::before {
+  content: "\ea72";
+}
+
+.axr.ax-settings::before {
+  content: "\ea73";
+}
+
+.axr.ax-servicemark::before {
+  content: "\ea74";
+}
+
+.axr.ax-server::before {
+  content: "\ea75";
+}
+
+.axr.ax-separator::before {
+  content: "\ea76";
+}
+
+.axr.ax-send::before {
+  content: "\ea77";
+}
+
+.axr.ax-selector::before {
+  content: "\ea78";
+}
+
+.axr.ax-search::before {
+  content: "\ea79";
+}
+
+.axr.ax-scissors::before {
+  content: "\ea7a";
+}
+
+.axr.ax-scan::before {
+  content: "\ea7b";
+}
+
+.axr.ax-scale::before {
+  content: "\ea7c";
+}
+
+.axr.ax-ruler::before {
+  content: "\ea7d";
+}
+
+.axr.ax-rss::before {
+  content: "\ea7e";
+}
+
+.axr.ax-router::before {
+  content: "\ea7f";
+}
+
+.axr.ax-route::before {
+  content: "\ea80";
+}
+
+.axr.ax-rotate-rectangle::before {
+  content: "\ea81";
+}
+
+.axr.ax-rotate-clockwise-2::before {
+  content: "\ea82";
+}
+
+.axr.ax-rotate-clockwise::before {
+  content: "\ea83";
+}
+
+.axr.ax-rotate-2::before {
+  content: "\ea84";
+}
+
+.axr.ax-rotate::before {
+  content: "\ea85";
+}
+
+.axr.ax-replace::before {
+  content: "\ea86";
+}
+
+.axr.ax-repeat-once::before {
+  content: "\ea87";
+}
+
+.axr.ax-repeat::before {
+  content: "\ea88";
+}
+
+.axr.ax-registered::before {
+  content: "\ea89";
+}
+
+.axr.ax-refresh::before {
+  content: "\ea8a";
+}
+
+.axr.ax-recycle::before {
+  content: "\ea8b";
+}
+
+.axr.ax-record-mail::before {
+  content: "\ea8c";
+}
+
+.axr.ax-qrcode::before {
+  content: "\ea8d";
+}
+
+.axr.ax-puzzle::before {
+  content: "\ea8e";
+}
+
+.axr.ax-prompt::before {
+  content: "\ea8f";
+}
+
+.axr.ax-printer::before {
+  content: "\ea90";
+}
+
+.axr.ax-presentation::before {
+  content: "\ea91";
+}
+
+.axr.ax-power::before {
+  content: "\ea92";
+}
+
+.axr.ax-point::before {
+  content: "\ea93";
+}
+
+.axr.ax-plus::before {
+  content: "\ea94";
+}
+
+.axr.ax-plug::before {
+  content: "\ea95";
+}
+
+.axr.ax-planet::before {
+  content: "\ea96";
+}
+
+.axr.ax-plane-departure::before {
+  content: "\ea97";
+}
+
+.axr.ax-plane-arrival::before {
+  content: "\ea98";
+}
+
+.axr.ax-plane::before {
+  content: "\ea99";
+}
+
+.axr.ax-pillow::before {
+  content: "\ea9a";
+}
+
+.axr.ax-photo::before {
+  content: "\ea9b";
+}
+
+.axr.ax-phone-x::before {
+  content: "\ea9c";
+}
+
+.axr.ax-notebook::before {
+  content: "\ea9d";
+}
+
+.axr.ax-phone-pause::before {
+  content: "\ea9e";
+}
+
+.axr.ax-phone-outgoing::before {
+  content: "\ea9f";
+}
+
+.axr.ax-palette::before {
+  content: "\eaa0";
+}
+
+.axr.ax-phone-check::before {
+  content: "\eaa1";
+}
+
+.axr.ax-phone-call::before {
+  content: "\eaa2";
+}
+
+.axr.ax-phone::before {
+  content: "\eaa3";
+}
+
+.axr.ax-pencil::before {
+  content: "\eaa4";
+}
+
+.axr.ax-parking::before {
+  content: "\eaa5";
+}
+
+.axr.ax-parentheses::before {
+  content: "\eaa6";
+}
+
+.axr.ax-paperclip::before {
+  content: "\eaa7";
+}
+
+.axr.ax-messages::before {
+  content: "\eaa8";
+}
+
+.axr.ax-paint::before {
+  content: "\eaa9";
+}
+
+.axr.ax-package::before {
+  content: "\eaaa";
+}
+
+.axr.ax-outlet::before {
+  content: "\eaab";
+}
+
+.axr.ax-omega::before {
+  content: "\eaac";
+}
+
+.axr.ax-notification::before {
+  content: "\eaad";
+}
+
+.axr.ax-notes::before {
+  content: "\eaae";
+}
+
+.axr.ax-note::before {
+  content: "\eaaf";
+}
+
+.axr.ax-movie::before {
+  content: "\eab0";
+}
+
+.axr.ax-new-section::before {
+  content: "\eab1";
+}
+
+.axr.ax-news::before {
+  content: "\eab2";
+}
+
+.axr.ax-music::before {
+  content: "\eab3";
+}
+
+.axr.ax-mug::before {
+  content: "\eab4";
+}
+
+.axr.ax-layout-navbar::before {
+  content: "\eab5";
+}
+
+.axr.ax-mouse::before {
+  content: "\eab6";
+}
+
+.axr.ax-moon::before {
+  content: "\eab7";
+}
+
+.axr.ax-mood-tongue::before {
+  content: "\eab8";
+}
+
+.axr.ax-mood-suprised::before {
+  content: "\eab9";
+}
+
+.axr.ax-mood-smile::before {
+  content: "\eaba";
+}
+
+.axr.ax-mood-sad::before {
+  content: "\eabb";
+}
+
+.axr.ax-mood-neutral::before {
+  content: "\eabc";
+}
+
+.axr.ax-mood-kid::before {
+  content: "\eabd";
+}
+
+.axr.ax-mood-happy::before {
+  content: "\eabe";
+}
+
+.axr.ax-mood-confuzed::before {
+  content: "\eabf";
+}
+
+.axr.ax-mist::before {
+  content: "\eac0";
+}
+
+.axr.ax-globe::before {
+  content: "\eac1";
+}
+
+.axr.ax-minimize::before {
+  content: "\eac2";
+}
+
+.axr.ax-microphone::before {
+  content: "\eac3";
+}
+
+.axr.ax-mail-opened-2::before {
+  content: "\eac4";
+}
+
+.axr.ax-message-dots::before {
+  content: "\eac5";
+}
+
+.axr.ax-message-circle::before {
+  content: "\eac6";
+}
+
+.axr.ax-message-2::before {
+  content: "\eac7";
+}
+
+.axr.ax-message::before {
+  content: "\eac8";
+}
+
+.axr.ax-menu::before {
+  content: "\eac9";
+}
+
+.axr.ax-medical-cross::before {
+  content: "\eaca";
+}
+
+.axr.ax-maximize::before {
+  content: "\eacb";
+}
+
+.axr.ax-math::before {
+  content: "\eacc";
+}
+
+.axr.ax-map-pin::before {
+  content: "\eacd";
+}
+
+.axr.ax-map-2::before {
+  content: "\eace";
+}
+
+.axr.ax-map::before {
+  content: "\eacf";
+}
+
+.axr.ax-man::before {
+  content: "\ead0";
+}
+
+.axr.ax-indent-decrease::before {
+  content: "\ead1";
+}
+
+.axr.ax-mail::before {
+  content: "\ead2";
+}
+
+.axr.ax-magnet::before {
+  content: "\ead3";
+}
+
+.axr.ax-logout::before {
+  content: "\ead4";
+}
+
+.axr.ax-login::before {
+  content: "\ead5";
+}
+
+.axr.ax-lock-open::before {
+  content: "\ead6";
+}
+
+.axr.ax-lock::before {
+  content: "\ead7";
+}
+
+.axr.ax-location::before {
+  content: "\ead8";
+}
+
+.axr.ax-live-photo::before {
+  content: "\ead9";
+}
+
+.axr.ax-list-check::before {
+  content: "\eada";
+}
+
+.axr.ax-list::before {
+  content: "\eadb";
+}
+
+.axr.ax-link::before {
+  content: "\eadc";
+}
+
+.axr.ax-line-height::before {
+  content: "\eadd";
+}
+
+.axr.ax-lifebuoy::before {
+  content: "\eade";
+}
+
+.axr.ax-license::before {
+  content: "\eadf";
+}
+
+.axr.ax-letter-case::before {
+  content: "\eae0";
+}
+
+.axr.ax-lego::before {
+  content: "\eae1";
+}
+
+.axr.ax-layout-sidebar-right::before {
+  content: "\eae2";
+}
+
+.axr.ax-layout-sidebar::before {
+  content: "\eae3";
+}
+
+.axr.ax-layout-rows::before {
+  content: "\eae4";
+}
+
+.axr.ax-key::before {
+  content: "\eae5";
+}
+
+.axr.ax-layout-list::before {
+  content: "\eae6";
+}
+
+.axr.ax-layout-distribute-vertical::before {
+  content: "\eae7";
+}
+
+.axr.ax-layout-distribute-horizontal::before {
+  content: "\eae8";
+}
+
+.axr.ax-layout-columns::before {
+  content: "\eae9";
+}
+
+.axr.ax-layout-cards::before {
+  content: "\eaea";
+}
+
+.axr.ax-layout-bottombar::before {
+  content: "\eaeb";
+}
+
+.axr.ax-layout-align-top::before {
+  content: "\eaec";
+}
+
+.axr.ax-layout-align-right::before {
+  content: "\eaed";
+}
+
+.axr.ax-layout-align-middle::before {
+  content: "\eaee";
+}
+
+.axr.ax-layout-align-left::before {
+  content: "\eaef";
+}
+
+.axr.ax-layout-align-center::before {
+  content: "\eaf0";
+}
+
+.axr.ax-layout-align-bottom::before {
+  content: "\eaf1";
+}
+
+.axr.ax-layout-2::before {
+  content: "\eaf2";
+}
+
+.axr.ax-layout::before {
+  content: "\eaf3";
+}
+
+.axr.ax-layers-union::before {
+  content: "\eaf4";
+}
+
+.axr.ax-layers-subtract::before {
+  content: "\eaf5";
+}
+
+.axr.ax-layers-intersect::before {
+  content: "\eaf6";
+}
+
+.axr.ax-layers-difference::before {
+  content: "\eaf7";
+}
+
+.axr.ax-language::before {
+  content: "\eaf8";
+}
+
+.axr.ax-keyboard::before {
+  content: "\eaf9";
+}
+
+.axr.ax-eraser::before {
+  content: "\eafa";
+}
+
+.axr.ax-italic::before {
+  content: "\eafb";
+}
+
+.axr.ax-info-square::before {
+  content: "\eafc";
+}
+
+.axr.ax-info-circle::before {
+  content: "\eafd";
+}
+
+.axr.ax-infinity::before {
+  content: "\eafe";
+}
+
+.axr.ax-indent-increase::before {
+  content: "\eaff";
+}
+
+.axr.ax-home::before {
+  content: "\eb00";
+}
+
+.axr.ax-inbox::before {
+  content: "\eb01";
+}
+
+.axr.ax-id::before {
+  content: "\eb02";
+}
+
+.axr.ax-ice-cream::before {
+  content: "\eb03";
+}
+
+.axr.ax-home-2::before {
+  content: "\eb04";
+}
+
+.axr.ax-gauge::before {
+  content: "\eb05";
+}
+
+.axr.ax-history::before {
+  content: "\eb06";
+}
+
+.axr.ax-hexagon::before {
+  content: "\eb07";
+}
+
+.axr.ax-help::before {
+  content: "\eb08";
+}
+
+.axr.ax-heart::before {
+  content: "\eb09";
+}
+
+.axr.ax-headset::before {
+  content: "\eb0a";
+}
+
+.axr.ax-headphones::before {
+  content: "\eb0b";
+}
+
+.axr.ax-hash::before {
+  content: "\eb0c";
+}
+
+.axr.ax-hand-stop::before {
+  content: "\eb0d";
+}
+
+.axr.ax-hand-middle-finger::before {
+  content: "\eb0e";
+}
+
+.axr.ax-grip-vertical::before {
+  content: "\eb0f";
+}
+
+.axr.ax-grip-horizontal::before {
+  content: "\eb10";
+}
+
+.axr.ax-grid-dots::before {
+  content: "\eb11";
+}
+
+.axr.ax-grid::before {
+  content: "\eb12";
+}
+
+.axr.ax-git-compare::before {
+  content: "\eb13";
+}
+
+.axr.ax-glass-full::before {
+  content: "\eb14";
+}
+
+.axr.ax-glass::before {
+  content: "\eb15";
+}
+
+.axr.ax-git-pull-request::before {
+  content: "\eb16";
+}
+
+.axr.ax-git-merge::before {
+  content: "\eb17";
+}
+
+.axr.ax-git-fork::before {
+  content: "\eb18";
+}
+
+.axr.ax-drag-drop::before {
+  content: "\eb19";
+}
+
+.axr.ax-git-commit::before {
+  content: "\eb1a";
+}
+
+.axr.ax-git-branch::before {
+  content: "\eb1b";
+}
+
+.axr.ax-gift::before {
+  content: "\eb1c";
+}
+
+.axr.ax-ghost::before {
+  content: "\eb1d";
+}
+
+.axr.ax-disabled::before {
+  content: "\eb1e";
+}
+
+.axr.ax-friends::before {
+  content: "\eb1f";
+}
+
+.axr.ax-frame::before {
+  content: "\eb20";
+}
+
+.axr.ax-forklift::before {
+  content: "\eb21";
+}
+
+.axr.ax-forbid-2::before {
+  content: "\eb22";
+}
+
+.axr.ax-forbid::before {
+  content: "\eb23";
+}
+
+.axr.ax-folder-x::before {
+  content: "\eb24";
+}
+
+.axr.ax-folders::before {
+  content: "\eb25";
+}
+
+.axr.ax-folder-plus::before {
+  content: "\eb26";
+}
+
+.axr.ax-folder-minus::before {
+  content: "\eb27";
+}
+
+.axr.ax-folder::before {
+  content: "\eb28";
+}
+
+.axr.ax-focus-2::before {
+  content: "\eb29";
+}
+
+.axr.ax-focus::before {
+  content: "\eb2a";
+}
+
+.axr.ax-floppy-disk::before {
+  content: "\eb2b";
+}
+
+.axr.ax-float-right::before {
+  content: "\eb2c";
+}
+
+.axr.ax-float-left::before {
+  content: "\eb2d";
+}
+
+.axr.ax-float-center::before {
+  content: "\eb2e";
+}
+
+.axr.ax-flip-vertical::before {
+  content: "\eb2f";
+}
+
+.axr.ax-flip-horizontal::before {
+  content: "\eb30";
+}
+
+.axr.ax-flask::before {
+  content: "\eb31";
+}
+
+.axr.ax-flame::before {
+  content: "\eb32";
+}
+
+.axr.ax-flag::before {
+  content: "\eb33";
+}
+
+.axr.ax-firetruck::before {
+  content: "\eb34";
+}
+
+.axr.ax-fingerprint::before {
+  content: "\eb35";
+}
+
+.axr.ax-filter::before {
+  content: "\eb36";
+}
+
+.axr.ax-file-x::before {
+  content: "\eb37";
+}
+
+.axr.ax-file-text::before {
+  content: "\eb38";
+}
+
+.axr.ax-file-shredder::before {
+  content: "\eb39";
+}
+
+.axr.ax-file-plus::before {
+  content: "\eb3a";
+}
+
+.axr.ax-file-music::before {
+  content: "\eb3b";
+}
+
+.axr.ax-file-minus::before {
+  content: "\eb3c";
+}
+
+.axr.ax-file-invoice::before {
+  content: "\eb3d";
+}
+
+.axr.ax-file-horizontal::before {
+  content: "\eb3e";
+}
+
+.axr.ax-file-download::before {
+  content: "\eb3f";
+}
+
+.axr.ax-file-code::before {
+  content: "\eb40";
+}
+
+.axr.ax-file-check::before {
+  content: "\eb41";
+}
+
+.axr.ax-file::before {
+  content: "\eb42";
+}
+
+.axr.ax-face-id::before {
+  content: "\eb43";
+}
+
+.axr.ax-eye::before {
+  content: "\eb44";
+}
+
+.axr.ax-external-link::before {
+  content: "\eb45";
+}
+
+.axr.ax-exposure::before {
+  content: "\eb46";
+}
+
+.axr.ax-exchange::before {
+  content: "\eb47";
+}
+
+.axr.ax-brightness::before {
+  content: "\eb48";
+}
+
+.axr.ax-emphasis::before {
+  content: "\eb49";
+}
+
+.axr.ax-egg::before {
+  content: "\eb4a";
+}
+
+.axr.ax-edit::before {
+  content: "\eb4b";
+}
+
+.axr.ax-ear::before {
+  content: "\eb4c";
+}
+
+.axr.ax-droplet::before {
+  content: "\eb4d";
+}
+
+.axr.ax-drag-drop-2::before {
+  content: "\eb4e";
+}
+
+.axr.ax-corner-left-down::before {
+  content: "\eb4f";
+}
+
+.axr.ax-download::before {
+  content: "\eb50";
+}
+
+.axr.ax-dots-vertical::before {
+  content: "\eb51";
+}
+
+.axr.ax-dots-diagonal-2::before {
+  content: "\eb52";
+}
+
+.axr.ax-dots-diagonal::before {
+  content: "\eb53";
+}
+
+.axr.ax-dots-circle-horizontal::before {
+  content: "\eb54";
+}
+
+.axr.ax-dots::before {
+  content: "\eb55";
+}
+
+.axr.ax-discount::before {
+  content: "\eb56";
+}
+
+.axr.ax-disc::before {
+  content: "\eb57";
+}
+
+.axr.ax-disabled-2::before {
+  content: "\eb58";
+}
+
+.axr.ax-device-tv::before {
+  content: "\eb59";
+}
+
+.axr.ax-directions::before {
+  content: "\eb5a";
+}
+
+.axr.ax-direction-horizontal::before {
+  content: "\eb5b";
+}
+
+.axr.ax-direction::before {
+  content: "\eb5c";
+}
+
+.axr.ax-dice::before {
+  content: "\eb5d";
+}
+
+.axr.ax-diamond::before {
+  content: "\eb5e";
+}
+
+.axr.ax-device-watch::before {
+  content: "\eb5f";
+}
+
+.axr.ax-coin::before {
+  content: "\eb60";
+}
+
+.axr.ax-device-tablet::before {
+  content: "\eb61";
+}
+
+.axr.ax-device-speaker::before {
+  content: "\eb62";
+}
+
+.axr.ax-devices::before {
+  content: "\eb63";
+}
+
+.axr.ax-device-mobile-vibration::before {
+  content: "\eb64";
+}
+
+.axr.ax-device-mobile::before {
+  content: "\eb65";
+}
+
+.axr.ax-device-laptop::before {
+  content: "\eb66";
+}
+
+.axr.ax-device-gamepad::before {
+  content: "\eb67";
+}
+
+.axr.ax-device-floppy::before {
+  content: "\eb68";
+}
+
+.axr.ax-device-desktop::before {
+  content: "\eb69";
+}
+
+.axr.ax-database::before {
+  content: "\eb6a";
+}
+
+.axr.ax-dashboard::before {
+  content: "\eb6b";
+}
+
+.axr.ax-cut::before {
+  content: "\eb6c";
+}
+
+.axr.ax-currency-yen::before {
+  content: "\eb6d";
+}
+
+.axr.ax-currency-rupee::before {
+  content: "\eb6e";
+}
+
+.axr.ax-currency-pound::before {
+  content: "\eb6f";
+}
+
+.axr.ax-currency-euro::before {
+  content: "\eb70";
+}
+
+.axr.ax-currency-dollar::before {
+  content: "\eb71";
+}
+
+.axr.ax-currency-bitcoin::before {
+  content: "\eb72";
+}
+
+.axr.ax-crop::before {
+  content: "\eb73";
+}
+
+.axr.ax-credit-card::before {
+  content: "\eb74";
+}
+
+.axr.ax-corner-up-right::before {
+  content: "\eb75";
+}
+
+.axr.ax-corner-up-left::before {
+  content: "\eb76";
+}
+
+.axr.ax-corner-right-up::before {
+  content: "\eb77";
+}
+
+.axr.ax-corner-right-down::before {
+  content: "\eb78";
+}
+
+.axr.ax-corner-left-up::before {
+  content: "\eb79";
+}
+
+.axr.ax-chart-candle::before {
+  content: "\eb7a";
+}
+
+.axr.ax-corner-down-right::before {
+  content: "\eb7b";
+}
+
+.axr.ax-corner-down-left::before {
+  content: "\eb7c";
+}
+
+.axr.ax-copyright::before {
+  content: "\eb7d";
+}
+
+.axr.ax-copy::before {
+  content: "\eb7e";
+}
+
+.axr.ax-compass::before {
+  content: "\eb7f";
+}
+
+.axr.ax-command::before {
+  content: "\eb80";
+}
+
+.axr.ax-columns::before {
+  content: "\eb81";
+}
+
+.axr.ax-color-swatch::before {
+  content: "\eb82";
+}
+
+.axr.ax-color-picker::before {
+  content: "\eb83";
+}
+
+.axr.ax-checks::before {
+  content: "\eb84";
+}
+
+.axr.ax-code::before {
+  content: "\eb85";
+}
+
+.axr.ax-cloud-upload::before {
+  content: "\eb86";
+}
+
+.axr.ax-cloud-storm::before {
+  content: "\eb87";
+}
+
+.axr.ax-cloud-snow::before {
+  content: "\eb88";
+}
+
+.axr.ax-cloud-rain::before {
+  content: "\eb89";
+}
+
+.axr.ax-cloud-download::before {
+  content: "\eb8a";
+}
+
+.axr.ax-cloud::before {
+  content: "\eb8b";
+}
+
+.axr.ax-clock::before {
+  content: "\eb8c";
+}
+
+.axr.ax-clipboard-x::before {
+  content: "\eb8d";
+}
+
+.axr.ax-clipboard-list::before {
+  content: "\eb8e";
+}
+
+.axr.ax-clipboard-check::before {
+  content: "\eb8f";
+}
+
+.axr.ax-clipboard::before {
+  content: "\eb90";
+}
+
+.axr.ax-click::before {
+  content: "\eb91";
+}
+
+.axr.ax-clear-formatting::before {
+  content: "\eb92";
+}
+
+.axr.ax-circle-x::before {
+  content: "\eb93";
+}
+
+.axr.ax-circle-plus::before {
+  content: "\eb94";
+}
+
+.axr.ax-circle-minus::before {
+  content: "\eb95";
+}
+
+.axr.ax-circle-check::before {
+  content: "\eb96";
+}
+
+.axr.ax-circle::before {
+  content: "\eb97";
+}
+
+.axr.ax-chevron-up::before {
+  content: "\eb98";
+}
+
+.axr.ax-chevrons-up::before {
+  content: "\eb99";
+}
+
+.axr.ax-chevrons-right::before {
+  content: "\eb9a";
+}
+
+.axr.ax-chevrons-left::before {
+  content: "\eb9b";
+}
+
+.axr.ax-chevrons-down::before {
+  content: "\eb9c";
+}
+
+.axr.ax-chevron-right::before {
+  content: "\eb9d";
+}
+
+.axr.ax-chevron-left::before {
+  content: "\eb9e";
+}
+
+.axr.ax-chevron-down::before {
+  content: "\eb9f";
+}
+
+.axr.ax-chart-line::before {
+  content: "\eba0";
+}
+
+.axr.ax-checkbox::before {
+  content: "\eba1";
+}
+
+.axr.ax-check::before {
+  content: "\eba2";
+}
+
+.axr.ax-chart-pie::before {
+  content: "\eba3";
+}
+
+.axr.ax-building-bridge-2::before {
+  content: "\eba4";
+}
+
+.axr.ax-chart-donut::before {
+  content: "\eba5";
+}
+
+.axr.ax-building-arch::before {
+  content: "\eba6";
+}
+
+.axr.ax-chart-bar::before {
+  content: "\eba7";
+}
+
+.axr.ax-chart-area-line::before {
+  content: "\eba8";
+}
+
+.axr.ax-chart-area::before {
+  content: "\eba9";
+}
+
+.axr.ax-cast::before {
+  content: "\ebaa";
+}
+
+.axr.ax-cash::before {
+  content: "\ebab";
+}
+
+.axr.ax-caret-up::before {
+  content: "\ebac";
+}
+
+.axr.ax-caret-right::before {
+  content: "\ebad";
+}
+
+.axr.ax-caret-left::before {
+  content: "\ebae";
+}
+
+.axr.ax-caret-down::before {
+  content: "\ebaf";
+}
+
+.axr.ax-car::before {
+  content: "\ebb0";
+}
+
+.axr.ax-camera::before {
+  content: "\ebb1";
+}
+
+.axr.ax-calendar-plus::before {
+  content: "\ebb2";
+}
+
+.axr.ax-calendar-minus::before {
+  content: "\ebb3";
+}
+
+.axr.ax-calendar-event::before {
+  content: "\ebb4";
+}
+
+.axr.ax-calendar::before {
+  content: "\ebb5";
+}
+
+.axr.ax-calculator::before {
+  content: "\ebb6";
+}
+
+.axr.ax-bus::before {
+  content: "\ebb7";
+}
+
+.axr.ax-bulb-off::before {
+  content: "\ebb8";
+}
+
+.axr.ax-bulb::before {
+  content: "\ebb9";
+}
+
+.axr.ax-building-warehouse::before {
+  content: "\ebba";
+}
+
+.axr.ax-building-store::before {
+  content: "\ebbb";
+}
+
+.axr.ax-building-skyscrappers::before {
+  content: "\ebbc";
+}
+
+.axr.ax-building-pavilon::before {
+  content: "\ebbd";
+}
+
+.axr.ax-building-hospital::before {
+  content: "\ebbe";
+}
+
+.axr.ax-building-community::before {
+  content: "\ebbf";
+}
+
+.axr.ax-building-church::before {
+  content: "\ebc0";
+}
+
+.axr.ax-brush::before {
+  content: "\ebc1";
+}
+
+.axr.ax-building-bridge::before {
+  content: "\ebc2";
+}
+
+.axr.ax-building-bank::before {
+  content: "\ebc3";
+}
+
+.axr.ax-brand-apple::before {
+  content: "\ebc4";
+}
+
+.axr.ax-building::before {
+  content: "\ebc5";
+}
+
+.axr.ax-bug::before {
+  content: "\ebc6";
+}
+
+.axr.ax-bucket::before {
+  content: "\ebc7";
+}
+
+.axr.ax-brand-telegram::before {
+  content: "\ebc8";
+}
+
+.axr.ax-browser::before {
+  content: "\ebc9";
+}
+
+.axr.ax-brightness-up::before {
+  content: "\ebca";
+}
+
+.axr.ax-brightness-down::before {
+  content: "\ebcb";
+}
+
+.axr.ax-brand-facebook::before {
+  content: "\ebcc";
+}
+
+.axr.ax-briefcase::before {
+  content: "\ebcd";
+}
+
+.axr.ax-brand-twitter::before {
+  content: "\ebce";
+}
+
+.axr.ax-border-bottom::before {
+  content: "\ebcf";
+}
+
+.axr.ax-brand-snapchat::before {
+  content: "\ebd0";
+}
+
+.axr.ax-brand-sketch::before {
+  content: "\ebd1";
+}
+
+.axr.ax-brand-safari::before {
+  content: "\ebd2";
+}
+
+.axr.ax-brand-paypal::before {
+  content: "\ebd3";
+}
+
+.axr.ax-brand-opera::before {
+  content: "\ebd4";
+}
+
+.axr.ax-brand-instagram::before {
+  content: "\ebd5";
+}
+
+.axr.ax-brand-google-drive::before {
+  content: "\ebd6";
+}
+
+.axr.ax-brand-google::before {
+  content: "\ebd7";
+}
+
+.axr.ax-brand-gitlab::before {
+  content: "\ebd8";
+}
+
+.axr.ax-brand-github::before {
+  content: "\ebd9";
+}
+
+.axr.ax-brand-framer::before {
+  content: "\ebda";
+}
+
+.axr.ax-battery-1::before {
+  content: "\ebdb";
+}
+
+.axr.ax-brand-dribbble::before {
+  content: "\ebdc";
+}
+
+.axr.ax-brand-chrome::before {
+  content: "\ebdd";
+}
+
+.axr.ax-border-radius::before {
+  content: "\ebde";
+}
+
+.axr.ax-brand-android::before {
+  content: "\ebdf";
+}
+
+.axr.ax-brackets::before {
+  content: "\ebe0";
+}
+
+.axr.ax-braces::before {
+  content: "\ebe1";
+}
+
+.axr.ax-box::before {
+  content: "\ebe2";
+}
+
+.axr.ax-border-vertical::before {
+  content: "\ebe3";
+}
+
+.axr.ax-border-top::before {
+  content: "\ebe4";
+}
+
+.axr.ax-border-right::before {
+  content: "\ebe5";
+}
+
+.axr.ax-border-inner::before {
+  content: "\ebe6";
+}
+
+.axr.ax-border-outer::before {
+  content: "\ebe7";
+}
+
+.axr.ax-border-none::before {
+  content: "\ebe8";
+}
+
+.axr.ax-border-left::before {
+  content: "\ebe9";
+}
+
+.axr.ax-bed::before {
+  content: "\ebea";
+}
+
+.axr.ax-border-horizontal::before {
+  content: "\ebeb";
+}
+
+.axr.ax-battery-4::before {
+  content: "\ebec";
+}
+
+.axr.ax-border-all::before {
+  content: "\ebed";
+}
+
+.axr.ax-bookmark::before {
+  content: "\ebee";
+}
+
+.axr.ax-book::before {
+  content: "\ebef";
+}
+
+.axr.ax-bolt::before {
+  content: "\ebf0";
+}
+
+.axr.ax-bold::before {
+  content: "\ebf1";
+}
+
+.axr.ax-bluetooth::before {
+  content: "\ebf2";
+}
+
+.axr.ax-bike::before {
+  content: "\ebf3";
+}
+
+.axr.ax-bell::before {
+  content: "\ebf4";
+}
+
+.axr.ax-arrows-minimize::before {
+  content: "\ebf5";
+}
+
+.axr.ax-battery-charging::before {
+  content: "\ebf6";
+}
+
+.axr.ax-ball-volleyball::before {
+  content: "\ebf7";
+}
+
+.axr.ax-battery-3::before {
+  content: "\ebf8";
+}
+
+.axr.ax-battery-2::before {
+  content: "\ebf9";
+}
+
+.axr.ax-arrow-down::before {
+  content: "\ebfa";
+}
+
+.axr.ax-battery::before {
+  content: "\ebfb";
+}
+
+.axr.ax-basket::before {
+  content: "\ebfc";
+}
+
+.axr.ax-barcode::before {
+  content: "\ebfd";
+}
+
+.axr.ax-bandage::before {
+  content: "\ebfe";
+}
+
+.axr.ax-ban::before {
+  content: "\ebff";
+}
+
+.axr.ax-arrow-narrow-left::before {
+  content: "\ec00";
+}
+
+.axr.ax-ball-tennis::before {
+  content: "\ec01";
+}
+
+.axr.ax-ball-bowling::before {
+  content: "\ec02";
+}
+
+.axr.ax-ball-basketball::before {
+  content: "\ec03";
+}
+
+.axr.ax-backspace::before {
+  content: "\ec04";
+}
+
+.axr.ax-award::before {
+  content: "\ec05";
+}
+
+.axr.ax-atom-2::before {
+  content: "\ec06";
+}
+
+.axr.ax-atom::before {
+  content: "\ec07";
+}
+
+.axr.ax-at::before {
+  content: "\ec08";
+}
+
+.axr.ax-artboard::before {
+  content: "\ec09";
+}
+
+.axr.ax-arrow-up-right-circle::before {
+  content: "\ec0a";
+}
+
+.axr.ax-arrow-up-right::before {
+  content: "\ec0b";
+}
+
+.axr.ax-arrow-up-left-circle::before {
+  content: "\ec0c";
+}
+
+.axr.ax-arrow-up-left::before {
+  content: "\ec0d";
+}
+
+.axr.ax-arrow-up-circle::before {
+  content: "\ec0e";
+}
+
+.axr.ax-arrow-up::before {
+  content: "\ec0f";
+}
+
+.axr.ax-arrows-vertical::before {
+  content: "\ec10";
+}
+
+.axr.ax-arrows-sort::before {
+  content: "\ec11";
+}
+
+.axr.ax-arrow-narrow-up::before {
+  content: "\ec12";
+}
+
+.axr.ax-arrows-maximize::before {
+  content: "\ec13";
+}
+
+.axr.ax-arrows-horizontal::before {
+  content: "\ec14";
+}
+
+.axr.ax-arrows-diagonal-2::before {
+  content: "\ec15";
+}
+
+.axr.ax-arrows-diagonal::before {
+  content: "\ec16";
+}
+
+.axr.ax-arrow-right-circle::before {
+  content: "\ec17";
+}
+
+.axr.ax-arrow-right::before {
+  content: "\ec18";
+}
+
+.axr.ax-arrow-bar-left::before {
+  content: "\ec19";
+}
+
+.axr.ax-arrow-narrow-right::before {
+  content: "\ec1a";
+}
+
+.axr.ax-align-justified::before {
+  content: "\ec1b";
+}
+
+.axr.ax-arrow-narrow-down::before {
+  content: "\ec1c";
+}
+
+.axr.ax-arrow-left-circle::before {
+  content: "\ec1d";
+}
+
+.axr.ax-arrow-left::before {
+  content: "\ec1e";
+}
+
+.axr.ax-arrow-forward-up::before {
+  content: "\ec1f";
+}
+
+.axr.ax-arrow-forward::before {
+  content: "\ec20";
+}
+
+.axr.ax-arrow-down-right-circle::before {
+  content: "\ec21";
+}
+
+.axr.ax-arrow-down-right::before {
+  content: "\ec22";
+}
+
+.axr.ax-arrow-down-left-circle::before {
+  content: "\ec23";
+}
+
+.axr.ax-arrow-down-left::before {
+  content: "\ec24";
+}
+
+.axr.ax-arrow-down-circle::before {
+  content: "\ec25";
+}
+
+.axr.ax-align-left::before {
+  content: "\ec26";
+}
+
+.axr.ax-arrow-bar-up::before {
+  content: "\ec27";
+}
+
+.axr.ax-arrow-bar-right::before {
+  content: "\ec28";
+}
+
+.axr.ax-align-center::before {
+  content: "\ec29";
+}
+
+.axr.ax-arrow-bar-down::before {
+  content: "\ec2a";
+}
+
+.axr.ax-arrow-back-up::before {
+  content: "\ec2b";
+}
+
+.axr.ax-arrow-back::before {
+  content: "\ec2c";
+}
+
+.axr.ax-archive::before {
+  content: "\ec2d";
+}
+
+.axr.ax-apps::before {
+  content: "\ec2e";
+}
+
+.axr.ax-aperture::before {
+  content: "\ec2f";
+}
+
+.axr.ax-anchor::before {
+  content: "\ec30";
+}
+
+.axr.ax-ambulance::before {
+  content: "\ec31";
+}
+
+.axr.ax-align-right::before {
+  content: "\ec32";
+}
+
+.axr.ax-alien::before {
+  content: "\ec33";
+}
+
+.axr.ax-list-music::before {
+  content: "\ec34";
+}
+
+.axr.ax-list-plus::before {
+  content: "\ec35";
+}
+
+.axr.ax-pause::before {
+  content: "\ec36";
+}
+
+.axr.ax-play::before {
+  content: "\ec37";
+}
+
+.axr.ax-forward::before {
+  content: "\ec38";
+}
+
+.axr.ax-previous::before {
+  content: "\ec39";
+}
+
+.axr.ax-message-empty-2::before {
+  content: "\ec3a";
+}
+
+.axr.ax-photos::before {
+  content: "\ec3b";
+}
+
+.axr.ax-reshare::before {
+  content: "\ec3c";
+}

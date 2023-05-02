@@ -1,0 +1,83 @@
+<div class="ad-btn-group" style="margin-top: 0px;">
+  <button
+    *ngIf="page > 1"
+    (click)="onPageClicked(1)"
+    class="ad-btn btn-dark ad-round ad-icon"
+    style="margin-right: 6px;"
+  >
+    <i class="fa fa-angle-double-left"></i>
+  </button>
+  <button
+    *ngIf="page > 1"
+    (click)="onPageClicked(page - 1)"
+    class="ad-btn btn-dark ad-round ad-icon"
+    style="margin-right: 6px;"
+  >
+    <i class="fa fa-angle-left"></i>
+  </button>
+
+  <span *ngIf="pagingType === 'button'; then buttonPager; else comboPager">
+  </span>
+
+  <button
+    *ngIf="lastPage > visible"
+    (click)="onPageClicked(visible)"
+    class="ad-btn btn-dark ad-round ad-icon"
+    style="margin-right: 6px;"
+  >
+    <i class="fa fa-ellipsis-h-alt"></i>
+  </button>
+
+  <button
+    *ngIf="lastPage > 1 && page < lastPage"
+    (click)="onPageClicked(page + 1)"
+    class="ad-btn btn-dark ad-round ad-icon"
+    style="margin-right: 6px;"
+  >
+    <i class="fa fa-angle-right"></i>
+  </button>
+
+  <button
+    *ngIf="lastPage > page"
+    (click)="onPageClicked(lastPage)"
+    class="ad-btn btn-{{
+      page == lastPage ? 'pink active' : 'dark'
+    }} ad-round ad-icon"
+    style="margin-right: 6px;"
+  >
+    <i class="fa fa-angle-double-right"></i>
+  </button>
+</div>
+
+<ng-template #buttonPager>
+  <button
+    *ngFor="let pager of data"
+    (click)="onPageClicked(pager[0])"
+    class="ad-btn btn-{{
+      page == pager ? 'pink active' : 'dark'
+    }} ad-round ad-icon"
+    style="margin-right: 6px;"
+  >
+    {{ pager }}
+  </button>
+</ng-template>
+
+<ng-template #comboPager>
+  <div
+    *ngIf="data.length"
+    class="ad-input ad-round no-margin no-padding"
+    style="
+      width: 50px;
+      padding-top: 0;
+      margin-top: 0;
+      display: inline-block;
+      vertical-align: top;
+    "
+  >
+    <!-- <select (change)="onPageClicked($event.target.value)" [value]="page">
+      <option *ngFor="let pager of data">
+        {{ pager }}
+      </option>
+    </select> -->
+  </div>
+</ng-template>
