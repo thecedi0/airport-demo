@@ -42,7 +42,7 @@ namespace WebApi.Controllers
 
 
         [HttpPost]
-        public async Task<ActionResult<Aircraft>> AddAircraft(PostAircraftDto model)
+        public async Task<ActionResult<Aircraft>> AddAircraft([FromBody] PostAircraftDto model)
         {
             var r = await this._service.AddAircraft(model);
             return Ok(r.Data);

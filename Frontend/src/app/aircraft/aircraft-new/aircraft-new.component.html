@@ -8,7 +8,7 @@
 
   <div class="ad-input ad-round ad-label">
     <label for="">Type <em>(required) </em></label>
-    <select name="type" [(ngModel)]="data.type">
+    <select name="type" [(ngModel)]="data.type" [disabled]="isLoading" required>
       <option [value]="1">Airlines</option>
       <option [value]="2">Private</option>
     </select>

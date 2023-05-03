@@ -127,6 +127,10 @@ export class GenericService {
     //   options.headers = null;
     // }
 
+    options.headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+    })
+
     return options;
   }
 

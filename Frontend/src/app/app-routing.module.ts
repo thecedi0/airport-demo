@@ -29,11 +29,11 @@ const routes: Routes = [
         component: AircraftNewComponent
       },
       {
-        path: 'edit',
+        path: 'edit/:id',
         component: AircraftNewComponent
       },
       {
-        path: 'log/id',
+        path: 'log',
         component: AircraftLogComponent
       },
     ]
