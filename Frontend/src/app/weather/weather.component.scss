@@ -1,0 +1,26 @@
+.weatherDetail {
+  display: flex;
+
+  gap: 4px;
+  padding: 4px;
+
+  div {
+    text-align: center;
+    border-radius: 12px;
+    background-color: whitesmoke;
+    flex: 1;
+
+    font-size: 18px;
+
+    small{
+      opacity: .6;
+    }
+    .icon {
+      display: inline-block;
+      color: deeppink;
+      opacity: .7;
+      font-size: 24px;
+      padding: 16px;
+    }
+  }
+}

@@ -5,17 +5,63 @@
 
         <div class="ad-card bg-white ad-ellipse">
           <div style="display: flex;">
-            <div class="ad-divider" style="flex:1">
+            <div class="ad-divider">
               <i class="axr ax-cloud"></i>
               &nbsp; Airport Weather
             </div>
-
+            <div class="text-center" style="flex:1">
+              <span class="highlight bg-dark">{{currentWeather.last_update}}</span>
+            </div>
             <button class="ad-btn ad-round btn-tgreen no-margin" (click)="showModal =true">Record Weather</button>
           </div>
-          <p>
+          <div class="weatherDetail">
+
+            <div class="weatherItem">
+              <span class="icon">
+                <i class="axr ax-temperature"></i>
+              </span>
+              <br>
+              <small>Temperature</small>
+              <br>
+              {{currentWeather.temperature}}
+            </div>
+            <div class="weatherItem">
+              <span class="icon">
+                <i class="axr ax-eye"></i>
+              </span>
+              <br>
+              <small>Visibilty</small>
+              <br>
+              {{currentWeather.visibility}}
+            </div>
+            <div class="weatherItem">
+              <span class="icon">
+                <i class="axr ax-propeller"></i>
+              </span>
+              <br>
+              <small>Wind</small>
+              <br>
+              Speed: {{currentWeather.windSpeed}}
+              &nbsp; | &nbsp;
+              Deg: {{currentWeather.windDeg}}
+            </div>
+
+            <div class="weatherItem">
+              <span class="icon">
+                <i class="axr ax-list"></i>
+              </span>
+              <br>
+              <small>Details</small>
+              <br>
+              {{currentWeather.description}}
+              <!-- &nbsp; | &nbsp;
+              {{currentWeather.created | date}} -->
+            </div>
+          </div>
+          <!-- <p>
             {{currentWeather | json}}
-          </p>
-          <p></p>
+          </p> -->
+          <!-- <p></p> -->
         </div>
       </div>
     </div>

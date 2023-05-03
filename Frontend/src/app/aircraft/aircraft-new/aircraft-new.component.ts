@@ -45,16 +45,16 @@ export class AircraftNewComponent implements OnInit {
 
   getData(id: string) {
     this._webApi
-      .setParams({ id })
+      .setParams({}, id)
       .get(Aircraft)
       .subscribe(res => {
-        const singRes: Aircraft = (res as any)[0];
-        // this._webApi.dataMap({ from: (res as any)[0], to: this.data });
+        // const singRes: Aircraft = res;
+        this._webApi.dataMap({ from: res, to: this.data });
 
-        this.data.id = singRes.id;
-        this.data.name = singRes.name;
-        this.data.type = singRes.type.toString() === 'AIRLINER' ? 1 : 2;
-        console.log('res to data ', res, this.data);
+        // this.data.id = singRes.id;
+        // this.data.name = singRes.name;
+        // this.data.type = singRes.type.toString() === 'AIRLINER' ? 1 : 2;
+        // console.log('res to data ', res, this.data);
 
         this.isEdit = true;
         this.isLoading = false;
