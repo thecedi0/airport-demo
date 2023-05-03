@@ -3,38 +3,26 @@
 </div>
 
 <div class="ad-list ad-sm ad-flat ad-ellipse">
-  <div class="ad-item bg-smoke">
+  <div *ngFor="let item of data" class="ad-item bg-smoke">
     <span>
-      Date
+      {{item.created}}
     </span>
     <span style="flex:1">
-      Request
+      {{item.intent}}
     </span>
     <span>
-      Response
+      {{item.response}}
     </span>
   </div>
-  <div class="ad-item bg-smoke">
-    <span>
-      Date
-    </span>
-    <span style="flex:1">
-      Request
-    </span>
-    <span>
-      Response
-    </span>
-  </div>
-  <div class="ad-item bg-smoke">
-    <span>
-      Date
-    </span>
-    <span style="flex:1">
-      Request
-    </span>
-    <span>
-      Response
-    </span>
-  </div>
+</div>
 
+
+<div class="ad-card ad-flat text-center" *ngIf="!isLoading && data.length === 0">
+  <p>
+    <i class="axl ax-message ax-3x"></i>
+    <br>
+    <br>
+    No Request Logs Found
+  </p>
+  <p></p>
 </div>

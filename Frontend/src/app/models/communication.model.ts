@@ -1,4 +1,5 @@
 import { Aircraft, IAircraft } from "./aircraft.model";
+import { Controller } from "./decorators";
 
 export enum CommunicationIntent {
   TAKEOFF = 1,
@@ -15,6 +16,7 @@ export interface ICommunication {
 }
 
 
+@Controller({ name: 'public/communication' })
 export class Communication implements ICommunication {
   constructor(
     public id = 0,

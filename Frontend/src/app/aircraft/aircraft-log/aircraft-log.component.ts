@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { Aircraft } from 'src/app/models';
+import { Aircraft, Communication, ICommunication } from 'src/app/models';
 import { AppCentralService, NotifyService, WebApiService } from 'src/app/services';
 
 @Component({
@@ -10,6 +10,10 @@ import { AppCentralService, NotifyService, WebApiService } from 'src/app/service
 export class AircraftLogComponent implements OnInit, OnDestroy {
 
   aircraft = new Aircraft();
+  data: ICommunication[] = [];
+
+  isLoading = false;
+
   constructor(
     private _appCentral: AppCentralService,
     private _webApi: WebApiService,
@@ -17,7 +21,8 @@ export class AircraftLogComponent implements OnInit, OnDestroy {
   ) { }
 
   ngOnInit() {
-    if (!this._appCentral.activeAircraft) {
+    if (!this._appCentral.activeAircraft || this._appCentral.activeAircraft.id === 0) {
+      this._appCentral.closeDataDetail.emit(true)
       return;
     }
 
@@ -38,6 +43,12 @@ export class AircraftLogComponent implements OnInit, OnDestroy {
 
 
   getData() {
+    this.isLoading = true;
+    this._webApi.setParams({}, this.aircraft.id.toString())
+      .getAll(Communication).subscribe(res => {
+        this.data = res;
+        this.isLoading = false;
+      })
 
   }
 
