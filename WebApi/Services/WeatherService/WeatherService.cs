@@ -1,5 +1,6 @@
 using AutoMapper;
 using WebApi.Data;
+using WebApi.Dto.Weather;
 using WebApi.Models;
 
 namespace WebApi.Services.WeatherService
@@ -36,10 +37,14 @@ namespace WebApi.Services.WeatherService
             return response;
         }
 
-        public async Task<ServiceResponse<Weather>> GetCurrentWeather()
+        public async Task<ServiceResponse<GetWeatherDto>> GetCurrentWeather()
         {
-            var response = new ServiceResponse<Weather>();
-            response.Data = await Task.FromResult(this._context.Weathers.Last());
+            var response = new ServiceResponse<GetWeatherDto>();
+            var c = this._context.Weathers.Count();
+            if (c > 0)
+            {
+                response.Data = await Task.FromResult(this._mapper.Map<GetWeatherDto>(this._context.Weathers.LastOrDefault(x => x.Id == c)));
+            }
             return response;
         }
     }

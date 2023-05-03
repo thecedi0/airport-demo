@@ -1,5 +1,6 @@
 using AutoMapper;
 using WebApi.Data;
+using WebApi.Dto.Aircraft;
 using WebApi.Models;
 
 namespace WebApi.Services.AircraftService
@@ -11,14 +12,15 @@ namespace WebApi.Services.AircraftService
         private readonly DataContext _context;
 
         public AircraftService(IMapper mapper, DataContext context)
-        {   
+        {
             this._mapper = mapper;
             this._context = context;
         }
-        public async Task<ServiceResponse<Aircraft>> AddAircraft(Aircraft model)
+        public async Task<ServiceResponse<Aircraft>> AddAircraft(PostAircraftDto model)
         {
+
             var response = new ServiceResponse<Aircraft>();
-            var data = await Task.FromResult(this._context.Aircrafts.Add(model));
+            var data = await Task.FromResult(this._context.Aircrafts.Add(this._mapper.Map<Aircraft>(model)));
             this._context.SaveChanges();
 
             response.Data = data.Entity;
@@ -32,14 +34,16 @@ namespace WebApi.Services.AircraftService
             return response;
         }
 
-        public async Task<ServiceResponse<List<Aircraft>>> GetAllAircrafts()
+        public async Task<ServiceResponse<List<GetAircraftDto>>> GetAllAircrafts()
         {
-            var response = new ServiceResponse<List<Aircraft>>();
-            response.Data = await Task.FromResult(this._context.Aircrafts.ToList());
+            var response = new ServiceResponse<List<GetAircraftDto>>();
+            response.Data = await Task.FromResult(
+                this._context.Aircrafts.Select(a => this._mapper.Map<GetAircraftDto>(a)).ToList()
+                );
             return response;
         }
 
-        public async Task<ServiceResponse<Aircraft>> UpdateAircraft(Aircraft model)
+        public async Task<ServiceResponse<Aircraft>> UpdateAircraft(PostAircraftDto model)
         {
             var response = new ServiceResponse<Aircraft>();
 

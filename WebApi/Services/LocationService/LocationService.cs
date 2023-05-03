@@ -1,5 +1,6 @@
 using AutoMapper;
 using WebApi.Data;
+using WebApi.Dto.Location;
 using WebApi.Models;
 
 namespace WebApi.Services.LocationService
@@ -36,10 +37,15 @@ namespace WebApi.Services.LocationService
             return response;
         }
 
-        public async Task<ServiceResponse<List<AircraftLocation>>> GetLocationsByAircraft(int aircraftId)
+        public async Task<ServiceResponse<List<GetLocationDto>>> GetLocationsByAircraft(int aircraftId)
         {
-            var response = new ServiceResponse<List<AircraftLocation>>();
-            response.Data = await Task.FromResult(this._context.AircraftLocations.Where(c => c.Aircraft.Id == aircraftId).ToList());
+            var response = new ServiceResponse<List<GetLocationDto>>();
+            response.Data = await Task.FromResult(
+                this._context.AircraftLocations
+                .Where(c => c.Aircraft.Id == aircraftId)
+                .Select(c => this._mapper.Map<GetLocationDto>(c))
+                .ToList()
+                );
             return response;
         }
     }

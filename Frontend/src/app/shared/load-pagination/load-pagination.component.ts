@@ -16,7 +16,7 @@ export class LoadPaginationComponent implements OnInit {
 
   visible: number = 5;
 
-  data = [];
+  data: any = [];
 
 
 
@@ -54,7 +54,7 @@ export class LoadPaginationComponent implements OnInit {
     }
   }
 
-  onPageClicked(page) {
+  onPageClicked(page: number) {
     this.pageClicked.emit(page);
   }
 }

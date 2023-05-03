@@ -4,13 +4,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using WebApi.Data;
+using WebApi.Dto.Location;
 using WebApi.Models;
 using WebApi.Services.LocationService;
 
 namespace WebApi.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/{call_sign}/[controller]")]
     public class LocationController : ControllerBase
     {
         private readonly ILocationService _service;
@@ -20,9 +21,9 @@ namespace WebApi.Controllers
         }
 
         [HttpGet()]
-        public async Task<ActionResult<List<AircraftLocation>>> GetAll()
+        public async Task<ActionResult<List<GetLocationDto>>> GetAll()
         {
-            var r = await this._service.GetAllLocations();
+            var r = await this._service.GetLocationsByAircraft(1);
             return Ok(r.Data);
         }
 

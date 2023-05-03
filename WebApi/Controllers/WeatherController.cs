@@ -3,6 +3,7 @@ namespace WebApi.Controllers
 
     using Microsoft.AspNetCore.Mvc;
     using WebApi.Data;
+    using WebApi.Dto.Weather;
     using WebApi.Models;
     using WebApi.Services.WeatherService;
 
@@ -38,6 +39,20 @@ namespace WebApi.Controllers
 
             return Ok(r.Data);
 
+        }
+
+
+        [HttpGet("/api/[area]/{call_sign}/[controller]")]
+        public async Task<ActionResult<List<GetWeatherDto>>> GetCurrentWeather()
+        {
+
+            var r = await this._service.GetCurrentWeather();
+            if (r.Data is null)
+            {
+                return NotFound();
+            }
+
+            return Ok(r.Data);
         }
 
 

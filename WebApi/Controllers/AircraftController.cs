@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using WebApi.Data;
+using WebApi.Dto.Aircraft;
 using WebApi.Models;
 using WebApi.Services.AircraftService;
 
@@ -20,7 +21,7 @@ namespace WebApi.Controllers
         }
 
         [HttpGet()]
-        public async Task<ActionResult<List<Aircraft>>> GetAll()
+        public async Task<ActionResult<List<GetAircraftDto>>> GetAll()
         {
             var r = await this._service.GetAllAircrafts();
             return Ok(r.Data);
@@ -41,7 +42,7 @@ namespace WebApi.Controllers
 
 
         [HttpPost]
-        public async Task<ActionResult<Aircraft>> AddAircraft(Aircraft model)
+        public async Task<ActionResult<Aircraft>> AddAircraft(PostAircraftDto model)
         {
             var r = await this._service.AddAircraft(model);
             return Ok(r.Data);
@@ -49,7 +50,7 @@ namespace WebApi.Controllers
 
 
         [HttpPut("{id:int}")]
-        public async Task<ActionResult<Aircraft>> UpdateAircraft(Aircraft model)
+        public async Task<ActionResult<Aircraft>> UpdateAircraft(PostAircraftDto model)
         {
             var r = await this._service.UpdateAircraft(model);
             if (!r.Success)

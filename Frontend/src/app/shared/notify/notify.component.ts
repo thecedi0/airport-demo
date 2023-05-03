@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { NotifyService } from 'src/app/services/notify.service';
 
 @Component({
-  selector: 'galaxy-notify',
+  selector: 'app-notify',
   templateUrl: './notify.component.html',
   styleUrls: ['./notify.component.scss']
 })

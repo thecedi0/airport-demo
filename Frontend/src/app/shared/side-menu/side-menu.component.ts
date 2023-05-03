@@ -21,7 +21,7 @@ export class SideMenuComponent implements OnInit {
   onToggleMenu() {
     this.showMenu = !this.showMenu;
   }
-  onMenuClicked(e) {
+  onMenuClicked(e:Event) {
     e.stopPropagation();
     this.onToggleMenu();
   }

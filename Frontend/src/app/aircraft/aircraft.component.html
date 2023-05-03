@@ -1,0 +1,121 @@
+<section class="ad-section" style="padding-top: 0;">
+  <div class="wrapper">
+    <div class="ad-row">
+      <div class="ad-cols-12">
+        <ui-data-grid [title]="title" (searchClicked)="onSearchData($event)" (closeDetail)="onCloseRoute()"
+          [showDetail]="showDetail" [detail]="detailTitle" [paginatorPage]="page" [paginatorTotal]="totalData"
+          [paginatorLimit]="pageSize" (pageinateData)="onPaginateData($event)">
+          <div class="header-btns">
+            <button class="ad-btn ad-icon ad-shadow ad-round btn-tgreen"
+              (click)="onDetailRoute('new', 'Register Aircraft')" routerLinkActive="btn-prim">
+              <i class="axl ax-plus"></i>
+            </button>
+            <button class="ad-btn btn-default ad-icon ad-round" (click)="onReloadData()">
+              <i class="axl ax-refresh"></i>
+            </button>
+          </div>
+          <div class="data">
+            <div class="ad-card ad-table padding-sm ad-ellipse ad-flat bg-white">
+              <div *ngIf="isLoading" class="ad-card ad-flat is-loading">
+                <p></p>
+              </div>
+
+              <!-- data here -->
+              <table [class]="theme">
+                <tr *ngFor="let item of data">
+
+
+                  <td>
+                    <div class="client">
+                      <div class="ad-img bg-darker">
+                        {{item.name[0]}}
+                      </div>
+                      <div class="detail">
+
+                        {{ item.name }}
+                        <br>
+                        <small>{{item.type}}</small>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    {{item.status}} <i [class]="getStatusIcon(item.status)"></i>
+                  </td>
+                  <td class="action">
+
+                    <div class="ad-btn-group ad-round">
+                      <button class="ad-btn ad-icon ad-flat clear" (click)="
+                          onDetailRoute('edit/' + item.id, 'Edit Aircraft Info')
+                        ">
+                        <i class="axl ax-edit"></i>
+                      </button>
+
+                      <button *ngFor="let btnItem of actionButtons" class="ad-btn ad-icon ad-flat clear" (click)="
+                          onDetailRoute(btnItem.route, btnItem.title, item)
+                        ">
+                        <i class="axl ax-{{ btnItem.icon }} color-pink"></i>
+                      </button>
+                      <!-- del -->
+                      <button class="ad-btn ad-icon ad-flat clear" (click)="onDelete(item)">
+                        <i class="axl ax-trash color-pink"></i>
+                      </button>
+                    </div>
+
+
+                  </td>
+                </tr>
+                <!-- {{data | json}} -->
+              </table>
+
+              <!-- data ends -->
+              <div class="ad-card ad-flat" *ngIf="!isLoading && data.length === 0">
+                <p class="text-center text-size18" style="opacity: 0.4;">
+                  <i class="axl ax-plane ax-2x"></i> <br />
+                  <br />
+                  No Data Found
+                </p>
+              </div>
+
+              <!-- pagination start -->
+              <div style="display: flex;">
+                <div style="flex: 1;">
+                  <button class="ad-btn btn-dark ad-round ad-flat" style="margni-top: 0;">
+                    Total: {{ totalData }}
+                  </button>
+                </div>
+                <galaxy-load-pagination *ngIf="!isLoading" [page]="page" [total]="totalData" [limit]="pageSize"
+                  (pageClicked)="onPaginate($event)"></galaxy-load-pagination>
+              </div>
+              <!-- pagination ends -->
+            </div>
+          </div>
+
+          <div class="detail">
+            <router-outlet></router-outlet>
+          </div>
+        </ui-data-grid>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<div class="bg-white delete-modal" *ngIf="showModal">
+  <div class="ad-card ad-flat">
+    <h2 class="title text-normal">Delete Aircraft!</h2>
+    <p>
+      You are about to delete Aircraft : <b class='color-pink'> {{selectedAircraft.name}}</b>
+      <br>
+      Invoice & Payments of the Bank you have entered will also be deleted
+    </p>
+
+    <button class="ad-btn ad-round ad-md" (click)="showModal = false">
+      Cancel
+    </button>
+    <button class="ad-btn ad-round ad-md btn-pink" (click)="deleteItem()" [disabled]="isLoading"
+      [class.is-loading]="isLoading">
+      Delete
+    </button>
+  </div>
+</div>

@@ -25,7 +25,6 @@ export class UiHeaderComponent implements OnInit {
 
   activeUser = new User;
 
-  businessDomain: string;
   constructor(
     private _router: Router,
   ) { }

@@ -1,0 +1,25 @@
+<form #inputData="ngForm" [class.is-loading]="isLoading">
+
+  <div class="ad-input ad-round ad-label">
+    <label for="">Aircraft Name <em>(required) </em></label>
+    <input type="text" name="name" [(ngModel)]="data.name" placeholder="eg. SpaceX Starship12" [disabled]="isLoading"
+      required />
+  </div>
+
+  <div class="ad-input ad-round ad-label">
+    <label for="">Type <em>(required) </em></label>
+    <select name="type" [(ngModel)]="data.type">
+      <option [value]="1">Airlines</option>
+      <option [value]="2">Private</option>
+    </select>
+  </div>
+
+  <button [disabled]="isLoading" class="ad-btn ad-round ad-sm btn-grey" (click)="onCloseDetail()">
+    Cancel
+  </button>
+
+  <button [disabled]="inputData.invalid || isLoading" (click)="onSubmit(2)"
+    class="ad-btn ad-round ad-sm btn-tgreen float-right">
+    Save
+  </button>
+</form>

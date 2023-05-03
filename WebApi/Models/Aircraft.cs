@@ -15,8 +15,8 @@ namespace WebApi.Models
 
         public DateTime Created { get; set; }
 
-        public ICollection<AircraftCommunication> Communications { get; set; }
-        public ICollection<AircraftLocation> Locations { get; set; }
+        public ICollection<AircraftCommunication>? Communications { get; set; }
+        public ICollection<AircraftLocation>? Locations { get; set; }
 
 
     }

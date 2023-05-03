@@ -42,7 +42,7 @@ interface IRequestOption {
 @Injectable()
 export class GenericService {
   params: HttpParams = new HttpParams();
-  route: string | null = '';
+  route: string | undefined = '';
 
   requestOption?: IRequestOption;
   authOption?: IRequestOption;
@@ -67,7 +67,7 @@ export class GenericService {
       (this.route ? this.route : '');
 
     // reset HttpParams & route to null
-    this.route = null;
+    this.route = undefined;
     this.params = new HttpParams();
 
     return url.toLowerCase();
@@ -91,27 +91,28 @@ export class GenericService {
     if (paramsObject) {
       const fields = Object.getOwnPropertyNames(paramsObject);
 
-      fields.forEach(field => {
-        const value = paramsObject[field];
+      fields.forEach((field: string) => {
+        const value = (paramsObject as any)[field];
         if (value) {
-          httpParams = httpParams.set(field, `${value}`);
+          httpParams = httpParams.set(field.toString(), `${value}`);
         }
       });
     }
     return httpParams;
   }
 
-  DataMap(data: { from: object; to: object }) {
+  dataMap(data: { from: object; to: object }) {
     if (data.from && data.to) {
       const toFields = Object.getOwnPropertyNames(data.to);
       const fromFields = Object.getOwnPropertyNames(data.from);
-      toFields.forEach(i => {
+      toFields.forEach((i: any) => {
         if (fromFields.map(f => f.toLowerCase()).includes(i.toLowerCase())) {
-          data.to[i] = data.from[i];
+          (data.to as any)[i] = (data.from as any)[i];
         }
       });
-      return data.to;
+      // return data.to;
     }
+
   }
 
   setRequestOptions(options: IRequestOption, headers?: any): IRequestOption {
@@ -160,6 +161,10 @@ export class GenericService {
   }
   getPageOf<T>(constructor: new () => T): Observable<IResult<T>> {
     return (this.get(constructor) as any) as Observable<IResult<T>>;
+  }
+
+  getAll<T>(constructor: new () => T): Observable<T[]> {
+    return (this.get(constructor) as any) as Observable<T[]>;
   }
 
   post<T>(data: T): Observable<T> {

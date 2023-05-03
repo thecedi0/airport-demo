@@ -1,3 +1,4 @@
+using WebApi.Dto.Weather;
 using WebApi.Models;
 
 namespace WebApi.Services.WeatherService
@@ -6,7 +7,7 @@ namespace WebApi.Services.WeatherService
     {
         Task<ServiceResponse<List<Weather>>> GetAllWeather();
         Task<ServiceResponse<Weather>> GetWeatherById(int id);
-        Task<ServiceResponse<Weather>> GetCurrentWeather();
+        Task<ServiceResponse<GetWeatherDto>> GetCurrentWeather();
         Task<ServiceResponse<Weather>> AddWeather(Weather model);
     }
 }

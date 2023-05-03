@@ -1,3 +1,5 @@
 export * from './result.model'
 export * from './authtoken.model'
 export * from './user.model'
+export * from './aircraft.model'
+export * from './communication.model'
