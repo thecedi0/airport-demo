@@ -7,7 +7,7 @@ import {
 } from '@angular/common/http';
 
 import { throwError as observableThrowError, Observable } from 'rxjs';
-import { map, catchError } from 'rxjs/operators';
+import { map, catchError, retry } from 'rxjs/operators';
 import { IResult } from '../models';
 
 export interface IParam {
@@ -175,6 +175,7 @@ export class GenericService {
     const constructor = (data as Object).constructor;
 
     const url = this.creatUrl(constructor);
+    console.log(this.requestOption);
     return this._http.post<T>(url, JSON.stringify(data), this.requestOption);
   }
 

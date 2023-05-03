@@ -9,7 +9,7 @@ namespace WebApi.Models
         public float Latitude { get; set; }
         public float Longitude { get; set; }
         public float Heading { get; set; }
-        public DateTime Created { get; set; }=DateTime.Now;
+        public DateTime Created { get; set; }
 
 
     }

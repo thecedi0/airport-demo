@@ -6,7 +6,7 @@ export interface IUser {
 export class User implements IUser {
   constructor(
     public id = 0,
-    public username = 'Kofi'
+    public username = 'Kofi Owusu-Afriyie'
   ) { }
 
 }

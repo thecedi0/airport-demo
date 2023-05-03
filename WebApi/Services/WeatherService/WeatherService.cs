@@ -16,10 +16,13 @@ namespace WebApi.Services.WeatherService
             this._context = context;
         }
 
-        public async Task<ServiceResponse<Weather>> AddWeather(Weather model)
+        public async Task<ServiceResponse<Weather>> AddWeather(PostWeatherDto model)
         {
             var response = new ServiceResponse<Weather>();
-            response.Data = await Task.FromResult(this._context.Weathers.Add(model).Entity);
+            var data = await Task.FromResult(this._context.Weathers.Add(this._mapper.Map<Weather>(model)));
+            this._context.SaveChanges();
+
+            response.Data = data.Entity;
             return response;
         }
 

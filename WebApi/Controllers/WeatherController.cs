@@ -57,10 +57,9 @@ namespace WebApi.Controllers
 
 
         [HttpPost]
-        public async Task<ActionResult<Weather>> AddWeather(Weather model)
+        public async Task<ActionResult<Weather>> AddWeather(PostWeatherDto model)
         {
             var r = await this._service.AddWeather(model);
-
             return Ok(r.Data);
         }
     }

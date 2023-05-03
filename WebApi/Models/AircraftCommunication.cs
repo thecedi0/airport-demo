@@ -12,6 +12,6 @@ namespace WebApi.Models
         public CommunicationIntent Intent { get; set; } = CommunicationIntent.TAKEOFF;
 
         public bool Response { get; set; } = false;
-        public DateTime Created { get; set; } =DateTime.Now;
+        public DateTime Created { get; set; }
     }
 }

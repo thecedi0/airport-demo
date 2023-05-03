@@ -80,6 +80,7 @@ export class AircraftNewComponent implements OnInit {
 
     // console.log(this.data);
     // return;
+    this.data.type = +this.data.type;
 
     this.isLoading = true;
 
@@ -89,21 +90,22 @@ export class AircraftNewComponent implements OnInit {
 
   updateEntity() {
     this._webApi
+      .setParams({}, this.data.id.toString())
       .put(this.data)
       .subscribe(res => {
         // console.log('responds',res)
         this.isLoading = false;
 
-        if ((<any>res).success) {
+        if (res.id > 0) {
           // console.log('tell me it was successfull', res);
-          this._notify.success((<any>res)['message']);
+          this._notify.success('Aircraft info successfully updated');
           // switch to is editable.
           // this._router.navigateByUrl('/u/');
           this._appCentral.dataChanged.emit();
           this.onCloseDetail();
         } else {
           // console.log('Somthing went wrong. Please try again.', res);
-          this._notify.error((<any>res)['message']);
+          this._notify.error('Somthing went wrong. Please try again.');
         }
         this.isLoading = false;
       });
@@ -111,6 +113,7 @@ export class AircraftNewComponent implements OnInit {
 
   createEntity() {
     this._webApi
+      .setParams({})
       .post(this.data)
       .subscribe(res => {
         // console.log('responds',res)
@@ -118,9 +121,9 @@ export class AircraftNewComponent implements OnInit {
         console.log(res);
         this._appCentral.dataChanged.emit();
 
-        if ((<any>res).success) {
+        if (res.id > 0) {
           // console.log('tell me it was successfull', res);
-          this._notify.success((<any>res)['message']);
+          this._notify.success('Aircraft successfully saved');
           // this.data.id = res['id'];
 
           // update businessList
@@ -132,7 +135,7 @@ export class AircraftNewComponent implements OnInit {
           // this.isEdit = true;
         } else {
           // console.log('Somthing went wrong. Please try again.', res);
-          this._notify.error((<any>res)['message']);
+          this._notify.error('Somthing went wrong. Please try again.');
         }
         this.onCloseDetail();
         this.isLoading = false;

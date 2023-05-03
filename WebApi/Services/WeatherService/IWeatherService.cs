@@ -8,6 +8,6 @@ namespace WebApi.Services.WeatherService
         Task<ServiceResponse<List<Weather>>> GetAllWeather();
         Task<ServiceResponse<Weather>> GetWeatherById(int id);
         Task<ServiceResponse<GetWeatherDto>> GetCurrentWeather();
-        Task<ServiceResponse<Weather>> AddWeather(Weather model);
+        Task<ServiceResponse<Weather>> AddWeather(PostWeatherDto model);
     }
 }

@@ -4,14 +4,23 @@
       <div class="ad-cols-12">
 
         <div class="ad-card bg-white ad-ellipse">
-          <div class="ad-divider">Airport Weather</div>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
+          <div style="display: flex;">
+            <div class="ad-divider" style="flex:1">
+              <i class="axr ax-cloud"></i>
+              &nbsp; Airport Weather
+            </div>
+
+            <button class="ad-btn ad-round btn-tgreen no-margin" (click)="showModal =true">Record Weather</button>
+          </div>
+          <p>
+            {{currentWeather | json}}
+          </p>
           <p></p>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+
+<app-weather-new [showModal]="showModal" (closeModal)="showModal = false; getCurrentWeather()"></app-weather-new>

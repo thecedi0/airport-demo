@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WebApi.Data;
 using WebApi.Dto.Aircraft;
@@ -41,11 +43,19 @@ namespace WebApi.Controllers
         }
 
 
+        [AllowAnonymous]
         [HttpPost]
-        public async Task<ActionResult<Aircraft>> AddAircraft([FromBody] PostAircraftDto model)
+        public async Task<ActionResult<Aircraft>> AddAircraft(PostAircraftDto model)
         {
-            var r = await this._service.AddAircraft(model);
-            return Ok(r.Data);
+
+            if (model is not null)
+            {
+                var r = await this._service.AddAircraft(model);
+                return Ok(r.Data);
+            }
+
+            return BadRequest();
+
         }
 
 

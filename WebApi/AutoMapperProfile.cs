@@ -20,6 +20,9 @@ namespace WebApi
             .ForMember(
                 dest => dest.Status,
                 opt => opt.MapFrom(src => src.Status.ToString())
+            ).ForMember(
+                dest => dest.CallSign,
+                opt => opt.MapFrom(src => this._GenerateToken(src.Id))
             );
 
 
@@ -48,6 +51,15 @@ namespace WebApi
 
             // from dto to model
             CreateMap<PostAircraftDto, Aircraft>();
+
+
+            CreateMap<PostWeatherDto, Weather>();
+        }
+
+
+        private string _GenerateToken(int Id)
+        {
+            return Id.ToString() + ".password";
         }
 
     }

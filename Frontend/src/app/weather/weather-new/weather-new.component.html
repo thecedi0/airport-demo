@@ -1,0 +1,48 @@
+
+<div class="ad-card bg-white ad-ellipse form-data" [class.ad-show]="showModal">
+  <div class="ad-divider">Record Weather Condition</div>
+  <form #inputData="ngForm" [class.is-loading]="isLoading">
+
+    <div class="ad-input ad-round ad-label">
+      <label for="">Temperature <em>(required) </em></label>
+      <input type="number" step=".1" min="0" name="temperature" [(ngModel)]="data.temperature" [disabled]="isLoading"
+        required />
+    </div>
+    <div class="ad-input ad-round ad-label">
+      <label for="">Visibility <em>(required) </em></label>
+      <input type="number" step=".1" min="0" name="visibility" [(ngModel)]="data.visibility" [disabled]="isLoading"
+        required />
+    </div>
+    <div class="ad-input-flex ad-card ad-ellipse ad-full bg-dark">
+      <div class="ad-input ad-round ad-label">
+        <label for="">WindSpeed <em>(required) </em></label>
+        <input type="number" step=".1" min="0" name="windSpeed" [(ngModel)]="data.windSpeed" [disabled]="isLoading"
+          required />
+      </div>
+      <div class="ad-input ad-round ad-label">
+        <label for="">WindDeg <em>(required) </em></label>
+        <input type="number" step=".1" min="0" name="windDeg" [(ngModel)]="data.windDeg" [disabled]="isLoading"
+          required />
+      </div>
+    </div>
+
+    <div class="ad-input ad-round ad-label">
+      <label for="">Description <em>(required) </em></label>
+      <textarea name="description" [(ngModel)]="data.description" [disabled]="isLoading" required></textarea>
+    </div>
+
+    <button [disabled]="isLoading" class="ad-btn ad-round ad-sm btn-grey" (click)="onCloseDetail()">
+      Cancel
+    </button>
+
+    <button [disabled]="inputData.invalid || isLoading" (click)="onSubmit(2)"
+      class="ad-btn ad-round ad-sm btn-tgreen float-right">
+      Save
+    </button>
+  </form>
+
+</div>
+
+<div class="overlay" (click)="onCloseDetail()" *ngIf="showModal">
+
+</div>

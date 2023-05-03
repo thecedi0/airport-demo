@@ -7,5 +7,8 @@ namespace WebApi.Dto.Aircraft
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
         public AircraftType Type { get; set; }
+
+
+       
     }
 }
