@@ -53,7 +53,7 @@ export class AircraftNewComponent implements OnInit {
 
         this.data.id = singRes.id;
         this.data.name = singRes.name;
-        this.data.type = singRes.type.toString() === 'AIRLINES' ? 1 : 2;
+        this.data.type = singRes.type.toString() === 'AIRLINER' ? 1 : 2;
         console.log('res to data ', res, this.data);
 
         this.isEdit = true;

@@ -5,11 +5,11 @@ namespace WebApi.Services
 {
     public class TowerAI
     {
-        public IConfiguration _configuration { get; }
+        private readonly IConfiguration _configuration;
 
-        private Aircraft[] _smallHanger;
-        private Aircraft[] _largeHanger;
-        private Aircraft[] _runWay;
+        private Aircraft[] _smallHanger = Array.Empty<Aircraft>();
+        private Aircraft[] _largeHanger = Array.Empty<Aircraft>();
+        private Aircraft[] _runWay = Array.Empty<Aircraft>();
         public TowerAI(IConfiguration configuration)
         {
             this._configuration = configuration;
@@ -25,7 +25,7 @@ namespace WebApi.Services
         public bool HangerAccessible(Aircraft aircraft)
         {
             var number = this._configuration.GetValue<int>("AppSettings:LargeHangerCapacity");
-            if (aircraft.Type == AircraftType.AIRLINES)
+            if (aircraft.Type == AircraftType.AIRLINER)
             {
                 return this._ResolveCapacity(number, this._largeHanger, aircraft);
             }

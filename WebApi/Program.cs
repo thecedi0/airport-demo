@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 using WebApi.Data;
+using WebApi.Services;
 using WebApi.Services.AircraftService;
 using WebApi.Services.AirportService;
 using WebApi.Services.CommunicationService;
@@ -31,6 +32,8 @@ builder.Services.AddScoped<ILocationService, LocationService>();
 builder.Services.AddScoped<ICommunicationService, CommunicationService>();
 builder.Services.AddScoped<IAirportService, AirportService>();
 builder.Services.AddScoped<IWeatherService, WeatherService>();
+
+builder.Services.AddSingleton<TowerAI>();
 
 builder.Services.AddAuthorization(options =>
 {

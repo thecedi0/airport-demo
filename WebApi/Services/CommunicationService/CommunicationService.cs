@@ -49,7 +49,7 @@ namespace WebApi.Services.CommunicationService
                 data.Aircraft = getAircraftRes.Data;
                 data.Response = this._towerAI.RunwayAccessible(data.Aircraft);
                 data.hasResponsed = true;
-                
+
                 var dbRequest = await Task.FromResult(this._context.AircraftCommunications.Add(data));
                 this._context.SaveChanges();
 

@@ -1,13 +1,13 @@
 import { Controller } from "./decorators";
 
 export enum AircraftStatus {
-  PACKED = 1,
+  PARKED = 1,
   AIRBORNE = 2,
   APROACH = 3,
   LANDED = 5
 }
 export enum AircraftType {
-  AIRLINES = 1,
+  AIRLINER = 1,
   PRIVATE = 2
 }
 
@@ -26,8 +26,8 @@ export class Aircraft implements IAircraft {
   constructor(
     public id = 0,
     public name = '',
-    public status = AircraftStatus.PACKED,
-    public type = AircraftType.AIRLINES,
+    public status = AircraftStatus.PARKED,
+    public type = AircraftType.AIRLINER,
     public created = ''
   ) { }
 }
