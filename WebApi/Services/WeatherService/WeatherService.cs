@@ -46,7 +46,7 @@ namespace WebApi.Services.WeatherService
             var c = this._context.Weathers.Count();
             if (c > 0)
             {
-                response.Data = await Task.FromResult(this._mapper.Map<GetWeatherDto>(this._context.Weathers.LastOrDefault(x => x.Id == c)));
+                response.Data = await Task.FromResult(this._mapper.Map<GetWeatherDto>(this._context.Weathers.OrderByDescending(x => x.Id).FirstOrDefault()));
             }
             return response;
         }

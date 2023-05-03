@@ -27,11 +27,7 @@ namespace WebApi
 
 
             // from model to dto
-            CreateMap<AircraftLocation, GetLocationDto>()
-            .ForMember(
-                dest => dest.Type,
-                opt => opt.MapFrom(src => src.Aircraft.Type.ToString())
-            );
+            CreateMap<AircraftLocation, GetLocationDto>();
 
             // from model to dto
             CreateMap<Weather, GetWeatherDto>()
@@ -54,6 +50,9 @@ namespace WebApi
 
 
             CreateMap<PostWeatherDto, Weather>();
+
+             // from model to dto
+            CreateMap<PutLocationDto, AircraftLocation>();
         }
 
 

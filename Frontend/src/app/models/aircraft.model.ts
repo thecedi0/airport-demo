@@ -26,7 +26,6 @@ export class Aircraft implements IAircraft {
   constructor(
     public id = 0,
     public name = '',
-    public callSign = '',
     public status = AircraftStatus.PACKED,
     public type = AircraftType.AIRLINES,
     public created = ''

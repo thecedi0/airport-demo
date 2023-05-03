@@ -1,6 +1,6 @@
 namespace WebApi.Controllers
 {
-
+    using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
     using WebApi.Data;
     using WebApi.Dto.Weather;
@@ -43,6 +43,7 @@ namespace WebApi.Controllers
 
 
         [HttpGet("/api/[area]/{call_sign}/[controller]")]
+      
         public async Task<ActionResult<List<GetWeatherDto>>> GetCurrentWeather()
         {
 

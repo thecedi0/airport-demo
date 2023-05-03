@@ -8,7 +8,7 @@ namespace WebApi.Services.LocationService
         Task<ServiceResponse<List<AircraftLocation>>> GetAllLocations();
         Task<ServiceResponse<List<GetLocationDto>>> GetLocationsByAircraft(int aircraftId);
         Task<ServiceResponse<AircraftLocation>> GetLocationById(int id);
-        Task<ServiceResponse<AircraftLocation>> AddLocation(AircraftLocation model);
+        Task<ServiceResponse<AircraftLocation>> AddLocation(PutLocationDto model, string callSign);
 
     }
 }

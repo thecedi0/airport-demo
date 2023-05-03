@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 using WebApi.Data;
 using WebApi.Services.AircraftService;
@@ -20,6 +21,7 @@ builder.Services.AddControllers();
 // Add Auto Mapper for DTOs
 builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -29,6 +31,14 @@ builder.Services.AddScoped<ILocationService, LocationService>();
 builder.Services.AddScoped<ICommunicationService, CommunicationService>();
 builder.Services.AddScoped<IAirportService, AirportService>();
 builder.Services.AddScoped<IWeatherService, WeatherService>();
+
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("Default", new AuthorizationPolicyBuilder()
+        .RequireAuthenticatedUser()
+        .Build());
+
+});
 
 var app = builder.Build();
 
