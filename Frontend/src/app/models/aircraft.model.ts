@@ -15,6 +15,7 @@ export interface IAircraft {
   id: number,
   name: string,
   callSign?: string,
+  autoPilot?: boolean,
   status: AircraftStatus,
   type: AircraftType,
   created: string
@@ -29,6 +30,18 @@ export class Aircraft implements IAircraft {
     public status = AircraftStatus.PARKED,
     public type = AircraftType.AIRLINER,
     public created = ''
+  ) { }
+}
+
+
+@Controller({ name: 'api' })
+export class AircraftLocation {
+  constructor(
+    public type = 'AIRLINER',
+    public latitude = 44.8212,
+    public longitude = 20.4555,
+    public altitude = 3500,
+    public heading = 220
   ) { }
 }
 

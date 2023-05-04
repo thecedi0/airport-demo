@@ -18,6 +18,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { WeatherComponent } from './weather/weather.component';
 import { WeatherNewComponent } from './weather/weather-new/weather-new.component';
+import { AircraftPilotComponent } from './aircraft/aircraft-pilot/aircraft-pilot.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { WeatherNewComponent } from './weather/weather-new/weather-new.component
     AircraftDefaultComponent,
     AircraftNewComponent,
     AircraftLogComponent,
+    AircraftPilotComponent,
     WeatherComponent,
     WeatherNewComponent
   ],

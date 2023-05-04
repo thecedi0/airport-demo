@@ -41,7 +41,11 @@
                   <td>
                     {{item.status}} <i [class]="getStatusIcon(item.status)"></i>
                   </td>
+                  <!-- <td class="text-right">
+                  </td> -->
                   <td class="action">
+                    <app-aircraft-pilot [aircraft]="item"></app-aircraft-pilot>
+                    &nbsp; |
 
                     <div class="ad-btn-group ad-round">
                       <button class="ad-btn ad-icon ad-flat clear" (click)="

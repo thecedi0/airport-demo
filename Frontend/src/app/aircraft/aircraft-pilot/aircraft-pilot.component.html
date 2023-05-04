@@ -1,0 +1,59 @@
+<button (click)="showModal = true" class="ad-btn ad-ellipse btn-default ad-flat no-margin"
+  [class.btn-special]="aircraft.autoPilot" style="margin:0; margin-top: -8px;">
+  <i class="axr ax-steering-wheel"></i> Pilot
+</button>
+
+
+<div class="ad-card ad-ellipse bg-white form-data" [class.ad-show]="showModal" (click)="$event.stopPropagation()">
+  <div class="ad-divider">Pilot Aircraft: {{aircraft.name}}</div>
+
+  <div class='autopilot-toggle'>
+    <div class="label">
+      Enable AutoPilot :
+    </div>
+    <div class="toggle">
+      <div class="ad-input ad-toggle">
+        <label for="autoPilot"></label>
+        <input type="checkbox" name="autoPilot" (change)="onSwitchPilotMode()" id="autoPilot">
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="control-flex">
+    <div>
+      <div class="ad-item ad-flat">
+        <small class="color-pink">Current State :</small>
+        <br>
+        <p>
+          {{aircraft.status}}
+        </p>
+      </div>
+      <div class="ad-item ad-flat">
+        <small class="color-pink">Location:</small>
+        <br>
+        <p>
+          {{location |json}}
+        </p>
+      </div>
+
+    </div>
+
+    <div>
+      <div class="ad-divider">Intent Requests</div>
+      <button (click)="onSendRequest('TAKEOFF')" class="ad-btn ad-round  ad-full btn-tgreen"
+        [disabled]="aircraft.autoPilot">
+        Take-Off
+      </button>
+      <br>
+      <button (click)="onSendRequest('LAND')" class="ad-btn ad-round ad-full btn-yellow" style="margin-top:0"
+        [disabled]="aircraft.autoPilot">
+        Land
+      </button>
+    </div>
+
+  </div>
+</div>
+
+<div class="overlay" *ngIf="showModal" (click)="showModal = false"></div>
