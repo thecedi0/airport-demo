@@ -1,3 +1,4 @@
+using api.Dto.Intent;
 using AutoMapper;
 using WebApi.Dto.Aircraft;
 using WebApi.Dto.Location;
@@ -29,6 +30,10 @@ namespace WebApi
             // from model to dto
             CreateMap<AircraftLocation, GetLocationDto>();
 
+            CreateMap<AircraftCommunication, GetLogsDto>();
+            // .ForMember(des => des.Intent,
+            //   opt => opt.MapFrom(src => src.Intent.ToString()));
+
             // from model to dto
             CreateMap<Weather, GetWeatherDto>()
             .ForMember(
@@ -51,7 +56,7 @@ namespace WebApi
 
             CreateMap<PostWeatherDto, Weather>();
 
-             // from model to dto
+            // from model to dto
             CreateMap<PutLocationDto, AircraftLocation>();
         }
 

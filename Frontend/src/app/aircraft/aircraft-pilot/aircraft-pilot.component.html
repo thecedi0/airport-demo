@@ -1,8 +1,17 @@
+<span *ngIf="aircraft.status.toString() === 'LANDED'">
+<button (click)="onPackCraft()" class="ad-btn ad-ellipse btn-dark ad-flat no-margin"
+ style="margin:0; margin-top: -8px;">
+  <i class="axr ax-building-cottage"></i> Park
+</button>
+&nbsp; 
+&nbsp; 
+</span>
+
+
 <button (click)="showModal = true" class="ad-btn ad-ellipse btn-default ad-flat no-margin"
   [class.btn-special]="aircraft.autoPilot" style="margin:0; margin-top: -8px;">
   <i class="axr ax-steering-wheel"></i> Pilot
 </button>
-
 
 <div class="ad-card ad-ellipse bg-white form-data" [class.ad-show]="showModal" (click)="$event.stopPropagation()">
   <div class="ad-divider">Pilot Aircraft: {{aircraft.name}}</div>

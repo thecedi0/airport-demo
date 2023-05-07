@@ -1,17 +1,33 @@
-<div class="ad-divider">
-  {{aircraft.name}} : Communication Logs
+<div style="display: flex;">
+  <div class="ad-divider" style="flex:1">
+    {{aircraft.name}} : Communication Logs
+  </div>
+  <div>
+    <button (click)="getData()" class="ad-btn ad-round ad-icon">
+      <i class="axl ax-refresh"></i>
+    </button>
+  </div>
 </div>
 
-<div class="ad-list ad-sm ad-flat ad-ellipse">
+<div class="ad-list ad-sm ad-flat ad-ellipse padding-sm" [class.is-loading]='isLoading' style="max-height: 300px; overflow-y: auto;">
   <div *ngFor="let item of data" class="ad-item bg-smoke">
     <span>
-      {{item.created}}
+      <small>
+        <i class="axl ax-calendar"></i> {{item.created|date}}
+      </small>
+      
+      <br>
+      <small>
+        <i class="axl ax-clock"></i> {{item.created|date:'h:m:s'}}
+      </small>
     </span>
-    <span style="flex:1">
-      {{item.intent}}
+    <span class="text-center" style="flex:1">
+      <b>
+        {{item.intent}}
+      </b>
     </span>
-    <span>
-      {{item.response}}
+    <span class="ad-btn ad-ellipse no-margin ad-flat" [class.btn-tgreen]="item.response" [class.btn-pink]="!item.response">
+      {{item.response ?'Approved':'Denied'}}
     </span>
   </div>
 </div>

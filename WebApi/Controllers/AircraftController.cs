@@ -70,6 +70,17 @@ namespace WebApi.Controllers
 
             return Ok(r.Data);
         }
+        [HttpPut("park/{id:int}")]
+        public async Task<ActionResult<GetAircraftDto>> ParkAircraft(int id)
+        {
+            var r = await this._service.ParkAircraft(id);
+            if (!r.Success)
+            {
+                return NotFound();
+            }
+
+            return Ok(r.Data);
+        }
 
     }
 }

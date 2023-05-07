@@ -20,14 +20,24 @@ export class AircraftPilotComponent implements OnInit {
 
     this.location.type = this.aircraft.type.toString();
 
+    this.onSendLocation();
+
   }
 
 
   onSwitchPilotMode() {
     this.aircraft.autoPilot = !this.aircraft.autoPilot;
-    this._notify.success('Aircraft is on ' + (this.aircraft.autoPilot ? 'AutoPilot' : 'Manual Pilot'));
 
+    if(this.aircraft.autoPilot && this.aircraft.status.toString() === 'PARKED'){
+      this._notify.info('Auto Pilot turned Off. Please do a manual takeoff');
+      return;
+    }
+
+    
+    this._notify.success('Aircraft is on ' + (this.aircraft.autoPilot ? 'AutoPilot' : 'Manual Pilot'));
+  
     this.autoPilot();
+    
   }
 
 
@@ -36,14 +46,42 @@ export class AircraftPilotComponent implements OnInit {
       return;
     }
 
+    // console.log(this.aircraft.status.toString() + AircraftStatus.AIRBORNE.toString()); //
+    switch (this.aircraft.status.toString()) {
+      case 'AIRBORNE':
+        this.onSendRequest("LAND");
+        
+        break;
 
+        case 'LANDED':
+        // this.onSendRequest("LAND");
+        this.aircraft.autoPilot = false;
+        
+        break;
+
+        case 'PARKED':
+          // this.onSendRequest("LAND");
+          this.aircraft.autoPilot = false;
+          this._notify.info('Auto Pilot turned Off. Please do a manual takeoff')
+          
+          break;
+    
+        default:
+        this.onSendRequest("TAKEOFF")
+        break;
+    }
     setTimeout(() => {
       this.autoPilot();
-    }, 1000);
+    }, 10000);
   }
 
   onSendLocation() {
-    if (this.aircraft.status.toString() === 'PARKED') {
+    if (this.aircraft.status.toString() !== 'AIRBORNE') {
+
+      setTimeout(() => {
+        this.onSendLocation();
+      }, 10000);
+
       return;
     }
 
@@ -56,7 +94,7 @@ export class AircraftPilotComponent implements OnInit {
 
     this._webApi
       .setParams({}, this.aircraft.callSign?.toString() + '/location')
-      .post(req).subscribe(res => {
+      .put(req).subscribe(res => {
         console.log(res);
 
         setTimeout(() => {
@@ -71,13 +109,12 @@ export class AircraftPilotComponent implements OnInit {
       });
   }
 
-
   onSendRequest(intent: string) {
     if (
-      this.aircraft.status.toString() === 'AIRBORN' &&
+      this.aircraft.status.toString() === 'AIRBORNE' &&
       intent === 'TAKEOFF'
     ) {
-      this._notify.error('Aircraft is already AIRBORN');
+      this._notify.error('Aircraft is already AIRBORNE');
       return;
     }
 
@@ -98,7 +135,21 @@ export class AircraftPilotComponent implements OnInit {
     this._webApi
       .setParams({}, this.aircraft.callSign?.toString() + '/intent')
       .postAs(AircraftLocation, { state: intent }).subscribe(res => {
+        this.aircraft.status = res.aircraft.status;
+        this._notify.info('Aircraft '+this.aircraft.name+' request to '+res.intent+' was '+(res.response?'Approved':'Denied'));
         console.log(res);
       });
+    }
+    
+    onPackCraft(){
+      // alert('Pack Craft')
+      this._webApi.setParams({}, 'park/'+this.aircraft.id.toString())
+      .put(new Aircraft)
+      .subscribe(res=>{
+      this.aircraft.status = res.status;
+      if(res.status.toString() === 'PARKED')
+        this._notify.success('Aircraft '+this.aircraft.name+' successfully parked');
+    });
   }
+
 }

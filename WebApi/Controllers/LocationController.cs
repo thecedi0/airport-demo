@@ -42,9 +42,9 @@ namespace WebApi.Controllers
 
 
         [HttpPut]
-        public async Task<ActionResult<AircraftLocation>> AddAircraftLocation(PutLocationDto model, [FromRoute] string call_sing)
+        public async Task<ActionResult<AircraftLocation>> AddAircraftLocation(PutLocationDto model, [FromRoute] string call_sign)
         {
-            var r = await this._service.AddLocation(model, call_sing);
+            var r = await this._service.AddLocation(model, call_sign);
             return Ok(r.Data);
         }
     }

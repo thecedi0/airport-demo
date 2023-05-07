@@ -17,7 +17,7 @@ export class WeatherComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.getCurrentWeather();
+    // this.getCurrentWeather();
   }
 
   getCurrentWeather() {

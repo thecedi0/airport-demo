@@ -34,7 +34,7 @@ export class Aircraft implements IAircraft {
 }
 
 
-@Controller({ name: 'api' })
+@Controller({ name: '' })
 export class AircraftLocation {
   constructor(
     public type = 'AIRLINER',

@@ -11,7 +11,7 @@ namespace WebApi.Models
         public float Visibility { get; set; }
         public float WindSpeed { get; set; }
         public float WindDeg { get; set; }
-        public DateTime Created { get; set; }
+        public DateTime Created { get; set; } = DateTime.Now.ToUniversalTime();
 
     }
 

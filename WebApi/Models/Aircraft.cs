@@ -13,7 +13,7 @@ namespace WebApi.Models
         // public int TypeId { get; set; }
         public AircraftType Type { get; set; } = AircraftType.AIRLINER;
 
-        public DateTime Created { get; set; }
+        public DateTime Created { get; set; } = DateTime.Now.ToUniversalTime();
 
         public ICollection<AircraftCommunication>? Communications { get; set; }
         public ICollection<AircraftLocation>? Locations { get; set; }

@@ -13,6 +13,7 @@ namespace WebApi.Models
 
         public bool Response { get; set; } = false;
         public bool hasResponsed { get; set; } = false;
-        public DateTime Created { get; set; }
+
+        public DateTime Created { get; set; } = DateTime.Now.ToUniversalTime();
     }
 }

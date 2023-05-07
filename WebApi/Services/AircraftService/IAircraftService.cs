@@ -10,5 +10,7 @@ namespace WebApi.Services.AircraftService
         Task<ServiceResponse<Aircraft>> AddAircraft(PostAircraftDto model);
 
         Task<ServiceResponse<Aircraft>> UpdateAircraft(PostAircraftDto model);
+        Task<ServiceResponse<Aircraft>> UpdateAircraftState(Aircraft model);
+        Task<ServiceResponse<GetAircraftDto>> ParkAircraft(int id);
     }
 }

@@ -60,11 +60,18 @@ export class GenericService {
 
     let url = this.enableProd ? this.rootUrl : ''; // production
 
-    url +=
+    if(metadata.name.length === 0){
+      url +=
+      this.baseServiceUrl +
+      (this.route ? this.route : '');
+    }else{
+      url +=
       this.baseServiceUrl +
       metadata.name +
       '/' +
       (this.route ? this.route : '');
+    }
+    
 
     // reset HttpParams & route to null
     this.route = undefined;

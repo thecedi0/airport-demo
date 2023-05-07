@@ -18,7 +18,7 @@ namespace WebApi.Controllers
         }
 
         [HttpGet("{id:int}")]
-        public async Task<ActionResult<List<AircraftCommunication>>> GetAircraftLogs(int id)
+        public async Task<ActionResult<List<api.Dto.Intent.GetLogsDto>>> GetAircraftLogs(int id)
         {
 
             var r = await this._service.GetCommunicationsByAircraft(id);
@@ -26,9 +26,9 @@ namespace WebApi.Controllers
         }
 
         [HttpPost("/api/{call_sign}/intent")]
-        public async Task<ActionResult<AircraftCommunication>> AddAircraftLocation(PostIntentDto model, [FromRoute] string call_sing)
+        public async Task<ActionResult<api.Dto.Intent.GetLogsDto>> AddAircraftLocation(PostIntentDto model, [FromRoute] string call_sign)
         {
-            var r = await this._service.AircraftRequest(model, call_sing);
+            var r = await this._service.AircraftRequest(model, call_sign);
             return Ok(r.Data);
         }
     }

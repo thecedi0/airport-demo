@@ -40,7 +40,10 @@ namespace WebApi.Services.LocationService
                 var dbRequest = await Task.FromResult(this._context.AircraftLocations.Add(data));
                 this._context.SaveChanges();
 
-                response.Data = dbRequest.Entity;
+                var dd = dbRequest.Entity;
+                dd.Aircraft.Communications = null;
+                dd.Aircraft.Locations = null;
+                response.Data = dd;
 
                 // throw;
 
